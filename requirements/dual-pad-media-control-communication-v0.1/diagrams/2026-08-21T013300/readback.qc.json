@@ -1,0 +1,48 @@
+{
+  "whiteboard_token": "Iw5Pwr1fWheM2EbJL7Ncjdn7n8c",
+  "document_url": "https://thevision.feishu.cn/docx/BACzdwYjJoiOpwxkeBPcRfvrnWg",
+  "block_id": "doxcnMT2m8Sbcr8LuHCqR6Zb2pb",
+  "document_revision_at_task_start": 33,
+  "write": {
+    "ok": true,
+    "created_node_count": 33,
+    "created_nodes": {
+      "text_shape": 14,
+      "composite_shape": 12,
+      "connector": 6,
+      "image": 1
+    },
+    "media_token": "XQNTbBMtAonabhxwTZscb0hinIc"
+  },
+  "local_check": {
+    "errors": 0,
+    "warnings": 0,
+    "text_overflow": 0,
+    "node_overlap": 0,
+    "text_occlusion": 0
+  },
+  "readback": {
+    "image_ok": true,
+    "image_file": "readback.png",
+    "image_width": 2560,
+    "image_height": 2560,
+    "image_bytes": 456432,
+    "raw_ok": true,
+    "raw_file": "readback.raw.json",
+    "raw_node_count": 33,
+    "title_found": true,
+    "seven_topics_found": true,
+    "searchable_no_go_found": true,
+    "searchable_roms_conflict_found": true,
+    "searchable_v02_note_found": true,
+    "thumbnail_visual_qc": "17/17 visible in the readback preview"
+  },
+  "source_artifact": {
+    "diagram_svg_self_contained": true,
+    "diagram_png_width": 3300,
+    "diagram_png_height": 4240,
+    "diagram_png_sha256": "02AD978CD791E5F6F688521AEFDE60A3BF4DC824CD90964689255D19748A47D5",
+    "manifest_media_coverage": "17/17"
+  },
+  "degradation": "whiteboard-cli does not render embedded data-URI images from SVG. The verified full-resolution PNG was therefore uploaded to this exact whiteboard and written as one native image node, with searchable title, status, seven-topic and connector nodes retained above it."
+}

@@ -1,0 +1,25 @@
+<p>以下 15 项来自更新后的客户确认表。P0 未关闭前，不得冻结 topicId、PRODUCT / CASE 编号、文件前缀或播放列表；P1 决定播放体验；P2 决定设备适配与签字留痕。</p>
+<table>
+  <colgroup><col width="80"/><col width="230"/><col width="310"/><col width="310"/><col width="220"/></colgroup>
+  <thead><tr><th background-color="light-gray">优先级</th><th background-color="light-gray">确认项</th><th background-color="light-gray">当前证据</th><th background-color="light-gray">客户需确认</th><th background-color="light-gray">影响</th></tr></thead>
+  <tbody>
+    <tr><td>P0</td><td>Pad 02 产品 01—07 正式名称</td><td>目前只有候选文件池，没有正式映射</td><td>逐项填写正式产品名及顺序</td><td>不确认则 Pad 02 不能进入开发</td></tr>
+    <tr><td>P0</td><td>Pad 01 七个主题首页顺序与 CASE 编号</td><td>8 月 17 日会议按互联网 / 大模型 / 航空航天 / 高端制造 / 科研院所 / 海洋模拟 / AI for Science 叙述；V0.2 是最新视觉沟通参考但不冻结排序</td><td>确认最终首页顺序并冻结 CASE-01—07 编号</td><td>影响 topicId 与文件命名，不能由概念设计稿先定</td></tr>
+    <tr><td>P0</td><td>Pad 02 每个产品的 PPT 页码和视频文件</td><td>新品发布 PPT 19 页及多支候选视频</td><td>逐项选择页码、文件和先后顺序</td><td>决定播放列表</td></tr>
+    <tr><td>P0</td><td>ROMS 归属</td><td>8 月 17 日会议将 ROMS 视频归 AI for Science；20260817 补充稿第 4 页归海洋模拟</td><td>确认归海洋模拟或 AI for Science，且是否重复出现</td><td>避免串主题和重复播放</td></tr>
+    <tr><td>P0</td><td>科研院所 4 页版本</td><td>会议明确 4 页全放，但怀疑不是最新版</td><td>确认是否最新版并提供替换页</td><td>未确认不得冻结</td></tr>
+    <tr><td>P0</td><td>0714 与 20260817 替换关系</td><td>0714 为 13 页总稿；0817 为 4 页高端制造 + 海洋模拟补充</td><td>确认 0817 是否替换 0714 第 6—7 和第 12 页及具体范围</td><td>决定最终页面源</td></tr>
+    <tr><td>P1</td><td>高端制造顺序</td><td>有补充 PPT 2 页和独立视频</td><td>确认“补充页 1 → 补充页 2 → 视频”或其他顺序</td><td>决定 Pad 操作步骤</td></tr>
+    <tr><td>P1</td><td>海洋模拟顺序</td><td>有补充 PPT 2 页和独立视频</td><td>确认封面 / 说明页与视频的排列，以及是否保留 ROMS 封面</td><td>决定 Pad 操作步骤</td></tr>
+    <tr><td>P1</td><td>航空航天动画转码</td><td>0714 第 5 页内嵌约 64.1 MB GIF</td><td>确认转 H.264，并确定自动或手动触发</td><td>决定媒体格式</td></tr>
+    <tr><td>P1</td><td>新品发布 PPT 选页</td><td>完整 19 页过长，且第 9 页含 KV Cache</td><td>确认只选哪些页；第 9 页本轮排除</td><td>决定 Pad 02 单产品时长</td></tr>
+    <tr><td>P1</td><td>内嵌视频是否独立播放</td><td>新品发布 PPT 第 5、16 页有内嵌 MP4</td><td>确认是否提取成独立条目及其前后页面</td><td>决定产品播放列表</td></tr>
+    <tr><td>P1</td><td>每个条目的手动 / 自动和时长</td><td>当前均未确认</td><td>逐项填写手动下一步 / 自动及秒数</td><td>决定状态机推进方式</td></tr>
+    <tr><td>P1</td><td>最后一项结束策略</td><td>当前支持重播或回列表方向</td><td>确认默认停留、自动返回或重播策略</td><td>决定 SESSION_END 行为</td></tr>
+    <tr><td>P2</td><td>目标屏与设备参数</td><td>现有视觉稿按 1920×1200 概念画布，目标端待绑定</td><td>提供两台 Pad 型号、分辨率和对应播放端</td><td>决定适配和通道锁定</td></tr>
+    <tr><td>P2</td><td>确认人和版本号</td><td>尚无签字留痕</td><td>填写客户确认人、日期和版本</td><td>形成开发冻结门</td></tr>
+  </tbody>
+</table>
+<callout emoji="❗" background-color="light-yellow" border-color="yellow">
+  <p><b>编号冻结规则：</b>客户只确认“主题有哪七个”还不够；必须同时确认首页展示顺序，才可冻结 CASE-01—07、topicId 和正式文件前缀。</p>
+</callout>

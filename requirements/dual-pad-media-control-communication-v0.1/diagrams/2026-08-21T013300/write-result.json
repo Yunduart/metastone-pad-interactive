@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "identity": "user",
+  "whiteboard_token": "Iw5Pwr1fWheM2EbJL7Ncjdn7n8c",
+  "created_node_ids": "a1:1,o1:1,a1:2,o1:2,a1:3,o1:3,a1:4,o1:4,a1:5,o1:5,a1:6,o1:6,a1:7,o1:7,a1:8,o1:8,a1:9,o1:9,a1:10,o1:10,a1:11,o1:11,a1:12,a1:13,o1:12,a1:14,d1:1,c1:1,c1:2,c1:3,c1:4,c1:5,c1:6",
+  "created_node_count": 33,
+  "overwrite_target": "new dedicated blank whiteboard only",
+  "idempotent_token": "20260821-pad01-media-v02-013300"
+}

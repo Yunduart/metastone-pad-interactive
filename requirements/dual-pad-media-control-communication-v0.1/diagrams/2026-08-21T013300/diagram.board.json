@@ -1,0 +1,307 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "type": "text",
+      "id": "searchable-title",
+      "x": 40,
+      "y": 20,
+      "width": 3220,
+      "height": "fit-content",
+      "text": "Pad 01｜成果案例真实文件名与建议顺序｜媒体可视化清单",
+      "fontSize": 28,
+      "textColor": "#0B2D5B",
+      "textAlign": "center"
+    },
+    {
+      "type": "rect",
+      "id": "status-client-review",
+      "x": 140,
+      "y": 76,
+      "width": 640,
+      "height": 56,
+      "fillColor": "#F0F4FC",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "客户确认稿 / 非定版开发指令",
+      "fontSize": 16,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "status-case-order",
+      "x": 860,
+      "y": 76,
+      "width": 640,
+      "height": 56,
+      "fillColor": "#FEF1CE",
+      "borderColor": "#D4B45B",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE编号及首页顺序暂定",
+      "fontSize": 16,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "status-no-go",
+      "x": 1580,
+      "y": 76,
+      "width": 640,
+      "height": 56,
+      "fillColor": "#FEE3E2",
+      "borderColor": "#D25D5A",
+      "borderWidth": 2,
+      "borderDash": "dashed",
+      "borderRadius": 8,
+      "text": "程序未开发 · P0未关闭 · 生产 NO-GO",
+      "fontSize": 16,
+      "textColor": "#D25D5A"
+    },
+    {
+      "type": "rect",
+      "id": "status-v02",
+      "x": 2300,
+      "y": 76,
+      "width": 860,
+      "height": 56,
+      "fillColor": "#DFF5E5",
+      "borderColor": "#509863",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "V0.2替代V0.1，但仍为概念评审版",
+      "fontSize": 16,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-01",
+      "x": 40,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-01 互联网",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-02",
+      "x": 510,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-02 大模型",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-03",
+      "x": 980,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-03 航空航天",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-04",
+      "x": 1450,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-04 高端制造",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-05",
+      "x": 1920,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#5178C6",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-05 科研院所",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-06",
+      "x": 2390,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#D4B45B",
+      "borderWidth": 2,
+      "borderRadius": 8,
+      "text": "CASE-06 海洋模拟",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "rect",
+      "id": "topic-07",
+      "x": 2860,
+      "y": 180,
+      "width": 390,
+      "height": 58,
+      "fillColor": "#FFFFFF",
+      "borderColor": "#D25D5A",
+      "borderWidth": 2,
+      "borderDash": "dashed",
+      "borderRadius": 8,
+      "text": "CASE-07 AI for Science",
+      "fontSize": 15,
+      "textColor": "#1F2329"
+    },
+    {
+      "type": "text",
+      "id": "order-note",
+      "x": 40,
+      "y": 258,
+      "width": 1100,
+      "height": "fit-content",
+      "text": "当前建议顺序（箭头仅表示沟通稿顺序，全部待确认）",
+      "fontSize": 14,
+      "textColor": "#0AA9B8",
+      "textAlign": "left"
+    },
+    {
+      "type": "rect",
+      "id": "roms-conflict-searchable",
+      "x": 1190,
+      "y": 252,
+      "width": 2020,
+      "height": 72,
+      "fillColor": "#FEE3E2",
+      "borderColor": "#D25D5A",
+      "borderWidth": 2,
+      "borderDash": "dashed",
+      "borderRadius": 8,
+      "text": "ROMS冲突：补充稿归海洋模拟 / 8月17日会议归AI for Science，待客户确认；1080P / 4K待确认",
+      "fontSize": 15,
+      "textColor": "#D25D5A"
+    },
+    {
+      "type": "image",
+      "id": "media-visualization-full-board",
+      "x": 0,
+      "y": 360,
+      "width": 3300,
+      "height": 4240,
+      "image": {
+        "src": "XQNTbBMtAonabhxwTZscb0hinIc"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-01-02",
+      "connector": {
+        "from": "topic-01",
+        "to": "topic-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-02-03",
+      "connector": {
+        "from": "topic-02",
+        "to": "topic-03",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-03-04",
+      "connector": {
+        "from": "topic-03",
+        "to": "topic-04",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-04-05",
+      "connector": {
+        "from": "topic-04",
+        "to": "topic-05",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-05-06",
+      "connector": {
+        "from": "topic-05",
+        "to": "topic-06",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "order-06-07",
+      "connector": {
+        "from": "topic-06",
+        "to": "topic-07",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle"
+      }
+    }
+  ]
+}

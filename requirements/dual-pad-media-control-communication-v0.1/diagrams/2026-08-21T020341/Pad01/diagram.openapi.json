@@ -1,0 +1,7169 @@
+{
+  "nodes": [
+    {
+      "id": "o001:1",
+      "type": "composite_shape",
+      "x": 40,
+      "y": 40,
+      "width": 2500,
+      "height": 3848,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#afc5dd",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#f2f7fc",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:2",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 70,
+      "width": 2440,
+      "height": 219,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:1",
+      "type": "text_shape",
+      "x": 98,
+      "y": 98,
+      "width": 2384,
+      "height": 47,
+      "text": {
+        "text": "Pad 01｜成果案例真实文件名与建议顺序｜媒体可视化清单",
+        "font_weight": "regular",
+        "font_size": 32,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:3",
+      "type": "composite_shape",
+      "x": 98,
+      "y": 156,
+      "width": 250,
+      "height": 41,
+      "text": {
+        "text": "客户确认稿 / 非定版开发指令",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#8cb9f0",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:4",
+      "type": "composite_shape",
+      "x": 360,
+      "y": 156,
+      "width": 220,
+      "height": 41,
+      "text": {
+        "text": "CASE编号及首页顺序暂定",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:5",
+      "type": "composite_shape",
+      "x": 592,
+      "y": 156,
+      "width": 220,
+      "height": 41,
+      "text": {
+        "text": "程序未开发 · 生产 NO-GO",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff0f0",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:2",
+      "type": "text_shape",
+      "x": 98,
+      "y": 208,
+      "width": 2384,
+      "height": 22,
+      "text": {
+        "text": "客户确认内容树：Pad01成果案例 → 主题（01/02…仅沟通暂定）→ 每主题条目01/02/03…；主题整组向下排列，条目箭头仅表示建议播放顺序。",
+        "font_weight": "regular",
+        "font_size": 15,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d7e8fa",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:3",
+      "type": "text_shape",
+      "x": 98,
+      "y": 241,
+      "width": 2384,
+      "height": 20,
+      "text": {
+        "text": "17个独立真实缩略图｜PPT页、GIF代表帧、视频20秒代表帧｜图片保持16:9比例",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d7e8fa",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:6",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 315,
+      "width": 2440,
+      "height": 416,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:7",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 339,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:8",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 357,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 01（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:4",
+      "type": "text_shape",
+      "x": 112,
+      "y": 408,
+      "width": 214,
+      "height": 37,
+      "text": {
+        "text": "互联网",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:5",
+      "type": "text_shape",
+      "x": 112,
+      "y": 457,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:6",
+      "type": "text_shape",
+      "x": 112,
+      "y": 485,
+      "width": 214,
+      "height": 36,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:9",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 339,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:1",
+      "type": "image",
+      "x": 386,
+      "y": 339,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "N3RTbfO39ogahaxkiPecLMg2nAd"
+      }
+    },
+    {
+      "id": "o001:10",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 533,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:11",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 533,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:7",
+      "type": "text_shape",
+      "x": 386,
+      "y": 580,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第01页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:8",
+      "type": "text_shape",
+      "x": 386,
+      "y": 607,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第01页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:12",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 631,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:9",
+      "type": "text_shape",
+      "x": 386,
+      "y": 679,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜播放顺序/停留时长待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:13",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 339,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:2",
+      "type": "image",
+      "x": 772,
+      "y": 339,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "Qnv6blwnKoipRyxHXZqci12znIf"
+      }
+    },
+    {
+      "id": "o001:14",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 533,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:15",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 533,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:10",
+      "type": "text_shape",
+      "x": 772,
+      "y": 580,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第02页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:11",
+      "type": "text_shape",
+      "x": 772,
+      "y": 607,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第02页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:16",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 631,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:12",
+      "type": "text_shape",
+      "x": 772,
+      "y": 679,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜主题结束动作待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:17",
+      "type": "composite_shape",
+      "x": 1144,
+      "y": 339,
+      "width": 360,
+      "height": 151,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:13",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 355,
+      "width": 328,
+      "height": 26,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:14",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 389,
+      "width": 328,
+      "height": 36,
+      "text": {
+        "text": "CASE编号与首页顺序待客户确认；两页停留与切换方式待确认。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:18",
+      "type": "composite_shape",
+      "x": 1160,
+      "y": 434,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:19",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 757,
+      "width": 2440,
+      "height": 417,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#f8fbff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:20",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 781,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:21",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 799,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 02（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:15",
+      "type": "text_shape",
+      "x": 112,
+      "y": 850,
+      "width": 214,
+      "height": 37,
+      "text": {
+        "text": "大模型",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:16",
+      "type": "text_shape",
+      "x": 112,
+      "y": 899,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:17",
+      "type": "text_shape",
+      "x": 112,
+      "y": 927,
+      "width": 214,
+      "height": 36,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:22",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 781,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:3",
+      "type": "image",
+      "x": 386,
+      "y": 781,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "NPJsbPCz9onasBxY6arcWMuEnig"
+      }
+    },
+    {
+      "id": "o001:23",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 975,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:24",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 975,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:18",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1022,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第03页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:19",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1049,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第03页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:25",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 1073,
+      "width": 304,
+      "height": 40,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:20",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1121,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜播放顺序/停留时长待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:26",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 781,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:4",
+      "type": "image",
+      "x": 772,
+      "y": 781,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "TWEEbYWNnokkWExcMzzckPEkn63"
+      }
+    },
+    {
+      "id": "o001:27",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 975,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:28",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 975,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:21",
+      "type": "text_shape",
+      "x": 772,
+      "y": 1022,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第04页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:22",
+      "type": "text_shape",
+      "x": 772,
+      "y": 1049,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第04页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:29",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 1073,
+      "width": 304,
+      "height": 40,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:23",
+      "type": "text_shape",
+      "x": 772,
+      "y": 1121,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜主题结束动作待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:30",
+      "type": "composite_shape",
+      "x": 1144,
+      "y": 781,
+      "width": 360,
+      "height": 152,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:24",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 797,
+      "width": 328,
+      "height": 25,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:25",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 831,
+      "width": 328,
+      "height": 36,
+      "text": {
+        "text": "CASE编号与首页顺序待客户确认；两页停留与切换方式待确认。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:31",
+      "type": "composite_shape",
+      "x": 1160,
+      "y": 876,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:32",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 1200,
+      "width": 2440,
+      "height": 416,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:33",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 1224,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:34",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 1242,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 03（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:26",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1293,
+      "width": 214,
+      "height": 38,
+      "text": {
+        "text": "航空航天",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:27",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1342,
+      "width": 214,
+      "height": 16,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:28",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1370,
+      "width": 214,
+      "height": 36,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:35",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 1224,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:5",
+      "type": "image",
+      "x": 386,
+      "y": 1224,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "TnOvbwpKoovIeLx7ad5cyNHEn9e"
+      }
+    },
+    {
+      "id": "o001:36",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 1418,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:37",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 1418,
+      "width": 116,
+      "height": 41,
+      "text": {
+        "text": "动画→H.264",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:29",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1465,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第05页内嵌GIF",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:30",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1492,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜CASE03_航空航天_第05页动图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:38",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 1516,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待转码/待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:31",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1564,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜H.264参数与触发方式待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:39",
+      "type": "composite_shape",
+      "x": 758,
+      "y": 1224,
+      "width": 360,
+      "height": 151,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:32",
+      "type": "text_shape",
+      "x": 774,
+      "y": 1240,
+      "width": 328,
+      "height": 26,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:33",
+      "type": "text_shape",
+      "x": 774,
+      "y": 1274,
+      "width": 328,
+      "height": 36,
+      "text": {
+        "text": "0714第05页内嵌GIF，仅用代表帧；须转H.264，转码参数待确认。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:40",
+      "type": "composite_shape",
+      "x": 774,
+      "y": 1319,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:41",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 1642,
+      "width": 2440,
+      "height": 417,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#f8fbff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:42",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 1666,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:43",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 1684,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 04（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:34",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1735,
+      "width": 214,
+      "height": 37,
+      "text": {
+        "text": "高端制造",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:35",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1784,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:36",
+      "type": "text_shape",
+      "x": 112,
+      "y": 1812,
+      "width": 214,
+      "height": 36,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:44",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 1666,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:6",
+      "type": "image",
+      "x": 386,
+      "y": 1666,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "XtBXbR2btoo2SpxpvPFcDcI0nQd"
+      }
+    },
+    {
+      "id": "o001:45",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 1860,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:46",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 1860,
+      "width": 116,
+      "height": 41,
+      "text": {
+        "text": "动画→H.264",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:37",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1907,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "20260817补充稿｜第01页GIF",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:38",
+      "type": "text_shape",
+      "x": 386,
+      "y": 1934,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜20260817成功案例补充｜第01页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:47",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 1958,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜替换关系待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:39",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2006,
+      "width": 304,
+      "height": 16,
+      "text": {
+        "text": "待确认｜是否替换0714第06页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:48",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 1666,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:7",
+      "type": "image",
+      "x": 772,
+      "y": 1666,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "Ee6Gb2JzroXAaXxxqowcyBAGnEQ"
+      }
+    },
+    {
+      "id": "o001:49",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 1860,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:50",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 1860,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:40",
+      "type": "text_shape",
+      "x": 772,
+      "y": 1907,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "20260817补充稿｜第02页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:41",
+      "type": "text_shape",
+      "x": 772,
+      "y": 1934,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜20260817成功案例补充｜第02页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:51",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 1958,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:42",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2006,
+      "width": 304,
+      "height": 16,
+      "text": {
+        "text": "待确认｜是否保留视频封面",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:52",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 1666,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:8",
+      "type": "image",
+      "x": 1158,
+      "y": 1666,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "QZEhbczpBovFfnxqFkOcg8qKnHf"
+      }
+    },
+    {
+      "id": "o001:53",
+      "type": "composite_shape",
+      "x": 1170,
+      "y": 1860,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 03",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:54",
+      "type": "composite_shape",
+      "x": 1244,
+      "y": 1860,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "视频",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#087985",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ddf8fa",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:43",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 1907,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "独立视频｜20秒代表帧",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:44",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 1934,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜云道智造-高端制造案例视频",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:55",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 1958,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜文件已校验/顺序待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:45",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2006,
+      "width": 304,
+      "height": 16,
+      "text": {
+        "text": "待确认｜播放方式与关联封面待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:56",
+      "type": "composite_shape",
+      "x": 1530,
+      "y": 1666,
+      "width": 360,
+      "height": 152,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:46",
+      "type": "text_shape",
+      "x": 1546,
+      "y": 1682,
+      "width": 328,
+      "height": 26,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:47",
+      "type": "text_shape",
+      "x": 1546,
+      "y": 1716,
+      "width": 328,
+      "height": 35,
+      "text": {
+        "text": "补充稿第01页是否替换0714第06页、补充稿第02页是否保留均待确认；0714第07页仅为视频封面。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:57",
+      "type": "composite_shape",
+      "x": 1546,
+      "y": 1761,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:58",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 2085,
+      "width": 2440,
+      "height": 416,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:59",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 2109,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:60",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 2127,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 05（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:48",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2178,
+      "width": 214,
+      "height": 38,
+      "text": {
+        "text": "科研院所",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:49",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2227,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:50",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2255,
+      "width": 214,
+      "height": 35,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:61",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 2109,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:9",
+      "type": "image",
+      "x": 386,
+      "y": 2109,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "LiyHbX7mqoecM3xqjwfcIsBinYb"
+      }
+    },
+    {
+      "id": "o001:62",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 2303,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:63",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 2303,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:51",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2350,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第08页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:52",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2377,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第08页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:64",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 2401,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜最新版待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:53",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2449,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜徐霞/乔双丽确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:65",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 2109,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:10",
+      "type": "image",
+      "x": 772,
+      "y": 2109,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "V4fCbA3qfo3hEUxiVpEcIg18nKh"
+      }
+    },
+    {
+      "id": "o001:66",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 2303,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:67",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 2303,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:54",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2350,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第09页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:55",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2377,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第09页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:68",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 2401,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:56",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2449,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜最新版/顺序待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:69",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 2109,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:11",
+      "type": "image",
+      "x": 1158,
+      "y": 2109,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "C6DObkH7zoQpP4xoD2BctXRHnbc"
+      }
+    },
+    {
+      "id": "o001:70",
+      "type": "composite_shape",
+      "x": 1170,
+      "y": 2303,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 03",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:71",
+      "type": "composite_shape",
+      "x": 1244,
+      "y": 2303,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:57",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2350,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第10页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:58",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2377,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第10页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:72",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 2401,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:59",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2449,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜最新版/顺序待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:73",
+      "type": "composite_shape",
+      "x": 1544,
+      "y": 2109,
+      "width": 330,
+      "height": 368,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:12",
+      "type": "image",
+      "x": 1544,
+      "y": 2109,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "T4XLb3mpTobwkex6VKncdNqpnvf"
+      }
+    },
+    {
+      "id": "o001:74",
+      "type": "composite_shape",
+      "x": 1556,
+      "y": 2303,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 04",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:75",
+      "type": "composite_shape",
+      "x": 1630,
+      "y": 2303,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:60",
+      "type": "text_shape",
+      "x": 1544,
+      "y": 2350,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第11页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:61",
+      "type": "text_shape",
+      "x": 1544,
+      "y": 2377,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第11页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:76",
+      "type": "composite_shape",
+      "x": 1544,
+      "y": 2401,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:62",
+      "type": "text_shape",
+      "x": 1544,
+      "y": 2449,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜最新版/主题结束动作待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:77",
+      "type": "composite_shape",
+      "x": 1916,
+      "y": 2109,
+      "width": 360,
+      "height": 151,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:63",
+      "type": "text_shape",
+      "x": 1932,
+      "y": 2125,
+      "width": 328,
+      "height": 26,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:64",
+      "type": "text_shape",
+      "x": 1932,
+      "y": 2159,
+      "width": 328,
+      "height": 36,
+      "text": {
+        "text": "0714第08—11页是否最新版待确认；需徐霞/乔双丽确认版本与四页顺序。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:78",
+      "type": "composite_shape",
+      "x": 1932,
+      "y": 2204,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:79",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 2527,
+      "width": 2440,
+      "height": 417,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#f8fbff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:80",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 2551,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:81",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 2569,
+      "width": 214,
+      "height": 41,
+      "text": {
+        "text": "主题 06（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:65",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2620,
+      "width": 214,
+      "height": 37,
+      "text": {
+        "text": "海洋模拟",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:66",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2669,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:67",
+      "type": "text_shape",
+      "x": 112,
+      "y": 2697,
+      "width": 214,
+      "height": 36,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:82",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 2551,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:13",
+      "type": "image",
+      "x": 386,
+      "y": 2551,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "T4z7b9crpoen06xFCMPcFRpWnZb"
+      }
+    },
+    {
+      "id": "o001:83",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 2745,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:84",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 2745,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:68",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2792,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "20260817补充稿｜第03页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:69",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2819,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜20260817成功案例补充｜第03页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:85",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 2843,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:70",
+      "type": "text_shape",
+      "x": 386,
+      "y": 2891,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜封面/说明页角色待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:86",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 2551,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:14",
+      "type": "image",
+      "x": 772,
+      "y": 2551,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "DGUrburgzokKYKxcVl6cDJsznkb"
+      }
+    },
+    {
+      "id": "o001:87",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 2745,
+      "width": 66,
+      "height": 41,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:88",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 2745,
+      "width": 82,
+      "height": 41,
+      "text": {
+        "text": "视频",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#087985",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ddf8fa",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:71",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2792,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "独立视频｜20秒代表帧",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:72",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2819,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜港科大淘海数字孪生地球视频",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:89",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 2843,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜文件已校验/顺序待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:73",
+      "type": "text_shape",
+      "x": 772,
+      "y": 2891,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜播放方式与封面关联待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:90",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 2551,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "dash",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:15",
+      "type": "image",
+      "x": 1158,
+      "y": 2551,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "Wg95b6SPkoGU0Jx3UplcQSqtnBd"
+      }
+    },
+    {
+      "id": "o001:91",
+      "type": "composite_shape",
+      "x": 1170,
+      "y": 2745,
+      "width": 76,
+      "height": 41,
+      "text": {
+        "text": "条目 冲突",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:92",
+      "type": "composite_shape",
+      "x": 1254,
+      "y": 2745,
+      "width": 116,
+      "height": 41,
+      "text": {
+        "text": "候选/归属待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#087985",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ddf8fa",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:74",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2792,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "20260817补充稿｜第04页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:75",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2819,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜ROMS封面｜补充稿归海洋模拟",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:93",
+      "type": "composite_shape",
+      "x": 1158,
+      "y": 2843,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜归属冲突",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff0f0",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:76",
+      "type": "text_shape",
+      "x": 1158,
+      "y": 2891,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜海洋模拟/AI for Science待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:94",
+      "type": "composite_shape",
+      "x": 1530,
+      "y": 2551,
+      "width": 360,
+      "height": 152,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:77",
+      "type": "text_shape",
+      "x": 1546,
+      "y": 2567,
+      "width": 328,
+      "height": 26,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:78",
+      "type": "text_shape",
+      "x": 1546,
+      "y": 2601,
+      "width": 328,
+      "height": 35,
+      "text": {
+        "text": "0714第12页仅为视频封面；补充稿把ROMS封面归海洋模拟，与8月17日会议口径冲突。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:95",
+      "type": "composite_shape",
+      "x": 1546,
+      "y": 2646,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:96",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 2970,
+      "width": 2440,
+      "height": 417,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:97",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 2994,
+      "width": 250,
+      "height": 199,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#bbd4f4",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:98",
+      "type": "composite_shape",
+      "x": 112,
+      "y": 3012,
+      "width": 214,
+      "height": 40,
+      "text": {
+        "text": "主题 07（暂定）",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:79",
+      "type": "text_shape",
+      "x": 112,
+      "y": 3063,
+      "width": 214,
+      "height": 38,
+      "text": {
+        "text": "AI for Science",
+        "font_weight": "regular",
+        "font_size": 25,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:80",
+      "type": "text_shape",
+      "x": 112,
+      "y": 3112,
+      "width": 214,
+      "height": 17,
+      "text": {
+        "text": "Pad01成果案例 → 主题 → 条目01/02/03…",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:81",
+      "type": "text_shape",
+      "x": 112,
+      "y": 3140,
+      "width": 214,
+      "height": 35,
+      "text": {
+        "text": "建议顺序 / 暂定编号\n非冻结",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:99",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 2994,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:16",
+      "type": "image",
+      "x": 386,
+      "y": 2994,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "OZSfbA8mZop15ExdDXicVpelnwc"
+      }
+    },
+    {
+      "id": "o001:100",
+      "type": "composite_shape",
+      "x": 398,
+      "y": 3188,
+      "width": 66,
+      "height": 40,
+      "text": {
+        "text": "条目 01",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:101",
+      "type": "composite_shape",
+      "x": 472,
+      "y": 3188,
+      "width": 82,
+      "height": 40,
+      "text": {
+        "text": "PPT转图",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#2f80ed",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#eaf3ff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:82",
+      "type": "text_shape",
+      "x": 386,
+      "y": 3235,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "0714总稿｜第13页",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:83",
+      "type": "text_shape",
+      "x": 386,
+      "y": 3262,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜waic成功案例0714｜第13页",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:102",
+      "type": "composite_shape",
+      "x": 386,
+      "y": 3286,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:84",
+      "type": "text_shape",
+      "x": 386,
+      "y": 3334,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜顺序与主题结束动作待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:103",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 2994,
+      "width": 330,
+      "height": 369,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "dash",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "d001:17",
+      "type": "image",
+      "x": 772,
+      "y": 2994,
+      "width": 330,
+      "height": 186,
+      "style": {
+        "border_style": "none"
+      },
+      "image": {
+        "token": "Wc31b3UPZoVSYUxjZ3zcBYFLnpT"
+      }
+    },
+    {
+      "id": "o001:104",
+      "type": "composite_shape",
+      "x": 784,
+      "y": 3188,
+      "width": 66,
+      "height": 40,
+      "text": {
+        "text": "条目 02",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#ffffff",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0b2d5b",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#0b2d5b",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:105",
+      "type": "composite_shape",
+      "x": 858,
+      "y": 3188,
+      "width": 116,
+      "height": 40,
+      "text": {
+        "text": "视频/归属待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#087985",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ddf8fa",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:85",
+      "type": "text_shape",
+      "x": 772,
+      "y": 3235,
+      "width": 304,
+      "height": 20,
+      "text": {
+        "text": "ROMS-1080P｜20秒代表帧",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:86",
+      "type": "text_shape",
+      "x": 772,
+      "y": 3262,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "短名｜ROMS-1080P.mp4 / ROMS-4K.mp4",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:106",
+      "type": "composite_shape",
+      "x": 772,
+      "y": 3286,
+      "width": 304,
+      "height": 41,
+      "text": {
+        "text": "状态｜归属/清晰度待确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff0f0",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:87",
+      "type": "text_shape",
+      "x": 772,
+      "y": 3334,
+      "width": 304,
+      "height": 17,
+      "text": {
+        "text": "待确认｜会议归AI for Science；待客户确认",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:107",
+      "type": "composite_shape",
+      "x": 1144,
+      "y": 2994,
+      "width": 360,
+      "height": 151,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#fff3de",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:88",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 3010,
+      "width": 328,
+      "height": 25,
+      "text": {
+        "text": "待确认事项",
+        "font_weight": "regular",
+        "font_size": 17,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:89",
+      "type": "text_shape",
+      "x": 1160,
+      "y": 3044,
+      "width": 328,
+      "height": 36,
+      "text": {
+        "text": "8月17日会议把ROMS视频归AI for Science；ROMS归属、1080P/4K、顺序均待客户确认。",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:108",
+      "type": "composite_shape",
+      "x": 1160,
+      "y": 3089,
+      "width": 150,
+      "height": 41,
+      "text": {
+        "text": "状态：未冻结",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "center",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#f2994a",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "o001:109",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 3413,
+      "width": 2440,
+      "height": 90,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "dash",
+        "fill_opacity": 100,
+        "fill_color": "#fff0f0",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:90",
+      "type": "text_shape",
+      "x": 88,
+      "y": 3431,
+      "width": 2404,
+      "height": 29,
+      "text": {
+        "text": "ROMS 归属冲突｜必须由客户确认",
+        "font_weight": "regular",
+        "font_size": 19,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:91",
+      "type": "text_shape",
+      "x": 88,
+      "y": 3466,
+      "width": 2404,
+      "height": 19,
+      "text": {
+        "text": "补充稿第04页把 ROMS 封面归海洋模拟；8月17日会议把 ROMS 视频归 AI for Science。ROMS 1080P / 4K 与主题归属均未冻结。",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:110",
+      "type": "composite_shape",
+      "x": 70,
+      "y": 3529,
+      "width": 2440,
+      "height": 329,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_style": "solid",
+        "fill_opacity": 100,
+        "fill_color": "#ffffff",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "a001:92",
+      "type": "text_shape",
+      "x": 94,
+      "y": 3553,
+      "width": 2392,
+      "height": 32,
+      "text": {
+        "text": "真实完整文件名 / 路径、版本与冻结门",
+        "font_weight": "regular",
+        "font_size": 21,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#0b2d5b",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:93",
+      "type": "text_shape",
+      "x": 94,
+      "y": 3597,
+      "width": 2392,
+      "height": 88,
+      "text": {
+        "text": "PPT｜waic成功案例交互展示0714_飞书下载.pptx\nPPT｜20260817waic成功案例交互展示_飞书消息下载.pptx\n视频｜4-是石科技x云道智造-并行优化-高端制造案例视频_飞书下载.mp4\n视频｜6-是石科技x港科大-淘海数字孪生地球系统-并行优化-案例视频_飞书下载.mp4\nROMS候选｜ROMS-1080P.mp4 / ROMS-4K.mp4",
+        "font_weight": "regular",
+        "font_size": 12,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:94",
+      "type": "text_shape",
+      "x": 94,
+      "y": 3698,
+      "width": 2392,
+      "height": 20,
+      "text": {
+        "text": "必须保留｜0714第07/12页仅为视频封面；科研院所最新版待确认；高端制造替换关系待确认；ROMS 1080P/4K待确认；CASE编号/首页顺序待客户确认。",
+        "font_weight": "regular",
+        "font_size": 13,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#b85c00",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:95",
+      "type": "text_shape",
+      "x": 94,
+      "y": 3731,
+      "width": 2392,
+      "height": 15,
+      "text": {
+        "text": "唯一映射基线｜C:\\Users\\visua\\Documents\\ChatGPT\\是石科技_空间体验升级项目\\交付\\是石科技_领域视频互动台_V1\\requirements\\dual-pad-media-control-communication-v0.1\\diagrams\\2026-08-21T013300\\PAD01_MEDIA_PREVIEW_MANIFEST.md",
+        "font_weight": "regular",
+        "font_size": 10,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#60758f",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "a001:96",
+      "type": "text_shape",
+      "x": 94,
+      "y": 3759,
+      "width": 2392,
+      "height": 17,
+      "text": {
+        "text": "V0.2视觉沟通参考（替代V0.1）｜D:\\FOR_WORK\\260818_MetaStone\\10_成果案例与产品介绍_整合_20260821\\07_设计协同\\V0.2_平面视觉概念评审版。仍是非定版开发指令；01为评审总览页非Pad运行界面；双Pad不可跨频道；07按频道返回；Pad02 14候选未分配。",
+        "font_weight": "regular",
+        "font_size": 11,
+        "horizontal_align": "left",
+        "vertical_align": "top",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#1e5fbd",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      }
+    },
+    {
+      "id": "o001:111",
+      "type": "composite_shape",
+      "x": 94,
+      "y": 3789,
+      "width": 2392,
+      "height": 45,
+      "text": {
+        "text": "P0未关闭｜程序未开发｜生产 NO-GO｜不得解释为已定版、可开发、可生产或现场验收",
+        "font_weight": "regular",
+        "font_size": 14,
+        "horizontal_align": "left",
+        "vertical_align": "mid",
+        "line_through": false,
+        "underline": false,
+        "italic": false,
+        "angle": 0,
+        "text_color": "#d64545",
+        "text_color_type": 1,
+        "text_background_color_type": 0,
+        "theme_text_background_color_code": -1
+      },
+      "style": {
+        "border_opacity": 100,
+        "border_width": "narrow",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "dash",
+        "fill_opacity": 100,
+        "fill_color": "#fff0f0",
+        "fill_color_type": 1
+      },
+      "composite_shape": {
+        "type": "round_rect"
+      }
+    },
+    {
+      "id": "c001:1",
+      "type": "connector",
+      "x": 716,
+      "y": 523,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:9",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:13",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:9",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:13",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:2",
+      "type": "connector",
+      "x": 716,
+      "y": 965.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:22",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:26",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:22",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:26",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:3",
+      "type": "connector",
+      "x": 716,
+      "y": 1850.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:44",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:48",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:44",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:48",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:4",
+      "type": "connector",
+      "x": 1102,
+      "y": 1850.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:48",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:52",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:48",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:52",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:5",
+      "type": "connector",
+      "x": 716,
+      "y": 2293,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:61",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:65",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:61",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:65",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:6",
+      "type": "connector",
+      "x": 1102,
+      "y": 2293,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:65",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:69",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:65",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:69",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:7",
+      "type": "connector",
+      "x": 1488,
+      "y": 2293,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:69",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:73",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:69",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:73",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:8",
+      "type": "connector",
+      "x": 716,
+      "y": 2735.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:82",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:86",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:82",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:86",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:9",
+      "type": "connector",
+      "x": 1102,
+      "y": 2735.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:86",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:90",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:86",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:90",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:10",
+      "type": "connector",
+      "x": 716,
+      "y": 3178.5,
+      "width": 56,
+      "height": 1,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "solid"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:99",
+            "snap_to": "right",
+            "position": {
+              "x": 1,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:103",
+            "snap_to": "left",
+            "position": {
+              "x": 0,
+              "y": 0.5
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "straight",
+        "captions": {
+          "data": [
+            {
+              "text": "建议/暂定",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:99",
+          "snap_to": "right",
+          "position": {
+            "x": 1,
+            "y": 0.5
+          }
+        },
+        "end_object": {
+          "id": "o001:103",
+          "snap_to": "left",
+          "position": {
+            "x": 0,
+            "y": 0.5
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:11",
+      "type": "connector",
+      "x": 219,
+      "y": 538,
+      "width": 1,
+      "height": 243,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:7",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:20",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:7",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:20",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:12",
+      "type": "connector",
+      "x": 219,
+      "y": 980,
+      "width": 1,
+      "height": 244,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:20",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:33",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:20",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:33",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:13",
+      "type": "connector",
+      "x": 219,
+      "y": 1423,
+      "width": 1,
+      "height": 243,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:33",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:42",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:33",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:42",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:14",
+      "type": "connector",
+      "x": 219,
+      "y": 1865,
+      "width": 1,
+      "height": 244,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:42",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:59",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:42",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:59",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:15",
+      "type": "connector",
+      "x": 219,
+      "y": 2308,
+      "width": 1,
+      "height": 243,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:59",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:80",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:59",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:80",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:16",
+      "type": "connector",
+      "x": 219,
+      "y": 2750,
+      "width": 1,
+      "height": 244,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#0aa9b8",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:80",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "none"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:97",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "line_arrow"
+        },
+        "shape": "right_angled_polyline",
+        "captions": {
+          "data": [
+            {
+              "text": "主题建议顺序 / 非冻结",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:80",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:97",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "c001:17",
+      "type": "connector",
+      "x": 937,
+      "y": 2920,
+      "width": 386,
+      "height": 74,
+      "style": {
+        "border_opacity": 100,
+        "border_width": "medium",
+        "border_color": "#d64545",
+        "border_color_type": 1,
+        "border_style": "dash"
+      },
+      "connector": {
+        "start": {
+          "attached_object": {
+            "id": "o001:90",
+            "snap_to": "bottom",
+            "position": {
+              "x": 0.5,
+              "y": 1
+            }
+          },
+          "arrow_style": "circle_arrow"
+        },
+        "end": {
+          "attached_object": {
+            "id": "o001:103",
+            "snap_to": "top",
+            "position": {
+              "x": 0.5,
+              "y": 0
+            }
+          },
+          "arrow_style": "triangle_arrow"
+        },
+        "shape": "curve",
+        "captions": {
+          "data": [
+            {
+              "text": "补充稿归海洋模拟 / 8月17日会议归AI for Science｜待客户确认",
+              "font_weight": "regular",
+              "font_size": 14,
+              "horizontal_align": "left",
+              "vertical_align": "top",
+              "line_through": false,
+              "underline": false,
+              "italic": false,
+              "angle": 0,
+              "text_color": "#1f2329",
+              "text_color_type": 0,
+              "text_background_color_type": 0,
+              "theme_text_color_code": -1,
+              "theme_text_background_color_code": -1
+            }
+          ]
+        },
+        "turning_points": [
+          {
+            "x": 285.925925925926,
+            "y": 54.12111949604684
+          },
+          {
+            "x": 100.07407407407409,
+            "y": 19.87888050395317
+          }
+        ],
+        "caption_auto_direction": false,
+        "specified_coordinate": true,
+        "caption_position": 0.5,
+        "start_object": {
+          "id": "o001:90",
+          "snap_to": "bottom",
+          "position": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "end_object": {
+          "id": "o001:103",
+          "snap_to": "top",
+          "position": {
+            "x": 0.5,
+            "y": 0
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<h1>2026-08-21 乔双丽反馈修订｜当前执行口径</h1>
+<callout emoji="📌"><p><b>状态：客户确认输入；非定版开发指令；程序 NO-GO。</b></p><p>本节优先于下方 rev42 历史基线。画板缩略图用于核对素材与顺序，不代表素材已接入程序、客户已定版或现场验收通过。</p></callout>
+<h2>Pad01｜成果案例修订</h2>
+<ul><li>七个主题保留；首页顺序与 CASE-01—07 编号仍为 P0，客户确认后才能冻结 topicId 与文件前缀。</li><li>海洋模拟删除原“20260817 补充稿第04页 / ROMS封面”内容项；新增“最新视频号发布 ROMS 视频”，原视频待徐霞提供，当前不得以截图或封面冒充已收件。</li><li>ROMS-1080P.mp4 / ROMS-4K.mp4 是“异构并行优化”产品视频，已移出成果案例；未确认产品归属前不得映射。</li></ul>
+<table><thead><tr><th>主题</th><th>当前建议条目</th><th>状态 / 客户填写</th></tr></thead><tbody>
+<tr><td>互联网</td><td>0714 总稿第01—02页</td><td>方式：□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>大模型</td><td>0714 总稿第03—04页</td><td>方式：□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>航空航天</td><td>0714 第05页 GIF → H.264 MP4</td><td>转码参数 / 触发方式待确认</td></tr>
+<tr><td>高端制造</td><td>20260817 第01—02页 + 4-是石科技x云道智造-并行优化-高端制造案例视频_飞书下载.mp4</td><td>页面与视频顺序待确认</td></tr>
+<tr><td>科研院所</td><td>0714 总稿第08—11页</td><td>待徐霞 / 乔双丽确认是否最新版</td></tr>
+<tr><td>海洋模拟</td><td>20260817 第03页 + 6-是石科技x港科大-淘海数字孪生地球系统-并行优化-案例视频_飞书下载.mp4 + 最新视频号 ROMS 原视频</td><td>ROMS：待收件；方式 / 时长待确认</td></tr>
+<tr><td>AI for Science</td><td>0714 总稿第13页</td><td>异构并行优化产品视频已移出</td></tr>
+</tbody></table>
+<h2>Pad02｜PRODUCT-01—09 当前工作目录与映射</h2>
+<callout emoji="📝"><p>以下是乔双丽标注图形成的工作映射，仍需客户逐项确认顺序、播放方式、时长、确认人和版本。PRODUCT-03 的两支原视频仍待收件；PRODUCT-09 已找到本地候选但需确认 canonical 文件。</p></callout>
+<table><thead><tr><th>产品</th><th>当前工作名称</th><th>真实文件 / 当前动作</th><th>客户确认栏</th></tr></thead><tbody>
+<tr><td>PRODUCT-01</td><td>国产Token优化工厂</td><td>候选1：P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4；候选2：1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4</td><td>顺序：____；□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-02</td><td>超智算集群</td><td>2-是石科技超智算集群介绍-(4K).mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-03</td><td>国产异构超智算中心</td><td>总10集；群聊最新口径已发布2集，其余8集待发布；两支已发布原视频待徐霞提供</td><td>文件名：____；方式：____；确认人：____</td></tr>
+<tr><td>PRODUCT-04</td><td>国产Token优化工厂计算速度大比拼：CPU vs GPU</td><td>8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-05</td><td>国产Token优化工厂-技术优势</td><td>3-是石科技国产Token优化工厂产品优势盘点-4k.mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-06</td><td>AI infra</td><td>4-是石科技AIinfra行业介绍-4K.mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-07</td><td>PD分离</td><td>5-是石科技国产Token优化工厂-PD分离-1080P.mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-08</td><td>投机解码</td><td>6-是石科技国产Token优化工厂-投机解码-1080p.mp4</td><td>□手动 □自动；时长：____；确认人：____</td></tr>
+<tr><td>PRODUCT-09</td><td>多层级KV Cache</td><td>候选A：7-是石科技国产Token优化工厂-多层级KVCache-1080P.mp4；候选B：KVCache1080P.mp4；两者99,388,090 bytes且SHA256相同</td><td>canonical 文件名 / 路径：____；确认人：____</td></tr>
+</tbody></table>
+<p><b>PRODUCT-09 校验：</b>SHA256 = 68E245958DA2170FD48FD43F414D063E2CF6DA93F87A8DB0724CE0F6AC770CE6。确认 canonical 路径前不得硬编码。</p>
+<h2>明确排除与未映射</h2>
+<ul><li>整套“新品发布 PPT”页面候选、第05页内嵌视频、被划 X 的拓元体验台与算电协同落地实践不纳入当前播放序列。</li><li>仅保留新品发布 PPT 第16页内嵌视频作为 PRODUCT-01 候选1。</li><li>9-行业Agent产品规划介绍-4K.mp4 暂无产品映射，不得硬塞入 PRODUCT-01—09。</li><li>wiki 勾选只证明目录存在，不证明媒体原文件已经收到。</li></ul>
+<h2>证据链与版本差异</h2>
+<ul><li>知识库：产品视频互动展示，obj_token FwC7deW78o5EQox2i8jcCxE3ndC，revision 125。其 PRODUCT-03“已发布1集”早于群聊“已发布2集”，本轮采用后续群聊工作口径并保留冲突。</li><li>四张原始标注图：D:\FOR_WORK\260818_MetaStone\10_成果案例与产品介绍_整合_20260821\05_会议证据\乔双丽群反馈_20260821。</li><li>关联消息 ID：om_x100b67b004840538c1c917f1af98ae9、om_x100b67b002a81ca0c3e73753da38aa1、om_x100b67b00017c4a0ddc153aac021694、om_x100b67b01fc1ccacc25b880502e6211、om_x100b67b015795ca0c3f1be63c2d147c、om_x100b67b0136c68b0df3904abdcecf33、om_x100b67b011f664a8df3da099ffed27d、om_x100b67b02dbbd4a0c45d48697251bf2、om_x100b67b0285024a0c49faa8b6f550bc、om_x100b67b03ef6d0a0c227c81cf96b725、om_x100b67b03c65e8a4c107179a5886f52、om_x100b67b03d1ee0acde919a1b5b7376c、om_x100b67b03b6acca8c437b988e388730、om_x100b67b03876cca0c4b377631d43829、om_x100b67b032e08ca0c2fd3bbd214d284、om_x100b67b0ce4f40acc3f184de3b71d91。</li></ul>
+<h2>冻结门与程序影响</h2>
+<ol><li>客户确认每条素材与缺件补齐。</li><li>确认首页 / 产品顺序、CASE / PRODUCT 编号与唯一文件名。</li><li>确认每条手动 / 自动、时长、末项动作与声音。</li><li>确认客户确认人、日期、版本；项目经理明确“已定版并同步开发”。</li><li>之后才进入程序评估、开发、双端联调与现场验收。</li></ol>
+<p>程序影响仅作为待评估项：Pad02 配置从7个空槽调整为9个工作目录；Pad01 删除旧ROMS封面并增加待收件项；状态机继续采用 mixed-media playlist；两端 controllerId / channel / catalogId / target endpoint 必须隔离。当前不得修改代码、写入程序素材或硬编码。</p>

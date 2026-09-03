@@ -1,0 +1,4745 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "type": "frame",
+      "id": "root",
+      "x": 40,
+      "y": 40,
+      "layout": "vertical",
+      "gap": 26,
+      "padding": 30,
+      "width": 2020,
+      "height": "fit-content",
+      "fillColor": "#F2F7FC",
+      "borderColor": "#AFC5DD",
+      "borderWidth": 2,
+      "borderRadius": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 28,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#0B2D5B",
+          "borderColor": "#0B2D5B",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "title",
+              "text": "Pad 02｜候选文件池媒体流程图｜客户确认稿",
+              "width": 1904,
+              "height": "fit-content",
+              "fontSize": 32,
+              "textColor": "#FFFFFF",
+              "textAlign": "left"
+            },
+            {
+              "type": "frame",
+              "id": "header-tags",
+              "layout": "horizontal",
+              "gap": 12,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "tag-confirm",
+                  "text": "客户确认稿 / 非定版开发指令",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#EAF3FF",
+                  "borderColor": "#8CB9F0",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-unassigned",
+                  "text": "PRODUCT-01—07 全部空位 / 未分配",
+                  "width": 280,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-nogo",
+                  "text": "程序未开发 · 生产 NO-GO",
+                  "width": 220,
+                  "height": "fit-content",
+                  "fillColor": "#FFF0F0",
+                  "borderColor": "#D64545",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#D64545",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "scope-note",
+              "text": "14个候选源仅作为客户选材池：页面源2 + PPT内嵌视频2 + 独立视频/文件10。任何候选都未映射到正式产品号。",
+              "width": 1904,
+              "height": "fit-content",
+              "fontSize": 15,
+              "textColor": "#D7E8FA",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "v02-note",
+              "text": "V0.2 仅为视觉沟通参考；不能据此冻结产品编号、播放顺序或开发指令。",
+              "width": 1904,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#D7E8FA",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-slots",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 20,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFF3DE",
+          "borderColor": "#F2994A",
+          "borderWidth": 2,
+          "borderRadius": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "slots-title",
+              "text": "正式产品槽（客户待填）｜下列空位与候选池之间不建立映射",
+              "width": 1920,
+              "height": "fit-content",
+              "fontSize": 18,
+              "textColor": "#B85C00",
+              "textAlign": "left"
+            },
+            {
+              "type": "frame",
+              "id": "slots-row",
+              "layout": "horizontal",
+              "gap": 14,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "slot-1",
+                  "text": "PRODUCT-01\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-2",
+                  "text": "PRODUCT-02\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-3",
+                  "text": "PRODUCT-03\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-4",
+                  "text": "PRODUCT-04\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-5",
+                  "text": "PRODUCT-05\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-6",
+                  "text": "PRODUCT-06\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "slot-7",
+                  "text": "PRODUCT-07\n空位 / 未分配",
+                  "width": 250,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 12,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "exclusion",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 18,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFF0F0",
+          "borderColor": "#D64545",
+          "borderWidth": 2,
+          "borderDash": "dashed",
+          "borderRadius": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "exclusion-title",
+              "text": "本轮排除说明｜新品发布 PPT 第09页不纳入候选",
+              "width": 1924,
+              "height": "fit-content",
+              "fontSize": 19,
+              "textColor": "#D64545",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "exclusion-body",
+              "text": "第09页及对应候选视频07不进入本轮客户候选清单、设计稿或播放列表；该页仅在内部排除记录留痕。",
+              "width": 1924,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#183153",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "group-ppt",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": 24,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "title-group-ppt",
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "width": 1912,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#1E5FBD",
+              "borderWidth": 2,
+              "borderRadius": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "heading-group-ppt",
+                  "text": "A｜候选 PPT 页 / 页面源",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 22,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "subtitle-group-ppt",
+                  "text": "可编辑母版与控台参考版是页面源；18张可选代表页逐张展示，第09页排除。",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppt-source-row",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-source-editable",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-source-editable",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "Cq56bWDkyoDCBxxZ0yCcKxY7nDc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-source-editable",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 420,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-source-editable",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-source-editable",
+                              "text": "页面源A",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-source-editable",
+                              "text": "可编辑PPTX",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-source-editable",
+                          "text": "新品发布 PPT｜19页可编辑母版",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-source-editable",
+                          "text": "真实文件/页｜Update【可编辑】是石科技新品发布PPT0717.pptx",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-source-editable",
+                          "text": "状态｜候选源 / 未分配产品槽",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-source-editable",
+                          "text": "待确认｜选页与正式产品映射",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-source-control",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-source-control",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "OctAbhDCGoOLEqxNDfvcMrM7nNb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-source-control",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 420,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-source-control",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-source-control",
+                              "text": "页面源B",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-source-control",
+                              "text": "控台参考PPTX",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-source-control",
+                          "text": "新品发布 PPT｜19页图片化控台版",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-source-control",
+                          "text": "真实文件/页｜Update【控台】是石科技新品发布PPT0717.pptx",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-source-control",
+                          "text": "状态｜仅播放/视觉参考",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-source-control",
+                          "text": "待确认｜不可作为编辑母版；产品映射待确认",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppt-pages-row-1",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-slide-01",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-01",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "YG9TbG7OoodCuOxN2rAcRd7VneP"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-01",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-01",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-01",
+                              "text": "第01页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-01",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-01",
+                          "text": "新品发布封面",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-01",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_01.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-01",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-01",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-02",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-02",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "NzA5bz0ZBoyQsnxouBac5XGknzf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-02",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-02",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-02",
+                              "text": "第02页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-02",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-02",
+                          "text": "从规模竞赛到效率竞赛",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-02",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_02.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-02",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-02",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-03",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-03",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "I5TubX1qZowhdVxEykdcIZR3nWe"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-03",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-03",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-03",
+                              "text": "第03页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-03",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-03",
+                          "text": "算力效率成为新生产力",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-03",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_03.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-03",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-03",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-04",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-04",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "RYPub7iFNoZpCuxkNC5cHbOGnqe"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-04",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-04",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-04",
+                              "text": "第04页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-04",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-04",
+                          "text": "国产Token优化工厂｜四大瓶颈",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-04",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_04.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-04",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-04",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-05",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-05",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "KjLebCISkoP258xG3ftcMskvn6g"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-05",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-05",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-05",
+                              "text": "第05页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-05",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-05",
+                          "text": "拓元 Vectron",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-05",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_05.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-05",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-05",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppt-pages-row-2",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-slide-06",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-06",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "F8h3b5XQTofym6xNPy6cvadlnwc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-06",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-06",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-06",
+                              "text": "第06页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-06",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-06",
+                          "text": "稳定、高效的 Token",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-06",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_06.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-06",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-06",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-07",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-07",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "YOGrbUIBnowSNhxfk4vcYl7dnih"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-07",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-07",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-07",
+                              "text": "第07页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-07",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-07",
+                          "text": "拓元 Vectron 架构",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-07",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_07.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-07",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-07",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-08",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-08",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "B415brBwrooefZxwDYmc1iE0n2f"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-08",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-08",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-08",
+                              "text": "第08页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-08",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-08",
+                          "text": "AI 全链路优化",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-08",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_08.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-08",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-08",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-10",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-10",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "IEULbceMRoTlWkxzlvScc6jAnEg"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-10",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-10",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-10",
+                              "text": "第10页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-10",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-10",
+                          "text": "全模态推理的 Token 压缩",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-10",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_10.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-10",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-10",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-11",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-11",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "KWBtbdqyzo62SKxz7wRc5TYknjf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-11",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-11",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-11",
+                              "text": "第11页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-11",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-11",
+                          "text": "长上下文后训练优化",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-11",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_11.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-11",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-11",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppt-pages-row-3",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-slide-12",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-12",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "Vz8tbXgRTooMnyxuwCMc5t1lnEj"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-12",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-12",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-12",
+                              "text": "第12页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-12",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-12",
+                          "text": "深度推理优化",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-12",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_12.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-12",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-12",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-13",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-13",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "NUYkb8xupoyuSCx7FuBcF0XKnmI"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-13",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-13",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-13",
+                              "text": "第13页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-13",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-13",
+                          "text": "智能体长程任务记忆",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-13",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_13.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-13",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-13",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-14",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-14",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "NJGIb1wnEogXlixXKDUcJTGIndh"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-14",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-14",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-14",
+                              "text": "第14页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-14",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-14",
+                          "text": "从技术突破到规模化应用",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-14",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_14.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-14",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-14",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-15",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-15",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "JIxMblQvYobijnxvhgcc4Ei8n4f"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-15",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-15",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-15",
+                              "text": "第15页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-15",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-15",
+                          "text": "体验中心入口",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-15",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_15.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-15",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-15",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-16",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-16",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "X2ipbR6P1obLHUxYQc0cYA1XnMg"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-16",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-16",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-16",
+                              "text": "第16页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-16",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-16",
+                          "text": "拓元体验中心页面",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-16",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_16.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-16",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-16",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppt-pages-row-4",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-slide-17",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-17",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "WbrhbAr6CoilTOxalStcaViNnag"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-17",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-17",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-17",
+                              "text": "第17页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-17",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-17",
+                          "text": "AI Infra 能力",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-17",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_17.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-17",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-17",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-18",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-18",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "ONaxb4yUYoD76HxPhRxcQohvnob"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-18",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-18",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-18",
+                              "text": "第18页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-18",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-18",
+                          "text": "国家级算力 / 产业级基础设施",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-18",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_18.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-18",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-18",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-slide-19",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 300,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-slide-19",
+                      "width": 300,
+                      "height": 169,
+                      "image": {
+                        "src": "WYynbZLlaoEPKmxkudmcrjWwnbc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-slide-19",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 300,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-slide-19",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-slide-19",
+                              "text": "第19页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-slide-19",
+                              "text": "PPT代表页",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-slide-19",
+                          "text": "AI 时代结尾主张",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-slide-19",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_slide_19.png",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-slide-19",
+                          "text": "状态｜候选页 / 未分配产品槽",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-slide-19",
+                          "text": "待确认｜是否选用、归属产品、页面顺序",
+                          "width": 280,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "group-embedded",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": 24,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "title-group-embedded",
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "width": 1912,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#0AA9B8",
+              "borderWidth": 2,
+              "borderRadius": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "heading-group-embedded",
+                  "text": "B｜PPT 内嵌视频（第05 / 16页）",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 22,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "subtitle-group-embedded",
+                  "text": "两支已从新品发布 PPT 提取，是否独立成播放条目仍待客户确认。",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "embedded-row",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-embedded-v05",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-embedded-v05",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "K2L5byurGoZx9ixkVCncG3tfnbf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-embedded-v05",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 420,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-embedded-v05",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-embedded-v05",
+                              "text": "第05页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-embedded-v05",
+                              "text": "PPT内嵌视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-embedded-v05",
+                          "text": "新品发布 PPT 第05页内嵌视频｜5.05秒代表帧",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-embedded-v05",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_新品发布PPT第05页内嵌视频.mp4",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-embedded-v05",
+                          "text": "状态｜已提取 / 候选",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-embedded-v05",
+                          "text": "待确认｜是否独立成播放条目",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-embedded-v16",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-embedded-v16",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "JZrCbWlLpopDQgxBYdfciVNQnnb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-embedded-v16",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 420,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-embedded-v16",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-embedded-v16",
+                              "text": "第16页",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-embedded-v16",
+                              "text": "PPT内嵌视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-embedded-v16",
+                          "text": "新品发布 PPT 第16页内嵌视频｜20秒代表帧",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-embedded-v16",
+                          "text": "真实文件/页｜P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-embedded-v16",
+                          "text": "状态｜已提取 / 候选",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-embedded-v16",
+                          "text": "待确认｜是否独立成播放条目",
+                          "width": 400,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "group-independent",
+          "layout": "vertical",
+          "gap": 18,
+          "padding": 24,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "title-group-independent",
+              "layout": "vertical",
+              "gap": 6,
+              "padding": 16,
+              "width": 1912,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#0AA9B8",
+              "borderWidth": 2,
+              "borderRadius": 14,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "heading-group-independent",
+                  "text": "C｜独立候选视频 / 文件",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 22,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "subtitle-group-independent",
+                  "text": "9支独立视频与1个算电协同扩展PPT，全部未分配产品槽。",
+                  "width": 1880,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "independent-row-1",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-video-01",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-01",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "IvBlbKdfsoN9aHxR3iEcoFHFnEc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-01",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-01",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-01",
+                              "text": "候选01",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-01",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-01",
+                          "text": "国产 Token 优化工厂产品介绍｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-01",
+                          "text": "真实文件/页｜1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-01",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-01",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-02",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-02",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "P2wFbmKcCo185oxfqklcU3iondg"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-02",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-02",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-02",
+                              "text": "候选02",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-02",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-02",
+                          "text": "超智算集群介绍｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-02",
+                          "text": "真实文件/页｜2-是石科技超智算集群介绍-(4K).mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-02",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-02",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-03",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-03",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "LGEvbvsQwoG7pbxZZoHcaTB0nEc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-03",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-03",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-03",
+                              "text": "候选03",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-03",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-03",
+                          "text": "Token 优化工厂产品优势盘点｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-03",
+                          "text": "真实文件/页｜3-是石科技国产Token优化工厂产品优势盘点-4k.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-03",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-03",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-04",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-04",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "NIhebHnwFowDJaxrnHDchtCfnUh"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-04",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-04",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-04",
+                              "text": "候选04",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-04",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-04",
+                          "text": "AI Infra 行业介绍｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-04",
+                          "text": "真实文件/页｜4-是石科技AIinfra行业介绍-4K.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-04",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-04",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "independent-row-2",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-video-05",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-05",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "FfSLbB0g0oHQ7ZxcDaEcujN7nLf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-05",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-05",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-05",
+                              "text": "候选05",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-05",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-05",
+                          "text": "Token 优化工厂｜PD 分离｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-05",
+                          "text": "真实文件/页｜5-是石科技国产Token优化工厂-PD分离-1080P.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-05",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-05",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-06",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-06",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "DhKzblybioh4IBx1sXxcp4NXnQb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-06",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-06",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-06",
+                              "text": "候选06",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-06",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-06",
+                          "text": "Token 优化工厂｜投机解码｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-06",
+                          "text": "真实文件/页｜6-是石科技国产Token优化工厂-投机解码-1080p.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-06",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-06",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-08",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-08",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "UICCbhlJioTENqxANFucnpypncd"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-08",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-08",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-08",
+                              "text": "候选08",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-08",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-08",
+                          "text": "CPU 国产移植 GPU｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-08",
+                          "text": "真实文件/页｜8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-08",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-08",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-video-09",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-09",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "INyWbIAgiooCr2xWZ6bcBbQ4n7e"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-09",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-09",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-09",
+                              "text": "候选09",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-09",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-09",
+                          "text": "行业 Agent 产品规划介绍｜20秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-09",
+                          "text": "真实文件/页｜9-行业Agent产品规划介绍-4K.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-09",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-09",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "independent-row-3",
+              "layout": "horizontal",
+              "gap": 26,
+              "padding": 18,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "fillColor": "#F8FBFF",
+              "borderColor": "#C7D6E8",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-video-experience",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-video-experience",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "M5IgbmJ5QoJ5XqxdxwtctRnonig"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-video-experience",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-video-experience",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-video-experience",
+                              "text": "体验台",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-video-experience",
+                              "text": "独立视频",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#DDF8FA",
+                              "borderColor": "#0AA9B8",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#087985",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-video-experience",
+                          "text": "拓元体验台｜40秒代表帧",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-video-experience",
+                          "text": "真实文件/页｜【控台】拓元体验台.mp4",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-video-experience",
+                          "text": "状态｜候选 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-video-experience",
+                          "text": "待确认｜正式产品号与顺序",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-file-power",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "padding": 0,
+                  "width": 400,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-file-power",
+                      "width": 400,
+                      "height": 225,
+                      "image": {
+                        "src": "CyXxbnwpao707Gxb3DkczHUvnR3"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "meta-file-power",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "padding": 10,
+                      "width": 400,
+                      "height": "fit-content",
+                      "fillColor": "#FFFFFF",
+                      "borderColor": "#C7D6E8",
+                      "borderWidth": 2,
+                      "borderDash": "solid",
+                      "borderRadius": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "tags-file-power",
+                          "layout": "horizontal",
+                          "gap": 6,
+                          "padding": 0,
+                          "width": "fit-content",
+                          "height": "fit-content",
+                          "children": [
+                            {
+                              "type": "rect",
+                              "id": "item-file-power",
+                              "text": "扩展源",
+                              "width": 82,
+                              "height": "fit-content",
+                              "fillColor": "#0B2D5B",
+                              "borderColor": "#0B2D5B",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#FFFFFF",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            },
+                            {
+                              "type": "rect",
+                              "id": "type-file-power",
+                              "text": "独立PPTX",
+                              "width": 110,
+                              "height": "fit-content",
+                              "fillColor": "#EAF3FF",
+                              "borderColor": "#2F80ED",
+                              "borderWidth": 2,
+                              "borderRadius": 12,
+                              "fontSize": 11,
+                              "textColor": "#1E5FBD",
+                              "textAlign": "center",
+                              "verticalAlign": "middle"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "name-file-power",
+                          "text": "算电协同落地实践｜29页内容源",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 12,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "file-file-power",
+                          "text": "真实文件/页｜【编辑版V2】是石科技-从0到1国内首个铁铬液流离网算电协同示范项目的落地实践.pptx",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#60758F",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "status-file-power",
+                          "text": "状态｜候选文件 / 未分配产品槽",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fillColor": "#FFF3DE",
+                          "borderColor": "#F2994A",
+                          "borderWidth": 2,
+                          "borderRadius": 12,
+                          "fontSize": 11,
+                          "textColor": "#B85C00",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-file-power",
+                          "text": "待确认｜不建议整套播放；选页与归属待确认",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 10,
+                          "textColor": "#B85C00",
+                          "textAlign": "left"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 22,
+          "width": 1960,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-title",
+              "text": "来源基线 / 完整路径 / 冻结门",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 20,
+              "textColor": "#0B2D5B",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-root",
+              "text": "本地来源根｜D:\\FOR_WORK\\260818_MetaStone\\10_成果案例与产品介绍_整合_20260821",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 11,
+              "textColor": "#183153",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-csv",
+              "text": "清单｜00_交付总览\\01_素材总清单.csv；00_交付总览\\02_双Pad播放清单_客户确认版.csv",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 11,
+              "textColor": "#183153",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-deck",
+              "text": "页面源｜D:\\FOR_WORK\\260818_MetaStone\\是石科技内容中心库\\品牌物料文件\\是石科技新品发布会PPT\\是石科技新品发布会PPT\\Update【可编辑】是石科技新品发布PPT0717.pptx",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 10,
+              "textColor": "#60758F",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-video",
+              "text": "独立视频源｜D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\（候选01—06、08、09；07排除）",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 10,
+              "textColor": "#60758F",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-status",
+              "text": "P0未关闭｜PRODUCT-01—07 未分配｜页码/文件/顺序待客户确认｜程序未开发｜生产 NO-GO",
+              "width": 1916,
+              "height": "fit-content",
+              "fontSize": 14,
+              "textColor": "#D64545",
+              "textAlign": "left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "connector",
+      "id": "group-flow-a-b",
+      "connector": {
+        "from": "group-ppt",
+        "to": "group-embedded",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "候选分组 / 非产品映射"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "group-flow-b-c",
+      "connector": {
+        "from": "group-embedded",
+        "to": "group-independent",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "候选分组 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "ppt-link-1",
+      "connector": {
+        "from": "title-group-ppt",
+        "to": "ppt-source-row",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "lineStyle": "solid",
+        "endArrow": "arrow",
+        "label": "页面候选"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "ppt-link-2",
+      "connector": {
+        "from": "ppt-source-row",
+        "to": "ppt-pages-row-1",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "lineStyle": "solid",
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "ppt-link-3",
+      "connector": {
+        "from": "ppt-pages-row-1",
+        "to": "ppt-pages-row-2",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "lineStyle": "solid",
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "ppt-link-4",
+      "connector": {
+        "from": "ppt-pages-row-2",
+        "to": "ppt-pages-row-3",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "lineStyle": "solid",
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "ppt-link-5",
+      "connector": {
+        "from": "ppt-pages-row-3",
+        "to": "ppt-pages-row-4",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "lineStyle": "solid",
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "embedded-link",
+      "connector": {
+        "from": "title-group-embedded",
+        "to": "embedded-row",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "endArrow": "arrow",
+        "label": "已提取 / 待确认"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "independent-link-1",
+      "connector": {
+        "from": "title-group-independent",
+        "to": "independent-row-1",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "endArrow": "arrow",
+        "label": "候选文件"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "independent-link-2",
+      "connector": {
+        "from": "independent-row-1",
+        "to": "independent-row-2",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "independent-link-3",
+      "connector": {
+        "from": "independent-row-2",
+        "to": "independent-row-3",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 2,
+        "endArrow": "arrow",
+        "label": "逐行展示 / 非播放顺序"
+      }
+    }
+  ]
+}

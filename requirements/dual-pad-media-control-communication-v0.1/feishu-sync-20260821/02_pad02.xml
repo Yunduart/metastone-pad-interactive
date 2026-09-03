@@ -1,0 +1,47 @@
+<callout emoji="📝" background-color="light-blue" border-color="blue">
+  <p><b>Pad 02 的 PRODUCT-01—07 尚未正式映射。</b>以下是可供客户选择的候选源文件池，不能自行命名成正式产品，也不能把候选顺序写死进程序。</p>
+</callout>
+<h3>客户逐项填写区</h3>
+<table>
+  <colgroup><col width="130"/><col width="180"/><col width="210"/><col width="150"/><col width="150"/><col width="180"/><col width="220"/></colgroup>
+  <thead><tr><th background-color="light-gray">产品槽</th><th background-color="light-gray">正式产品名</th><th background-color="light-gray">选用素材 ID / 页码 / 文件</th><th background-color="light-gray">播放顺序</th><th background-color="light-gray">方式 / 时长</th><th background-color="light-gray">客户确认人 / 日期</th><th background-color="light-gray">备注</th></tr></thead>
+  <tbody>
+    <tr><td>PRODUCT-01</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-02</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-03</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-04</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-05</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-06</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+    <tr><td>PRODUCT-07</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td><td>____________</td></tr>
+  </tbody>
+</table>
+<h3>候选文件池：真实文件名 / 绝对路径 / 页码 / 来源状态</h3>
+<table>
+  <colgroup><col width="135"/><col width="160"/><col width="100"/><col width="260"/><col width="340"/><col width="230"/></colgroup>
+  <thead><tr><th background-color="light-gray">素材 ID</th><th background-color="light-gray">候选内容</th><th background-color="light-gray">类型 / 页码</th><th background-color="light-gray">真实文件名</th><th background-color="light-gray">绝对路径</th><th background-color="light-gray">来源状态 / 限制</th></tr></thead>
+  <tbody>
+    <tr><td>P02-CAND-DECK</td><td>拓元 Vectron / 新品发布</td><td>PPTX / 19 页</td><td>Update【可编辑】是石科技新品发布PPT0717.pptx</td><td>D:\FOR_WORK\260818_MetaStone\是石科技内容中心库\品牌物料文件\是石科技新品发布会PPT\是石科技新品发布会PPT\Update【可编辑】是石科技新品发布PPT0717.pptx</td><td>候选源，未分配产品槽；优先作文字 / 页面母版；第 9 页排除</td></tr>
+    <tr><td>P02-CAND-CONTROL</td><td>拓元 Vectron / 控台参考</td><td>PPTX / 19 页图片化</td><td>Update【控台】是石科技新品发布PPT0717.pptx</td><td>D:\FOR_WORK\260818_MetaStone\是石科技内容中心库\品牌物料文件\是石科技新品发布会PPT\是石科技新品发布会PPT\Update【控台】是石科技新品发布PPT0717.pptx</td><td>候选源，未分配产品槽；仅作播放 / 视觉参考，不作编辑母版</td></tr>
+    <tr><td>P02-CAND-V05</td><td>拓元 Vectron</td><td>MP4 / 原 PPT 第 5 页</td><td>P02_CANDIDATE_VECTRON_新品发布PPT第05页内嵌视频.mp4</td><td>D:\FOR_WORK\260818_MetaStone\10_成果案例与产品介绍_整合_20260821\02_本地素材引用\Pad02_产品介绍候选\拓元Vectron_新品发布PPT内嵌视频\P02_CANDIDATE_VECTRON_新品发布PPT第05页内嵌视频.mp4</td><td>已提取；是否独立成条目及前后页面待确认</td></tr>
+    <tr><td>P02-CAND-V16</td><td>拓元 Vectron</td><td>MP4 / 原 PPT 第 16 页</td><td>P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4</td><td>D:\FOR_WORK\260818_MetaStone\10_成果案例与产品介绍_整合_20260821\02_本地素材引用\Pad02_产品介绍候选\拓元Vectron_新品发布PPT内嵌视频\P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4</td><td>已提取；是否独立成条目及前后页面待确认</td></tr>
+    <tr><td>P02-CAND-01</td><td>Token 优化工厂</td><td>MP4</td><td>1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-02</td><td>超智算集群</td><td>MP4</td><td>2-是石科技超智算集群介绍-(4K).mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\2-是石科技超智算集群介绍-(4K).mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-03</td><td>Token 优化工厂产品优势</td><td>MP4</td><td>3-是石科技国产Token优化工厂产品优势盘点-4k.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\3-是石科技国产Token优化工厂产品优势盘点-4k.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-04</td><td>AI Infra</td><td>MP4</td><td>4-是石科技AIinfra行业介绍-4K.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\4-是石科技AIinfra行业介绍-4K.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-05</td><td>PD 分离</td><td>MP4</td><td>5-是石科技国产Token优化工厂-PD分离-1080P.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\5-是石科技国产Token优化工厂-PD分离-1080P.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-06</td><td>投机解码</td><td>MP4</td><td>6-是石科技国产Token优化工厂-投机解码-1080p.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\6-是石科技国产Token优化工厂-投机解码-1080p.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-EXCLUDED-07</td><td>KV Cache</td><td>MP4</td><td>7-是石科技国产Token优化工厂-多层级KVCache-1080P.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\7-是石科技国产Token优化工厂-多层级KVCache-1080P.mp4</td><td><b>本轮排除；不得进入播放清单或设计稿</b></td></tr>
+    <tr><td>P02-CAND-08</td><td>CPU 国产移植 GPU</td><td>MP4</td><td>8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-09</td><td>行业 Agent</td><td>MP4</td><td>9-行业Agent产品规划介绍-4K.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技waic物料\WAIC大屏和电视视频\9-行业Agent产品规划介绍-4K.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-EXPERIENCE</td><td>拓元 Vectron / 体验台</td><td>MP4</td><td>【控台】拓元体验台.mp4</td><td>D:\FOR_WORK\260818_MetaStone\是石科技内容中心库\品牌物料文件\是石科技新品发布会PPT\是石科技新品发布会PPT\【控台】拓元体验台.mp4</td><td>候选；未分配产品槽</td></tr>
+    <tr><td>P02-CAND-POWER</td><td>算电协同</td><td>PPTX / 29 页</td><td>【编辑版V2】是石科技-从0到1国内首个铁铬液流离网算电协同示范项目的落地实践.pptx</td><td>D:\FOR_WORK\260818_MetaStone\是石科技内容中心库\品牌物料文件\算电协同落地实践PPT\【编辑版V2】是石科技-从0到1国内首个铁铬液流离网算电协同示范项目的落地实践.pptx</td><td>候选内容库；不建议未经筛选整套播放；无会议证据映射到正式产品槽</td></tr>
+  </tbody>
+</table>
+<h3>媒体检查与排除项</h3>
+<ul>
+  <li>新品发布可编辑版共 19 页，是目前最完整的 Pad 02 候选页面源；第 5、16 页包含内嵌 MP4，已提取为独立候选文件。</li>
+  <li>第 9 页为 KV Cache，本轮排除；KV Cache / KBA 均不得进入当前候选播放序列或设计稿。</li>
+  <li>第 5、7、16 页含时间相关元素；仍应把客户选定页面和视频拆成明确 playlist item，现场不运行原生 PPT。</li>
+  <li>新品发布 PPT、拓元、Token 工厂、集群、AI Infra、PD 分离、投机解码、CPU 迁移 GPU、行业 Agent、算电协同均只是候选池，不是正式产品 01—07 的命名。</li>
+</ul>
+<p><b>可编辑版 SHA256：</b>F4162BE33B191E7A0EF56E2F3F0CD60B8D49B7F51F3A465E76620E6BFCBDE2BF。<b>控台参考版 SHA256：</b>670BF2ACD213652254C70C9D3E5F0FCF339075823938E124098E11A61B410719。</p>

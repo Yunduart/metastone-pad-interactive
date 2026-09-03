@@ -1,0 +1,126 @@
+{
+  "code": 0,
+  "data": {
+    "to": "check",
+    "metadata": {
+      "width": 0,
+      "height": 0,
+      "nodeCount": 241,
+      "connectorCount": 17
+    },
+    "check": {
+      "errors": 0,
+      "warnings": 17,
+      "summary": {
+        "textOverflow": 0,
+        "nodeOverlap": 17,
+        "textOcclusion": 0
+      },
+      "issues": [
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:9",
+          "message": "overlaps d001:1 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:13",
+          "message": "overlaps d001:2 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:22",
+          "message": "overlaps d001:3 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:26",
+          "message": "overlaps d001:4 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:35",
+          "message": "overlaps d001:5 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:44",
+          "message": "overlaps d001:6 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:48",
+          "message": "overlaps d001:7 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:52",
+          "message": "overlaps d001:8 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:61",
+          "message": "overlaps d001:9 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:65",
+          "message": "overlaps d001:10 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:69",
+          "message": "overlaps d001:11 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:73",
+          "message": "overlaps d001:12 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:82",
+          "message": "overlaps d001:13 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:86",
+          "message": "overlaps d001:14 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:90",
+          "message": "overlaps d001:15 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:99",
+          "message": "overlaps d001:16 (100% of smaller node)"
+        },
+        {
+          "type": "node-overlap",
+          "severity": "warn",
+          "nodeId": "o001:103",
+          "message": "overlaps d001:17 (100% of smaller node)"
+        }
+      ]
+    }
+  },
+  "error": ""
+}

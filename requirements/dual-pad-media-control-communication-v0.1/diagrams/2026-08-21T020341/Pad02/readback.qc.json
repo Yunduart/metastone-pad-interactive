@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "whiteboard_token": "SZwWwraJMhaciLbMg9QcQrbwng8",
+  "block_id": "doxcnqtk9Hm0wvePYFp0UjsOofd",
+  "remote_raw": {
+    "node_count": 315,
+    "node_types": {
+      "composite_shape": 158,
+      "connector": 11,
+      "image": 32,
+      "text_shape": 114
+    },
+    "image_nodes": 32,
+    "unique_image_tokens": 32,
+    "connector_nodes": 11,
+    "customer_visible_text_kba_hits": 0,
+    "neutral_exclusion_copy_found": true
+  },
+  "z_order_assertions": {
+    "root_background_id": "o1:632",
+    "root_background_z": 0,
+    "header_background_z": 1,
+    "image_to_containing_background_violations": 0,
+    "text_or_label_to_containing_background_relations_checked": 830,
+    "text_or_label_to_containing_background_violations": 0,
+    "pass": true
+  },
+  "local_check": {
+    "source": "check.json",
+    "errors": 0,
+    "warnings": 0,
+    "text_overflow": 0,
+    "node_overlap": 0,
+    "text_occlusion": 0
+  },
+  "visual_readback": {
+    "path": "readback.png",
+    "bytes": 490436,
+    "pixel_size": "2560x2560",
+    "manual_inspection": "pass",
+    "notes": "All 32 independent images, the seven empty PRODUCT slots, neutral page-09 exclusion notice, groups A/B/C, editable cards and connectors are visible."
+  },
+  "product_mapping_assertion": {
+    "product_01_to_07_all_empty_unassigned": true,
+    "candidate_to_product_mapping_count": 0
+  }
+}

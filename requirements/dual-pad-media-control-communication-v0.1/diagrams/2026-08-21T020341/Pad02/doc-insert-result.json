@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "doc_url": "https://thevision.feishu.cn/docx/BACzdwYjJoiOpwxkeBPcRfvrnWg",
+  "final_revision_id": 42,
+  "inserted_after_block_id": "doxcnMT2m8Sbcr8LuHCqR6Zb2pb",
+  "heading": {
+    "block_id": "doxcnlJ1nnRYOqedSFZrq7zsJCh",
+    "text": "Pad 02 候选文件池媒体流程图（客户确认稿）"
+  },
+  "scope_paragraph_block_id": "doxcndWAyfD4NHGEaMsdj5P9mFf",
+  "whiteboard": {
+    "block_id": "doxcnqtk9Hm0wvePYFp0UjsOofd",
+    "whiteboard_token": "SZwWwraJMhaciLbMg9QcQrbwng8"
+  },
+  "order_verified": [
+    "Pad01 media whiteboard",
+    "Pad02 heading",
+    "Pad02 scope paragraph",
+    "Pad02 whiteboard",
+    "pre-existing following content"
+  ],
+  "other_body_content_modified_by_this_insertion": false,
+  "final_doc_kba_count": 0,
+  "revision_42_and_document_kba_count_verified_by": "parent-agent final fetch"
+}

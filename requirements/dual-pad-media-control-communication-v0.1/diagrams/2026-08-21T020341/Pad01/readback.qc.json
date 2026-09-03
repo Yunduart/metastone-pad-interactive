@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "whiteboard_token": "Iw5Pwr1fWheM2EbJL7Ncjdn7n8c",
+  "block_id": "doxcnMT2m8Sbcr8LuHCqR6Zb2pb",
+  "remote_raw": {
+    "node_count": 241,
+    "node_types": {
+      "composite_shape": 111,
+      "connector": 17,
+      "image": 17,
+      "text_shape": 96
+    },
+    "image_nodes": 17,
+    "unique_image_tokens": 17,
+    "connector_nodes": 17,
+    "required_text_found": {
+      "title": true,
+      "互联网": true,
+      "大模型": true,
+      "航空航天": true,
+      "高端制造": true,
+      "科研院所": true,
+      "海洋模拟": true,
+      "AI for Science": true,
+      "CASE编号": true,
+      "ROMS归属冲突": true,
+      "补充稿": true,
+      "8月17日会议": true,
+      "程序未开发": true,
+      "生产NO-GO": true
+    }
+  },
+  "local_check": {
+    "source": "check.json",
+    "errors": 0,
+    "warnings": 17,
+    "text_overflow": 0,
+    "node_overlap": 17,
+    "text_occlusion": 0,
+    "warning_scope": "Each warning is the intentional containment of one independent image by its media-card background (100 percent of the smaller node); no text overflow or text occlusion was reported."
+  },
+  "visual_readback": {
+    "path": "readback.png",
+    "bytes": 422876,
+    "manual_inspection": "pass",
+    "notes": "All 17 independent thumbnails are visible without stretching; seven vertically stacked topic groups, editable item cards, status labels, flow arrows and the ROMS conflict treatment are visible."
+  },
+  "pending_items_preserved": [
+    "CASE编号及首页顺序待客户确认",
+    "科研院所最新版待确认",
+    "高端制造替换关系待确认",
+    "ROMS归属及1080P/4K待确认"
+  ]
+}

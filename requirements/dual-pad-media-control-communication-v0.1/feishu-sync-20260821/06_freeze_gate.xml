@@ -1,0 +1,21 @@
+<ol>
+  <li>客户逐项确认物料：每个主题 / 产品下的图片、PPT 转图、视频均有明确条目。</li>
+  <li>确认 Pad 01 首页顺序并冻结 CASE-01—07 / topicId；确认 Pad 02 产品 01—07 正式名称与顺序。</li>
+  <li>确认每条播放顺序、实际文件名、唯一交付文件名和绝对源路径。</li>
+  <li>确认每条播放方式：手动下一步 / 自动、停留秒数、视频控制和末项动作。</li>
+  <li>完成媒体转换与 SHA256 复核；KV Cache / KBA 及新品发布 PPT 第 9 页保持排除。</li>
+  <li>填写客户确认人、确认日期和确认版本；项目经理明确标记“已定版”。</li>
+  <li>资料核对包可沿“项目经理 → 程序_产品经理 → 程序_成果案例与产品介绍”链路先行只读交接，用于接收、路径核对和程序影响回报；只有项目经理明确标记“已定版并同步开发”后，才可发送开发指令并进入技术评估、排期、开发和验收。</li>
+</ol>
+<table>
+  <colgroup><col width="180"/><col width="280"/><col width="180"/><col width="280"/></colgroup>
+  <tbody>
+    <tr><td background-color="light-gray"><b>确认版本</b></td><td>________________</td><td background-color="light-gray"><b>确认日期</b></td><td>________________</td></tr>
+    <tr><td background-color="light-gray"><b>客户确认人</b></td><td>________________</td><td background-color="light-gray"><b>项目经理</b></td><td>________________</td></tr>
+    <tr><td background-color="light-gray"><b>同步状态</b></td><td>□ 待定版　□ 已同步</td><td background-color="light-gray"><b>开发状态</b></td><td>□ 不可开发　□ 已获定版授权</td></tr>
+  </tbody>
+</table>
+<callout emoji="🚫" background-color="light-red" border-color="red">
+  <p><b>当前结论：非定版开发指令；客户确认输入；程序 NO-GO。</b></p>
+  <p>内容尚待客户逐项填写，双 Pad 程序功能尚未开发。任何候选文件、建议顺序、产品名称、CASE 编号或视觉稿位置均不得自行升级为定版事实。</p>
+</callout>

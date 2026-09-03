@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "o998:1",
+      "type": "composite_shape",
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 60,
+      "text": {"text":"正在同步 Pad02 修订版","font_size":14,"horizontal_align":"center","vertical_align":"mid","text_color":"#183153","text_color_type":1},
+      "style": {"border_opacity":100,"border_width":"narrow","border_color":"#c7d6e8","border_color_type":1,"border_style":"solid","fill_opacity":100,"fill_color":"#f2f7fc","fill_color_type":1},
+      "composite_shape": {"type":"round_rect"}
+    }
+  ]
+}

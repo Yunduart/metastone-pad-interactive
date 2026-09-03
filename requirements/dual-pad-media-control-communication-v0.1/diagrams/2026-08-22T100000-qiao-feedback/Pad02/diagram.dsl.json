@@ -1,0 +1,3069 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "type": "frame",
+      "id": "root",
+      "x": 40,
+      "y": 40,
+      "layout": "vertical",
+      "gap": 26,
+      "padding": 30,
+      "width": 2500,
+      "height": "fit-content",
+      "fillColor": "#F2F7FC",
+      "borderColor": "#AFC5DD",
+      "borderWidth": 2,
+      "borderRadius": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 28,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#0B2D5B",
+          "borderColor": "#0B2D5B",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "title",
+              "text": "Pad 02｜PRODUCT-01—09｜产品目录与真实媒体映射",
+              "width": 2384,
+              "height": "fit-content",
+              "fontSize": 32,
+              "textColor": "#FFFFFF",
+              "textAlign": "left"
+            },
+            {
+              "type": "frame",
+              "id": "header-tags",
+              "layout": "horizontal",
+              "gap": 12,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "tag-source",
+                  "text": "乔双丽群反馈 2026-08-21",
+                  "width": 240,
+                  "height": "fit-content",
+                  "fillColor": "#EAF3FF",
+                  "borderColor": "#8CB9F0",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-directory",
+                  "text": "当前工作目录 01—09",
+                  "width": 210,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-nogo",
+                  "text": "程序未开发 · 生产 NO-GO",
+                  "width": 220,
+                  "height": "fit-content",
+                  "fillColor": "#FFF0F0",
+                  "borderColor": "#D64545",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#D64545",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "scope-note",
+              "text": "9个独立真实视频缩略图 + 2个“已发布但待收件”文字卡｜映射用于客户确认，不是程序开发放行",
+              "width": 2384,
+              "height": "fit-content",
+              "fontSize": 14,
+              "textColor": "#D7E8FA",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "evidence",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 18,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#E5F7F2",
+          "borderColor": "#258B74",
+          "borderWidth": 2,
+          "borderRadius": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "evidence-title",
+              "text": "P09 本地候选核验",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 19,
+              "textColor": "#258B74",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "evidence-body",
+              "text": "7-是石科技国产Token优化工厂-多层级KVCache-1080P.mp4 与内容中心库 KVCache1080P.mp4：均 99,388,090 bytes，SHA256=68E245958DA2170FD48FD43F414D063E2CF6DA93F87A8DB0724CE0F6AC770CE6。两份相同，但采用哪一路径仍待乔双丽或徐霞确认。",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 12,
+              "textColor": "#183153",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p01",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p01",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p01",
+                  "text": "PRODUCT-01",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p01",
+                  "text": "国产 Token 优化工厂",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p01",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p01",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p01",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p01-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p01-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "JZrCbWlLpopDQgxBYdfciVNQnnb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p01-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p01-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p01-01",
+                          "text": "PPT内嵌视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p01-01",
+                      "text": "真实文件名｜P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p01-01",
+                      "text": "状态｜本地候选已存在｜最终采用待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-p01-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p01-02",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "IvBlbKdfsoN9aHxR3iEcoFHFnEc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p01-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p01-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p01-02",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p01-02",
+                      "text": "真实文件名｜1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p01-02",
+                      "text": "状态｜本地候选已存在｜顺序待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p01",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p01",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p01",
+                  "text": "乔双丽候选映射：候选1 + 候选2。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p01",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p01",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p01",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p01",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p02",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p02",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p02",
+                  "text": "PRODUCT-02",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p02",
+                  "text": "超智算集群",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p02",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p02",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p02",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p02-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p02-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "P2wFbmKcCo185oxfqklcU3iondg"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p02-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p02-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p02-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p02-01",
+                      "text": "真实文件名｜2-是石科技超智算集群介绍-(4K).mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p02-01",
+                      "text": "状态｜本地候选已存在｜播放方式待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p02",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p02",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p02",
+                  "text": "乔双丽候选映射：候选3。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p02",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p02",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p02",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p02",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p03",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p03",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p03",
+                  "text": "PRODUCT-03",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p03",
+                  "text": "国产异构超智算中心",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p03",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p03",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p03",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p03-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pending-p03-01",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "width": 420,
+                      "height": 236,
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderDash": "dashed",
+                      "borderRadius": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pending-title-p03-01",
+                          "text": "原视频待徐霞提供",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 23,
+                          "textColor": "#D64545",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-body-p03-01",
+                          "text": "目录/集数已确认到沟通层；真实媒体文件尚未收到。",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 13,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p03-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p03-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p03-01",
+                          "text": "视频｜待收件",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#FFF0F0",
+                          "borderColor": "#D64545",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#D64545",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p03-01",
+                      "text": "真实文件名｜真实文件名待徐霞提供｜已发布第1集",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p03-01",
+                      "text": "状态｜待收件｜不得以截图/代表帧冒充",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#D64545",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-p03-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pending-p03-02",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "width": 420,
+                      "height": 236,
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderDash": "dashed",
+                      "borderRadius": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pending-title-p03-02",
+                          "text": "原视频待徐霞提供",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 23,
+                          "textColor": "#D64545",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-body-p03-02",
+                          "text": "目录/集数已确认到沟通层；真实媒体文件尚未收到。",
+                          "width": 380,
+                          "height": "fit-content",
+                          "fontSize": 13,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p03-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p03-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p03-02",
+                          "text": "视频｜待收件",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#FFF0F0",
+                          "borderColor": "#D64545",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#D64545",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p03-02",
+                      "text": "真实文件名｜真实文件名待徐霞提供｜已发布第2集",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p03-02",
+                      "text": "状态｜待收件｜不得以截图/代表帧冒充",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#D64545",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p03",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p03",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p03",
+                  "text": "目录总10集；群聊最新口径已发布2集，其余8集待发布。已发布2集原视频仍待徐霞提供。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p03",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p03",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p03",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p03",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p04",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p04",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p04",
+                  "text": "PRODUCT-04",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p04",
+                  "text": "国产 Token 优化工厂计算速度大比拼：CPU vs GPU",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p04",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p04",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p04",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p04-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p04-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "UICCbhlJioTENqxANFucnpypncd"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p04-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p04-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p04-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p04-01",
+                      "text": "真实文件名｜8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p04-01",
+                      "text": "状态｜本地候选已存在｜标题/顺序待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p04",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p04",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p04",
+                  "text": "乔双丽候选映射：候选8。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p04",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p04",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p04",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p04",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p05",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p05",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p05",
+                  "text": "PRODUCT-05",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p05",
+                  "text": "国产 Token 优化工厂-技术优势",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p05",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p05",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p05",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p05-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p05-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "LGEvbvsQwoG7pbxZZoHcaTB0nEc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p05-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p05-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p05-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p05-01",
+                      "text": "真实文件名｜3-是石科技国产Token优化工厂产品优势盘点-4k.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p05-01",
+                      "text": "状态｜本地候选已存在｜播放方式待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p05",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p05",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p05",
+                  "text": "乔双丽候选映射：候选4。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p05",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p05",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p05",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p05",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p06",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p06",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p06",
+                  "text": "PRODUCT-06",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p06",
+                  "text": "AI infra",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p06",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p06",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p06",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p06-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p06-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "NIhebHnwFowDJaxrnHDchtCfnUh"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p06-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p06-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p06-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p06-01",
+                      "text": "真实文件名｜4-是石科技AIinfra行业介绍-4K.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p06-01",
+                      "text": "状态｜本地候选已存在｜显示名待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p06",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p06",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p06",
+                  "text": "乔双丽候选映射：候选5。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p06",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p06",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p06",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p06",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p07",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p07",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p07",
+                  "text": "PRODUCT-07",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p07",
+                  "text": "PD 分离",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p07",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p07",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p07",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p07-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p07-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "FfSLbB0g0oHQ7ZxcDaEcujN7nLf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p07-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p07-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p07-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p07-01",
+                      "text": "真实文件名｜5-是石科技国产Token优化工厂-PD分离-1080P.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p07-01",
+                      "text": "状态｜本地候选已存在｜播放方式待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p07",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p07",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p07",
+                  "text": "乔双丽候选映射：候选6。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p07",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p07",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p07",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p07",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p08",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p08",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p08",
+                  "text": "PRODUCT-08",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p08",
+                  "text": "投机解码",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p08",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p08",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p08",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p08-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p08-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "DhKzblybioh4IBx1sXxcp4NXnQb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p08-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p08-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p08-01",
+                          "text": "独立视频",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p08-01",
+                      "text": "真实文件名｜6-是石科技国产Token优化工厂-投机解码-1080p.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p08-01",
+                      "text": "状态｜本地候选已存在｜播放方式待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p08",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p08",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p08",
+                  "text": "乔双丽候选映射：候选7。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p08",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p08",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p08",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p08",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "product-p09",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-p09",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 300,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "code-p09",
+                  "text": "PRODUCT-09",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-p09",
+                  "text": "多层级 KV Cache",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 20,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "channel-p09",
+                  "text": "Pad02 / 产品介绍",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "state-p09",
+                  "text": "工作目录｜未开发冻结",
+                  "width": 264,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-p09",
+              "layout": "horizontal",
+              "gap": 44,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-p09-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 420,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-p09-01",
+                      "width": 420,
+                      "height": 236,
+                      "image": {
+                        "src": "TY8ibF0ixoogpyxuXCQcAcvench"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-p09-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 420,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-p09-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-p09-01",
+                          "text": "独立视频｜候选",
+                          "width": 160,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-p09-01",
+                      "text": "真实文件名｜7-是石科技国产Token优化工厂-多层级KVCache-1080P.mp4",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fontSize": 11,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-p09-01",
+                      "text": "状态｜本地候选已找到｜版本待确认",
+                      "width": 394,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "confirm-p09",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 430,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mapping-p09",
+                  "text": "当前映射 / 待确认",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-p09",
+                  "text": "本地找到两份逐字节相同候选；待乔双丽或徐霞确认采用版本，确认前不得硬编码。",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "mode-p09",
+                  "text": "播放方式：□手动下一步 □自动",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "duration-p09",
+                  "text": "停留/时长：____秒",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "confirmer-p09",
+                  "text": "客户确认人：____　日期：____",
+                  "width": 398,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "freeze-p09",
+                  "text": "未冻结 / 不得写死",
+                  "width": 180,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "exclusions",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 18,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#FFF0F0",
+          "borderColor": "#D64545",
+          "borderWidth": 2,
+          "borderDash": "dashed",
+          "borderRadius": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "exclusions-title",
+              "text": "本轮删除 / 排除 / 暂不映射",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 19,
+              "textColor": "#D64545",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "exclusions-body",
+              "text": "整套“新品发布PPT”页面候选、PPT第05页内嵌视频、拓元体验台、算电协同落地实践：不进入当前目录。候选9“9-行业Agent产品规划介绍-4K.mp4”无产品映射，不硬塞。ROMS-1080P/4K“异构并行优化”虽为产品视频，但产品归属未确认，暂不映射。",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#183153",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-title",
+              "text": "播放控制与冻结门",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 20,
+              "textColor": "#0B2D5B",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-control",
+              "text": "图片/PPT转图：上一页、下一页；视频：播放、暂停、进度、静音、下一项；最后一项：重播或返回产品列表。Pad01/Pad02 controllerId、channel、catalogId 与目标播放端必须锁定，严禁串控。",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#183153",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-freeze",
+              "text": "客户逐项确认 → 顺序确认 → 真实文件名确认 → 播放方式/时长确认 → 确认人/日期/版本 → 项目经理标记已定版 → 才能进入开发。",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#B85C00",
+              "textAlign": "left"
+            },
+            {
+              "type": "rect",
+              "id": "footer-nogo",
+              "text": "当前：客户确认输入 / 非定版开发指令 / 程序 NO-GO",
+              "width": 2396,
+              "height": "fit-content",
+              "fillColor": "#FFF0F0",
+              "borderColor": "#D64545",
+              "borderWidth": 2,
+              "borderRadius": 11,
+              "fontSize": 11,
+              "textColor": "#D64545",
+              "textAlign": "center",
+              "verticalAlign": "middle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "connector",
+      "id": "flow-p01-01-p01-02",
+      "connector": {
+        "from": "image-p01-01",
+        "to": "image-p01-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "条目顺序待确认"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-p03-01-p03-02",
+      "connector": {
+        "from": "pending-p03-01",
+        "to": "pending-p03-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "条目顺序待确认"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-1-2",
+      "connector": {
+        "from": "label-p01",
+        "to": "label-p02",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-2-3",
+      "connector": {
+        "from": "label-p02",
+        "to": "label-p03",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-3-4",
+      "connector": {
+        "from": "label-p03",
+        "to": "label-p04",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-4-5",
+      "connector": {
+        "from": "label-p04",
+        "to": "label-p05",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-5-6",
+      "connector": {
+        "from": "label-p05",
+        "to": "label-p06",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-6-7",
+      "connector": {
+        "from": "label-p06",
+        "to": "label-p07",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-7-8",
+      "connector": {
+        "from": "label-p07",
+        "to": "label-p08",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "product-flow-8-9",
+      "connector": {
+        "from": "label-p08",
+        "to": "label-p09",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "目录顺序 01→09"
+      }
+    }
+  ]
+}

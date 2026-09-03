@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3600" height="3200" viewBox="0 0 3600 3200">
+  <!-- background -->
+  <rect x="0" y="0" width="3600" height="3200" rx="56" fill="#070A16"/>
+  <circle cx="3420" cy="115" r="6" fill="#6DE3FF" opacity="0.75"/>
+  <circle cx="3360" cy="750" r="4" fill="#A98AFF" opacity="0.65"/>
+  <circle cx="110" cy="1840" r="5" fill="#6DE3FF" opacity="0.55"/>
+  <circle cx="3510" cy="2480" r="5" fill="#FFB455" opacity="0.65"/>
+
+  <!-- title -->
+  <text x="120" y="105" fill="#F7FAFF" font-family="Noto Sans SC, Arial" font-size="50" font-weight="700">双 Pad 内容物料、播放顺序与状态确认图</text>
+  <text x="122" y="153" fill="#91A4C9" font-family="Noto Sans SC, Arial" font-size="22">本图用于客户确认：每个主题具体放什么、先后顺序、文件名称、播放方式与时长</text>
+  <rect x="2720" y="72" width="310" height="54" rx="27" fill="#102D43" stroke="#41D5FF" stroke-width="2"/>
+  <text x="2875" y="107" text-anchor="middle" fill="#8BEAFF" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">蓝色＝客户确认内容</text>
+  <rect x="3050" y="72" width="390" height="54" rx="27" fill="#3A2B14" stroke="#FFB455" stroke-width="2" stroke-dasharray="10 7"/>
+  <text x="3245" y="107" text-anchor="middle" fill="#FFD398" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">琥珀虚线＝待程序开发</text>
+
+  <!-- section 01: dual pad -->
+  <rect x="100" y="205" width="3400" height="505" rx="42" fill="#0A1023" stroke="#26365C" stroke-width="3"/>
+  <text x="150" y="260" fill="#DDE8FF" font-family="Noto Sans SC, Arial" font-size="26" font-weight="700">01｜双 Pad 频道边界</text>
+  <text x="150" y="295" fill="#7184A9" font-family="Noto Sans SC, Arial" font-size="18">两个独立控制端，共用播放内核；各自只控制自己的内容频道，不跨控</text>
+
+  <!-- pad 01 -->
+  <rect x="145" y="330" width="1560" height="330" rx="34" fill="#0A1934" stroke="#3788FF" stroke-width="4"/>
+  <rect x="185" y="365" width="280" height="72" rx="36" fill="#123B77" stroke="#5CA8FF" stroke-width="3"/>
+  <circle cx="228" cy="401" r="17" fill="#53C8FF"/>
+  <text x="270" y="412" fill="#F2F8FF" font-family="Noto Sans SC, Arial" font-size="27" font-weight="700">PAD 01</text>
+  <text x="505" y="412" fill="#8DC9FF" font-family="Noto Sans SC, Arial" font-size="27" font-weight="700">成果案例</text>
+  <rect x="1315" y="370" width="330" height="56" rx="28" fill="#0F2C51" stroke="#4C9BFF" stroke-width="2"/>
+  <text x="1480" y="406" text-anchor="middle" fill="#A8D9FF" font-family="Noto Sans SC, Arial" font-size="19">channel = CASES</text>
+  <text x="190" y="477" fill="#6F88B5" font-family="Noto Sans SC, Arial" font-size="18">主题目录（首页顺序 / CASE 编号待确认）</text>
+  <rect x="190" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="285" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">01 大模型</text>
+  <rect x="395" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="490" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">02 科研院所</text>
+  <rect x="600" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="695" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">03 高端制造</text>
+  <rect x="805" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="900" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">04 海洋模拟</text>
+  <rect x="1010" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="1105" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">05 互联网</text>
+  <rect x="1215" y="500" width="190" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="1310" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="19">06 航空航天</text>
+  <rect x="1420" y="500" width="225" height="58" rx="29" fill="#10274C" stroke="#3268BA" stroke-width="2"/>
+  <text x="1532" y="537" text-anchor="middle" fill="#EAF3FF" font-family="Noto Sans SC, Arial" font-size="18">07 AI FOR SCIENCE</text>
+  <rect x="190" y="585" width="560" height="45" rx="22" fill="#0D213F"/>
+  <text x="470" y="614" text-anchor="middle" fill="#8EC8FF" font-family="Noto Sans SC, Arial" font-size="18">每个主题＝图片 / PPT 转图 / 视频的顺序播放清单</text>
+  <rect x="775" y="580" width="870" height="52" rx="26" fill="#392B15" stroke="#FFB455" stroke-width="2" stroke-dasharray="10 7"/>
+  <text x="1210" y="613" text-anchor="middle" fill="#FFD69F" font-family="Noto Sans SC, Arial" font-size="18">当前 V1：每主题仅 domain.video；混合媒体 playlist 与频道锁定需新增</text>
+
+  <!-- pad 02 -->
+  <rect x="1895" y="330" width="1560" height="330" rx="34" fill="#181231" stroke="#A278FF" stroke-width="4"/>
+  <rect x="1935" y="365" width="280" height="72" rx="36" fill="#3B2872" stroke="#B99BFF" stroke-width="3"/>
+  <circle cx="1978" cy="401" r="17" fill="#BEA4FF"/>
+  <text x="2020" y="412" fill="#FAF6FF" font-family="Noto Sans SC, Arial" font-size="27" font-weight="700">PAD 02</text>
+  <text x="2255" y="412" fill="#CDB9FF" font-family="Noto Sans SC, Arial" font-size="27" font-weight="700">产品介绍</text>
+  <rect x="3065" y="370" width="330" height="56" rx="28" fill="#2A2052" stroke="#A278FF" stroke-width="2"/>
+  <text x="3230" y="406" text-anchor="middle" fill="#D4C5FF" font-family="Noto Sans SC, Arial" font-size="19">channel = PRODUCTS</text>
+  <text x="1940" y="477" fill="#8B79AE" font-family="Noto Sans SC, Arial" font-size="18">当前工作目录 PRODUCT-01—09｜客户确认输入｜程序未冻结</text>
+  <rect x="1940" y="490" width="270" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2075" y="512" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13"><tspan x="2075">P01 国产 Token</tspan><tspan x="2075" dy="18">优化工厂</tspan></text>
+  <rect x="2225" y="490" width="270" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2360" y="523" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13">P02 超智算集群</text>
+  <rect x="2510" y="490" width="270" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2645" y="512" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13"><tspan x="2645">P03 国产异构</tspan><tspan x="2645" dy="18">超智算中心</tspan></text>
+  <rect x="2795" y="490" width="270" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2930" y="512" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13"><tspan x="2930">P04 CPU vs GPU</tspan><tspan x="2930" dy="18">计算速度大比拼</tspan></text>
+  <rect x="3080" y="490" width="270" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="3215" y="512" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13"><tspan x="3215">P05 Token 优化工厂</tspan><tspan x="3215" dy="18">技术优势</tspan></text>
+  <rect x="1940" y="554" width="330" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2105" y="587" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13">P06 AI infra</text>
+  <rect x="2285" y="554" width="330" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2450" y="587" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13">P07 PD 分离</text>
+  <rect x="2630" y="554" width="330" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="2795" y="587" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13">P08 投机解码</text>
+  <rect x="2975" y="554" width="375" height="54" rx="18" fill="#251C49" stroke="#7156B5" stroke-width="2"/>
+  <text x="3162" y="587" text-anchor="middle" fill="#F2EDFF" font-family="Noto Sans SC, Arial" font-size="13">P09 多层级 KV Cache</text>
+  <text x="1940" y="638" fill="#FFD69F" font-family="Noto Sans SC, Arial" font-size="15">每个产品＝独立 playlist｜Pad02 controller / channel / catalog / endpoint 锁定｜程序 NO-GO</text>
+
+  <!-- section 02: worksheet -->
+  <rect x="100" y="755" width="3400" height="1045" rx="42" fill="#091323" stroke="#2E668B" stroke-width="3"/>
+  <text x="150" y="815" fill="#79E4FF" font-family="Noto Sans SC, Arial" font-size="30" font-weight="700">02｜客户填写：单个主题 / 产品的物料顺序</text>
+  <text x="150" y="852" fill="#7F94B6" font-family="Noto Sans SC, Arial" font-size="18">复制本模板用于每个主题；编号即播放顺序。每一项必须记录真实文件名称，避免“一个主题＝一个视频”的误解。</text>
+
+  <rect x="145" y="880" width="3310" height="115" rx="28" fill="#0D1D34" stroke="#294968" stroke-width="2"/>
+  <text x="190" y="930" fill="#B9C9E5" font-family="Noto Sans SC, Arial" font-size="22">当前 Pad：________________</text>
+  <text x="760" y="930" fill="#B9C9E5" font-family="Noto Sans SC, Arial" font-size="22">板块：________________</text>
+  <text x="1275" y="930" fill="#B9C9E5" font-family="Noto Sans SC, Arial" font-size="22">主题编号 / 名称：____________________________</text>
+  <text x="2380" y="930" fill="#B9C9E5" font-family="Noto Sans SC, Arial" font-size="22">客户确认人：________________</text>
+  <text x="190" y="970" fill="#6886A9" font-family="Noto Sans SC, Arial" font-size="17">文件命名建议：P01_CASE_01_01_内容简称.ext</text>
+  <text x="1250" y="970" fill="#6886A9" font-family="Noto Sans SC, Arial" font-size="17">或：P02_PRODUCT_01_01_内容简称.ext</text>
+  <text x="2460" y="970" fill="#FFCC8B" font-family="Noto Sans SC, Arial" font-size="17">所有空线均为客户确认 / 填写口</text>
+
+  <!-- sequence card 1 -->
+  <rect x="145" y="1030" width="600" height="680" rx="32" fill="#0B1C32" stroke="#36BDE4" stroke-width="4"/>
+  <circle cx="205" cy="1093" r="34" fill="#164867" stroke="#6BE5FF" stroke-width="3"/>
+  <text x="205" y="1104" text-anchor="middle" fill="#F4FCFF" font-family="Noto Sans SC, Arial" font-size="25" font-weight="700">01</text>
+  <text x="260" y="1104" fill="#8CEBFF" font-family="Noto Sans SC, Arial" font-size="24" font-weight="700">第一项 / 开场</text>
+  <line x1="185" y1="1145" x2="705" y2="1145" stroke="#25445D" stroke-width="2"/>
+  <text x="185" y="1195" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">内容名称：______________________</text>
+  <text x="185" y="1270" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">素材类型：□ 图片  □ PPT转图  □ 视频</text>
+  <text x="185" y="1345" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">文件名称：</text>
+  <line x1="185" y1="1380" x2="705" y2="1380" stroke="#56C9E9" stroke-width="2"/>
+  <text x="185" y="1445" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">播放方式：□ 手动下一步  □ 自动</text>
+  <text x="185" y="1520" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="19">停留 / 时长：______ 秒</text>
+  <text x="185" y="1595" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">备注：</text>
+  <line x1="185" y1="1630" x2="705" y2="1630" stroke="#56C9E9" stroke-width="2"/>
+  <text x="185" y="1675" fill="#607B9C" font-family="Noto Sans SC, Arial" font-size="16">示例：P01_CASE_01_01_模型总览.png</text>
+
+  <!-- sequence arrow 1 -->
+  <line x1="755" y1="1370" x2="795" y2="1370" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="805,1370 787,1360 787,1380" fill="#55D9FF"/>
+
+  <!-- sequence card 2 -->
+  <rect x="805" y="1030" width="600" height="680" rx="32" fill="#0B1C32" stroke="#36BDE4" stroke-width="4"/>
+  <circle cx="865" cy="1093" r="34" fill="#164867" stroke="#6BE5FF" stroke-width="3"/>
+  <text x="865" y="1104" text-anchor="middle" fill="#F4FCFF" font-family="Noto Sans SC, Arial" font-size="25" font-weight="700">02</text>
+  <text x="920" y="1104" fill="#8CEBFF" font-family="Noto Sans SC, Arial" font-size="24" font-weight="700">第二项</text>
+  <line x1="845" y1="1145" x2="1365" y2="1145" stroke="#25445D" stroke-width="2"/>
+  <text x="845" y="1195" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">内容名称：______________________</text>
+  <text x="845" y="1270" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">素材类型：□ 图片  □ PPT转图  □ 视频</text>
+  <text x="845" y="1345" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">文件名称：</text>
+  <line x1="845" y1="1380" x2="1365" y2="1380" stroke="#56C9E9" stroke-width="2"/>
+  <text x="845" y="1445" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">播放方式：□ 手动下一步  □ 自动</text>
+  <text x="845" y="1520" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="19">停留 / 时长：______ 秒</text>
+  <text x="845" y="1595" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">备注：</text>
+  <line x1="845" y1="1630" x2="1365" y2="1630" stroke="#56C9E9" stroke-width="2"/>
+  <text x="845" y="1675" fill="#607B9C" font-family="Noto Sans SC, Arial" font-size="16">示例：P01_CASE_01_02_算法演示.mp4</text>
+
+  <line x1="1415" y1="1370" x2="1455" y2="1370" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="1465,1370 1447,1360 1447,1380" fill="#55D9FF"/>
+
+  <!-- sequence card 3 -->
+  <rect x="1465" y="1030" width="600" height="680" rx="32" fill="#0B1C32" stroke="#36BDE4" stroke-width="4"/>
+  <circle cx="1525" cy="1093" r="34" fill="#164867" stroke="#6BE5FF" stroke-width="3"/>
+  <text x="1525" y="1104" text-anchor="middle" fill="#F4FCFF" font-family="Noto Sans SC, Arial" font-size="25" font-weight="700">03</text>
+  <text x="1580" y="1104" fill="#8CEBFF" font-family="Noto Sans SC, Arial" font-size="24" font-weight="700">第三项</text>
+  <line x1="1505" y1="1145" x2="2025" y2="1145" stroke="#25445D" stroke-width="2"/>
+  <text x="1505" y="1195" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">内容名称：______________________</text>
+  <text x="1505" y="1270" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">素材类型：□ 图片  □ PPT转图  □ 视频</text>
+  <text x="1505" y="1345" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">文件名称：</text>
+  <line x1="1505" y1="1380" x2="2025" y2="1380" stroke="#56C9E9" stroke-width="2"/>
+  <text x="1505" y="1445" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">播放方式：□ 手动下一步  □ 自动</text>
+  <text x="1505" y="1520" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="19">停留 / 时长：______ 秒</text>
+  <text x="1505" y="1595" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">备注：</text>
+  <line x1="1505" y1="1630" x2="2025" y2="1630" stroke="#56C9E9" stroke-width="2"/>
+  <text x="1505" y="1675" fill="#607B9C" font-family="Noto Sans SC, Arial" font-size="16">示例：P01_CASE_01_03_参数说明.png</text>
+
+  <line x1="2075" y1="1370" x2="2115" y2="1370" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="2125,1370 2107,1360 2107,1380" fill="#55D9FF"/>
+
+  <!-- sequence card 4 -->
+  <rect x="2125" y="1030" width="600" height="680" rx="32" fill="#0B1C32" stroke="#36BDE4" stroke-width="4"/>
+  <circle cx="2185" cy="1093" r="34" fill="#164867" stroke="#6BE5FF" stroke-width="3"/>
+  <text x="2185" y="1104" text-anchor="middle" fill="#F4FCFF" font-family="Noto Sans SC, Arial" font-size="25" font-weight="700">04</text>
+  <text x="2240" y="1104" fill="#8CEBFF" font-family="Noto Sans SC, Arial" font-size="24" font-weight="700">第四项</text>
+  <line x1="2165" y1="1145" x2="2685" y2="1145" stroke="#25445D" stroke-width="2"/>
+  <text x="2165" y="1195" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">内容名称：______________________</text>
+  <text x="2165" y="1270" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">素材类型：□ 图片  □ PPT转图  □ 视频</text>
+  <text x="2165" y="1345" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">文件名称：</text>
+  <line x1="2165" y1="1380" x2="2685" y2="1380" stroke="#56C9E9" stroke-width="2"/>
+  <text x="2165" y="1445" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">播放方式：□ 手动下一步  □ 自动</text>
+  <text x="2165" y="1520" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="19">停留 / 时长：______ 秒</text>
+  <text x="2165" y="1595" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">备注：</text>
+  <line x1="2165" y1="1630" x2="2685" y2="1630" stroke="#56C9E9" stroke-width="2"/>
+  <text x="2165" y="1675" fill="#607B9C" font-family="Noto Sans SC, Arial" font-size="16">示例：P01_CASE_01_04_成果影片.mp4</text>
+
+  <line x1="2735" y1="1370" x2="2775" y2="1370" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="2785,1370 2767,1360 2767,1380" fill="#55D9FF"/>
+
+  <!-- sequence card 5 -->
+  <rect x="2785" y="1030" width="600" height="680" rx="32" fill="#0B1C32" stroke="#36BDE4" stroke-width="4"/>
+  <circle cx="2845" cy="1093" r="34" fill="#164867" stroke="#6BE5FF" stroke-width="3"/>
+  <text x="2845" y="1104" text-anchor="middle" fill="#F4FCFF" font-family="Noto Sans SC, Arial" font-size="25" font-weight="700">05</text>
+  <text x="2900" y="1104" fill="#8CEBFF" font-family="Noto Sans SC, Arial" font-size="24" font-weight="700">第五项 / 收尾</text>
+  <line x1="2825" y1="1145" x2="3345" y2="1145" stroke="#25445D" stroke-width="2"/>
+  <text x="2825" y="1195" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">内容名称：______________________</text>
+  <text x="2825" y="1270" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">素材类型：□ 图片  □ PPT转图  □ 视频</text>
+  <text x="2825" y="1345" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">文件名称：</text>
+  <line x1="2825" y1="1380" x2="3345" y2="1380" stroke="#56C9E9" stroke-width="2"/>
+  <text x="2825" y="1445" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">播放方式：□ 手动下一步  □ 自动</text>
+  <text x="2825" y="1520" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="19">停留 / 时长：______ 秒</text>
+  <text x="2825" y="1595" fill="#D7E4F5" font-family="Noto Sans SC, Arial" font-size="21">备注：</text>
+  <line x1="2825" y1="1630" x2="3345" y2="1630" stroke="#56C9E9" stroke-width="2"/>
+  <text x="2825" y="1675" fill="#607B9C" font-family="Noto Sans SC, Arial" font-size="16">示例：P01_CASE_01_05_结束页.png</text>
+
+  <rect x="1390" y="1735" width="820" height="46" rx="23" fill="#123047" stroke="#46CEE9" stroke-width="2" stroke-dasharray="10 7"/>
+  <text x="1800" y="1766" text-anchor="middle" fill="#8AEAFF" font-family="Noto Sans SC, Arial" font-size="19" font-weight="700">物料超过 5 项：继续添加 06 → 07 → … → N，字段保持一致</text>
+
+  <!-- section 03 -->
+  <rect x="100" y="1845" width="1650" height="570" rx="38" fill="#121324" stroke="#6C5C93" stroke-width="3"/>
+  <text x="150" y="1905" fill="#D8C7FF" font-family="Noto Sans SC, Arial" font-size="28" font-weight="700">03A｜PPT 物料处理决策</text>
+  <text x="150" y="1940" fill="#8479A1" font-family="Noto Sans SC, Arial" font-size="18">PPT 先转换为稳定播控素材，不在现场直接打开原生 PPT</text>
+
+  <polygon points="420,2000 600,2110 420,2220 240,2110" fill="#2B2150" stroke="#B899FF" stroke-width="4"/>
+  <text x="420" y="2098" text-anchor="middle" fill="#F3ECFF" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">有动画 / 转场</text>
+  <text x="420" y="2130" text-anchor="middle" fill="#C6B4E8" font-family="Noto Sans SC, Arial" font-size="19">或音频？</text>
+
+  <polyline points="600,2110 680,2110 680,2040 755,2040" fill="none" stroke="#5FD9FF" stroke-width="4"/>
+  <polygon points="765,2040 747,2030 747,2050" fill="#5FD9FF"/>
+  <text x="635" y="2090" fill="#88E7FF" font-family="Noto Sans SC, Arial" font-size="18">否</text>
+  <rect x="765" y="1985" width="370" height="160" rx="28" fill="#0E2A3A" stroke="#4BCDE9" stroke-width="3"/>
+  <text x="950" y="2030" text-anchor="middle" fill="#E9FBFF" font-family="Noto Sans SC, Arial" font-size="22" font-weight="700">逐页导出 PNG / JPG</text>
+  <text x="950" y="2068" text-anchor="middle" fill="#9ACCDD" font-family="Noto Sans SC, Arial" font-size="18">每一页＝一个图片项</text>
+  <text x="950" y="2101" text-anchor="middle" fill="#769DB0" font-family="Noto Sans SC, Arial" font-size="17">Pad 手动下一步 / 自动停留</text>
+
+  <polyline points="420,2220 420,2290 1225,2290 1225,2145" fill="none" stroke="#B899FF" stroke-width="4"/>
+  <polygon points="1225,2145 1215,2163 1235,2163" fill="#B899FF"/>
+  <text x="455" y="2275" fill="#D2C1FF" font-family="Noto Sans SC, Arial" font-size="18">是</text>
+  <rect x="1160" y="1985" width="470" height="160" rx="28" fill="#281F48" stroke="#A981FF" stroke-width="3"/>
+  <text x="1395" y="2030" text-anchor="middle" fill="#F4EDFF" font-family="Noto Sans SC, Arial" font-size="22" font-weight="700">导出 H.264 MP4</text>
+  <text x="1395" y="2068" text-anchor="middle" fill="#C8B9EA" font-family="Noto Sans SC, Arial" font-size="18">篇幅较长时按章节拆分</text>
+  <text x="1395" y="2101" text-anchor="middle" fill="#9888B8" font-family="Noto Sans SC, Arial" font-size="17">每一段＝一个视频项</text>
+
+  <rect x="240" y="2330" width="1390" height="52" rx="26" fill="#3A1D24" stroke="#FF7180" stroke-width="2"/>
+  <text x="935" y="2363" text-anchor="middle" fill="#FFB7BF" font-family="Noto Sans SC, Arial" font-size="19" font-weight="700">现场禁用原生 PPT：避免 Office / 字体 / 版本 / 窗口焦点带来的播放风险</text>
+
+  <!-- simplified state machine -->
+  <rect x="1850" y="1845" width="1650" height="570" rx="38" fill="#0B1727" stroke="#2D708D" stroke-width="3"/>
+  <text x="1900" y="1905" fill="#7CE6FF" font-family="Noto Sans SC, Arial" font-size="28" font-weight="700">03B｜混合媒体播放逻辑（程序确认）</text>
+  <rect x="3050" y="1870" width="380" height="48" rx="24" fill="#392B15" stroke="#FFB455" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="3240" y="1901" text-anchor="middle" fill="#FFD295" font-family="Noto Sans SC, Arial" font-size="17">双 Pad + playlist＝新增开发</text>
+
+  <rect x="1905" y="1970" width="210" height="74" rx="26" fill="#11304B" stroke="#42CBEA" stroke-width="3"/>
+  <text x="2010" y="2016" text-anchor="middle" fill="#E7F9FF" font-family="Noto Sans SC, Arial" font-size="19" font-weight="700">选择主题</text>
+  <line x1="2115" y1="2007" x2="2160" y2="2007" stroke="#55D9FF" stroke-width="4"/>
+  <polygon points="2170,2007 2152,1997 2152,2017" fill="#55D9FF"/>
+  <rect x="2170" y="1970" width="260" height="74" rx="26" fill="#11304B" stroke="#42CBEA" stroke-width="3"/>
+  <text x="2312" y="2002" text-anchor="middle" fill="#E7F9FF" font-family="Noto Sans SC, Arial" font-size="16" font-weight="700">PLAYLIST_READY&#160;&#160;&#160;&#160;</text>
+  <text x="2306" y="2026" text-anchor="middle" fill="#7FAABC" font-family="Noto Sans SC, Arial" font-size="13">itemIndex = 0&#160;&#160;</text>
+  <line x1="2430" y1="2007" x2="2460" y2="2007" stroke="#55D9FF" stroke-width="4"/>
+  <polygon points="2470,2007 2452,1997 2452,2017" fill="#55D9FF"/>
+  <rect x="2470" y="1970" width="235" height="74" rx="26" fill="#11304B" stroke="#42CBEA" stroke-width="3"/>
+  <text x="2587" y="2016" text-anchor="middle" fill="#E7F9FF" font-family="Noto Sans SC, Arial" font-size="18" font-weight="700">ITEM_LOADING</text>
+  <line x1="2705" y1="2007" x2="2750" y2="2007" stroke="#55D9FF" stroke-width="4"/>
+  <polygon points="2760,2007 2742,1997 2742,2017" fill="#55D9FF"/>
+  <polygon points="2880,1950 3000,2007 2880,2064 2760,2007" fill="#17334A" stroke="#4BCDE9" stroke-width="3"/>
+  <text x="2880" y="2014" text-anchor="middle" fill="#E9F9FF" font-family="Noto Sans SC, Arial" font-size="18" font-weight="700">itemType</text>
+
+  <polyline points="2880,2064 2880,2110 2450,2110" fill="none" stroke="#42CBEA" stroke-width="4"/>
+  <polygon points="2440,2110 2458,2100 2458,2120" fill="#42CBEA"/>
+  <text x="2660" y="2096" fill="#82E2F5" font-family="Noto Sans SC, Arial" font-size="16">IMAGE / SLIDE</text>
+  <rect x="2170" y="2075" width="270" height="78" rx="25" fill="#0F2F42" stroke="#45CAE5" stroke-width="3"/>
+  <text x="2305" y="2107" text-anchor="middle" fill="#E8FBFF" font-family="Noto Sans SC, Arial" font-size="17" font-weight="700">IMAGE_SHOWING</text>
+  <text x="2305" y="2133" text-anchor="middle" fill="#86AEBE" font-family="Noto Sans SC, Arial" font-size="15">停留 / 等待下一步</text>
+
+  <polyline points="3000,2007 3070,2007 3070,2110 3130,2110" fill="none" stroke="#AA84FF" stroke-width="4"/>
+  <polygon points="3140,2110 3122,2100 3122,2120" fill="#AA84FF"/>
+  <text x="3090" y="2060" fill="#D3C1FF" font-family="Noto Sans SC, Arial" font-size="16">VIDEO</text>
+  <rect x="3140" y="2075" width="270" height="78" rx="25" fill="#281F48" stroke="#A981FF" stroke-width="3"/>
+  <text x="3275" y="2107" text-anchor="middle" fill="#F7F1FF" font-family="Noto Sans SC, Arial" font-size="17" font-weight="700">VIDEO_PLAYING</text>
+  <text x="3275" y="2133" text-anchor="middle" fill="#AB9CC7" font-family="Noto Sans SC, Arial" font-size="15">PLAY / PAUSE / SEEK</text>
+
+  <polyline points="2305,2153 2305,2190 2780,2190" fill="none" stroke="#55D9FF" stroke-width="4"/>
+  <polyline points="3275,2153 3275,2190 3050,2190" fill="none" stroke="#AA84FF" stroke-width="4"/>
+  <rect x="2780" y="2160" width="270" height="72" rx="26" fill="#163247" stroke="#58D6EF" stroke-width="3"/>
+  <text x="2915" y="2205" text-anchor="middle" fill="#E9FBFF" font-family="Noto Sans SC, Arial" font-size="19" font-weight="700">WAIT_NEXT</text>
+  <line x1="2915" y1="2232" x2="2915" y2="2260" stroke="#55D9FF" stroke-width="4"/>
+  <polygon points="2915,2270 2905,2252 2925,2252" fill="#55D9FF"/>
+  <polygon points="2915,2270 3055,2325 2915,2380 2775,2325" fill="#17334A" stroke="#4BCDE9" stroke-width="3"/>
+  <text x="2915" y="2332" text-anchor="middle" fill="#E9F9FF" font-family="Noto Sans SC, Arial" font-size="17" font-weight="700">还有下一项？</text>
+  <polyline points="2775,2325 2585,2325 2585,2265 2380,2265" fill="none" stroke="#55D9FF" stroke-width="4"/>
+  <polygon points="2370,2265 2388,2255 2388,2275" fill="#55D9FF"/>
+  <text x="2520" y="2310" fill="#8BEAFF" font-family="Noto Sans SC, Arial" font-size="16">是：itemIndex + 1</text>
+  <rect x="2100" y="2228" width="270" height="74" rx="26" fill="#11304B" stroke="#42CBEA" stroke-width="3"/>
+  <text x="2235" y="2274" text-anchor="middle" fill="#E7F9FF" font-family="Noto Sans SC, Arial" font-size="18" font-weight="700">ITEM_LOADING</text>
+  <line x1="3055" y1="2325" x2="3115" y2="2325" stroke="#A981FF" stroke-width="4"/>
+  <polygon points="3125,2325 3107,2315 3107,2335" fill="#A981FF"/>
+  <text x="3070" y="2308" fill="#D2C1FF" font-family="Noto Sans SC, Arial" font-size="16">否</text>
+  <rect x="3125" y="2288" width="285" height="74" rx="26" fill="#281F48" stroke="#A981FF" stroke-width="3"/>
+  <text x="3280" y="2334" text-anchor="middle" fill="#F7F1FF" font-family="Noto Sans SC, Arial" font-size="16" font-weight="700">SESSION_END&#160;&#160;&#160;&#160;</text>
+  <text x="1900" y="2374" fill="#718DA9" font-family="Noto Sans SC, Arial" font-size="14">状态字段：controllerId · channel · topicId · itemIndex · itemType · status · progress</text>
+  <text x="1900" y="2398" fill="#718DA9" font-family="Noto Sans SC, Arial" font-size="14">指令：OPEN_TOPIC · NEXT_ITEM · PREV_ITEM · JUMP_ITEM · PLAY · PAUSE · SEEK · MUTE · EXIT</text>
+
+  <!-- section 04 gate -->
+  <rect x="100" y="2460" width="3400" height="625" rx="42" fill="#0D1120" stroke="#7A6A43" stroke-width="3"/>
+  <text x="150" y="2520" fill="#FFD38D" font-family="Noto Sans SC, Arial" font-size="30" font-weight="700">04｜确认与程序交接闸门</text>
+  <text x="150" y="2558" fill="#A49270" font-family="Noto Sans SC, Arial" font-size="18">先确认、再冻结、最后同步。未收到项目经理“已定版”指令，不向程序产品经理发送临时方案。</text>
+
+  <rect x="150" y="2615" width="440" height="125" rx="30" fill="#15283A" stroke="#56CBE7" stroke-width="3"/>
+  <circle cx="205" cy="2677" r="25" fill="#1B5770"/>
+  <text x="205" y="2686" text-anchor="middle" fill="#F0FCFF" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">1</text>
+  <text x="250" y="2670" fill="#E8F8FF" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">具体物料确认</text>
+  <text x="250" y="2706" fill="#8CB2C1" font-family="Noto Sans SC, Arial" font-size="17">每项内容 / 类型齐全</text>
+  <line x1="590" y1="2677" x2="640" y2="2677" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="650,2677 632,2667 632,2687" fill="#55D9FF"/>
+
+  <rect x="650" y="2615" width="440" height="125" rx="30" fill="#15283A" stroke="#56CBE7" stroke-width="3"/>
+  <circle cx="705" cy="2677" r="25" fill="#1B5770"/>
+  <text x="705" y="2686" text-anchor="middle" fill="#F0FCFF" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">2</text>
+  <text x="750" y="2670" fill="#E8F8FF" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">播放顺序确认</text>
+  <text x="750" y="2706" fill="#8CB2C1" font-family="Noto Sans SC, Arial" font-size="17">01 → 02 → … → N</text>
+  <line x1="1090" y1="2677" x2="1140" y2="2677" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="1150,2677 1132,2667 1132,2687" fill="#55D9FF"/>
+
+  <rect x="1150" y="2615" width="440" height="125" rx="30" fill="#15283A" stroke="#56CBE7" stroke-width="3"/>
+  <circle cx="1205" cy="2677" r="25" fill="#1B5770"/>
+  <text x="1205" y="2686" text-anchor="middle" fill="#F0FCFF" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">3</text>
+  <text x="1250" y="2667" fill="#E8F8FF" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">文件名 / 模式 / 时长</text>
+  <text x="1250" y="2704" fill="#8CB2C1" font-family="Noto Sans SC, Arial" font-size="17">真实文件名可追溯</text>
+  <line x1="1590" y1="2677" x2="1640" y2="2677" stroke="#55D9FF" stroke-width="5"/>
+  <polygon points="1650,2677 1632,2667 1632,2687" fill="#55D9FF"/>
+
+  <rect x="1650" y="2615" width="440" height="125" rx="30" fill="#332816" stroke="#FFB455" stroke-width="3"/>
+  <circle cx="1705" cy="2677" r="25" fill="#6A4A18"/>
+  <text x="1705" y="2686" text-anchor="middle" fill="#FFF5E4" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">4</text>
+  <text x="1750" y="2670" fill="#FFE5B8" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">客户确认</text>
+  <text x="1750" y="2706" fill="#C8A66C" font-family="Noto Sans SC, Arial" font-size="17">项目经理标记“已定版”</text>
+  <line x1="2090" y1="2677" x2="2140" y2="2677" stroke="#FFB455" stroke-width="5"/>
+  <polygon points="2150,2677 2132,2667 2132,2687" fill="#FFB455"/>
+
+  <rect x="2150" y="2615" width="520" height="125" rx="30" fill="#332816" stroke="#FFB455" stroke-width="3"/>
+  <circle cx="2205" cy="2677" r="25" fill="#6A4A18"/>
+  <text x="2205" y="2686" text-anchor="middle" fill="#FFF5E4" font-family="Noto Sans SC, Arial" font-size="20" font-weight="700">5</text>
+  <text x="2250" y="2670" fill="#FFE5B8" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">冻结版本 + 变更包</text>
+  <text x="2250" y="2706" fill="#C8A66C" font-family="Noto Sans SC, Arial" font-size="17">物料表 / 顺序 / 状态 / 差异</text>
+  <line x1="2670" y1="2677" x2="2720" y2="2677" stroke="#FFB455" stroke-width="5"/>
+  <polygon points="2730,2677 2712,2667 2712,2687" fill="#FFB455"/>
+
+  <rect x="2730" y="2600" width="610" height="155" rx="34" fill="#271E47" stroke="#A981FF" stroke-width="4"/>
+  <circle cx="2790" cy="2677" r="28" fill="#5D3E99"/>
+  <text x="2790" y="2687" text-anchor="middle" fill="#FAF4FF" font-family="Noto Sans SC, Arial" font-size="21" font-weight="700">6</text>
+  <text x="2840" y="2655" fill="#F3ECFF" font-family="Noto Sans SC, Arial" font-size="22" font-weight="700">同步「程序_产品经理」</text>
+  <text x="2840" y="2692" fill="#C4B2E8" font-family="Noto Sans SC, Arial" font-size="18">程序评估 → 开发 → 联调 → 验收</text>
+  <text x="2840" y="2724" fill="#9788B5" font-family="Noto Sans SC, Arial" font-size="16">只同步已冻结版本，不发送草案</text>
+
+  <rect x="150" y="2800" width="3190" height="210" rx="30" fill="#12192A" stroke="#37445F" stroke-width="2"/>
+  <text x="200" y="2855" fill="#C8D3E7" font-family="Noto Sans SC, Arial" font-size="22">确认版本：________________</text>
+  <text x="860" y="2855" fill="#C8D3E7" font-family="Noto Sans SC, Arial" font-size="22">确认日期：________________</text>
+  <text x="1500" y="2855" fill="#C8D3E7" font-family="Noto Sans SC, Arial" font-size="22">客户确认人：________________</text>
+  <text x="2320" y="2855" fill="#C8D3E7" font-family="Noto Sans SC, Arial" font-size="22">项目经理：________________</text>
+  <line x1="200" y1="2900" x2="3290" y2="2900" stroke="#2E3D58" stroke-width="2"/>
+  <text x="200" y="2955" fill="#E8D6A9" font-family="Noto Sans SC, Arial" font-size="22" font-weight="700">程序同步状态：</text>
+  <text x="430" y="2955" fill="#E8D6A9" font-family="Noto Sans SC, Arial" font-size="22">□ 待定版　 □ 已定版待同步　 □ 已同步　　同步日期：____________</text>
+  <rect x="2670" y="2920" width="620" height="56" rx="28" fill="#3A1D24" stroke="#FF7180" stroke-width="2"/>
+  <text x="2980" y="2956" text-anchor="middle" fill="#FFB7BF" font-family="Noto Sans SC, Arial" font-size="19" font-weight="700">未定版：禁止进入程序开发排期</text>
+
+  <text x="120" y="3150" fill="#536784" font-family="Noto Sans SC, Arial" font-size="17">是石科技｜空间体验升级项目　·　客户沟通工作版　·　双 Pad / 混合媒体播放清单</text>
+</svg>

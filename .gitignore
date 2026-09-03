@@ -1,0 +1,16 @@
+node_modules/
+dist/
+output/
+.playwright-cli/
+
+# Customer media and distributable archives are published as release assets,
+# not committed to Git history.
+public/videos/**/*.mp4
+*.zip
+
+# Local runtime and credentials.
+.runtime/
+.env
+.env.*
+!.env.example
+*.log

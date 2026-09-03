@@ -1,0 +1,32 @@
+{
+  "name": "v1",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "content:check": "node scripts/check-video-slots.mjs",
+    "preview": "vite preview",
+    "preview:pad": "vite preview --host 0.0.0.0 --port 4174 --strictPort",
+    "testenv": "npm run content:check && npm run testenv:serve",
+    "testenv:prepare": "npm run build && npm run content:check",
+    "testenv:serve": "node server/test-control-server.mjs",
+    "test:orbit": "node --test tests/orbit-motion.test.mjs",
+    "test:standby": "node --test tests/tv-standby.test.mjs",
+    "test:sync": "node --test tests/playback-sync.test.mjs tests/control-server-sync.test.mjs",
+    "test:sites": "node --test tests/sites-worker.test.mjs"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "@react-three/postprocessing": "^3.0.5",
+    "@vitejs/plugin-react": "5.0.4",
+    "postprocessing": "^6.39.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "^0.185.1",
+    "vite": "6.4.2"
+  }
+}

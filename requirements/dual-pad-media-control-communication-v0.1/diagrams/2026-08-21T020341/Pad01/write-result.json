@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "whiteboard_token": "Iw5Pwr1fWheM2EbJL7Ncjdn7n8c",
+  "block_id": "doxcnMT2m8Sbcr8LuHCqR6Zb2pb",
+  "operation": "overwrite_existing_pad01_board",
+  "input": "diagram.openapi.json",
+  "remote_node_count": 241,
+  "remote_image_node_count": 17,
+  "remote_image_node_ids": [
+    "d1:2",
+    "d1:3",
+    "d1:4",
+    "d1:5",
+    "d1:6",
+    "d1:7",
+    "d1:8",
+    "d1:9",
+    "d1:10",
+    "d1:11",
+    "d1:12",
+    "d1:13",
+    "d1:14",
+    "d1:15",
+    "d1:16",
+    "d1:17",
+    "d1:18"
+  ],
+  "remote_connector_count": 17,
+  "media_uploads": {
+    "uploaded_files": 17,
+    "distinct_media_tokens": 17,
+    "mapping": "media-map.json"
+  },
+  "readback": {
+    "image": "readback.png",
+    "raw": "readback.raw.json",
+    "ok": true
+  },
+  "release_status": "客户确认稿 / 非定版开发指令 / 程序未开发 / 生产 NO-GO",
+  "notifications_sent": false
+}

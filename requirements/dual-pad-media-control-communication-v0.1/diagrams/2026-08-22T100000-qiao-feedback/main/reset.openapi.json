@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "o997:1",
+      "type": "composite_shape",
+      "x": 0,
+      "y": 0,
+      "width": 120,
+      "height": 60,
+      "text": {"text":"正在同步主确认图","font_size":14,"horizontal_align":"center","vertical_align":"mid","text_color":"#ffffff","text_color_type":1},
+      "style": {"border_opacity":100,"border_width":"narrow","border_color":"#2e668b","border_color_type":1,"border_style":"solid","fill_opacity":100,"fill_color":"#091323","fill_color_type":1},
+      "composite_shape": {"type":"round_rect"}
+    }
+  ]
+}

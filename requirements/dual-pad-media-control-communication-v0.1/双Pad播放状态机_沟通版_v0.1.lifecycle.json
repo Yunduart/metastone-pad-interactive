@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "diagram_type": "lifecycle",
+  "meta": {
+    "title": "双 Pad 多媒体播放状态机 · 沟通版",
+    "subtitle": "固定频道；PPT 仅转图/视频；自动推进和现场绑定待确认",
+    "output": "双Pad播放状态机_沟通版_v0.1.html",
+    "viewBox": [1600, 900],
+    "render_status": "BLOCKED_MISSING_ARCHIFY_RUNTIME_DEPENDENCY"
+  },
+  "lanes": [
+    { "id": "main", "label": "主题与播放主链" },
+    { "id": "end", "label": "结束与人工决策" },
+    { "id": "exceptions", "label": "异常与恢复" }
+  ],
+  "states": [
+    { "id": "home", "type": "start", "label": "HOME_IDLE", "sublabel": "首页 / 品牌待机", "lane": "main", "col": 0, "width": 150 },
+    { "id": "topicList", "type": "active", "label": "TOPIC_LIST", "sublabel": "固定频道的纵向主题", "lane": "main", "col": 1, "width": 165 },
+    { "id": "playlist", "type": "active", "label": "PLAYLIST_READY", "sublabel": "OPEN_TOPIC 后清单就绪", "lane": "main", "col": 2, "width": 185 },
+    { "id": "loading", "type": "waiting", "label": "ITEM_LOADING", "sublabel": "文件 / 目标 / 绑定校验", "lane": "main", "col": 3, "width": 180 },
+    { "id": "mediaType", "type": "decision", "label": "itemType？", "sublabel": "image / slide / video", "lane": "main", "col": 4, "width": 160 },
+    { "id": "image", "type": "active", "label": "IMAGE_SHOWING", "sublabel": "图片按已确认时长", "lane": "main", "col": 5, "width": 170, "yOffset": -50 },
+    { "id": "slide", "type": "active", "label": "SLIDE_SHOWING", "sublabel": "PPT 转图页", "lane": "main", "col": 5, "width": 170, "yOffset": 0 },
+    { "id": "video", "type": "active", "label": "VIDEO_PLAYING", "sublabel": "播放 / 暂停 / 进度 / 静音", "lane": "main", "col": 5, "width": 175, "yOffset": 50 },
+    { "id": "videoPaused", "type": "waiting", "label": "VIDEO_PAUSED", "sublabel": "保存当前进度", "lane": "main", "col": 6, "width": 165 },
+    { "id": "itemEnd", "type": "neutral", "label": "ITEM_END", "sublabel": "当前项完成", "lane": "end", "col": 5, "width": 150 },
+    { "id": "waitNext", "type": "decision", "label": "WAIT_NEXT", "sublabel": "上一步 / 下一步 / 跳转", "lane": "end", "col": 6, "width": 180 },
+    { "id": "sessionEnd", "type": "success", "label": "SESSION_END", "sublabel": "最后一项完成", "lane": "end", "col": 7, "width": 165 },
+    { "id": "returnHome", "type": "success", "label": "RETURN_HOME", "sublabel": "EXIT / 释放 session", "lane": "end", "col": 8, "width": 180 },
+    { "id": "error", "type": "failure", "label": "ERROR", "sublabel": "缺失 / 加载 / 解码 / 错配 / 超时", "lane": "exceptions", "col": 4, "width": 205 },
+    { "id": "recovering", "type": "waiting", "label": "RECOVERING", "sublabel": "重连 / 重试 / 拉取快照", "lane": "exceptions", "col": 5, "width": 185 },
+    { "id": "offline", "type": "failure", "label": "OFFLINE", "sublabel": "Pad 或目标端不可达", "lane": "exceptions", "col": 7, "width": 175 }
+  ],
+  "transitions": [
+    { "from": "home", "to": "topicList", "label": "进入固定频道", "variant": "emphasis" },
+    { "from": "topicList", "to": "playlist", "label": "OPEN_TOPIC", "variant": "emphasis" },
+    { "from": "playlist", "to": "loading", "label": "PLAY / 首项", "variant": "emphasis" },
+    { "from": "loading", "to": "mediaType", "label": "媒体就绪", "variant": "emphasis" },
+    { "from": "mediaType", "to": "image", "label": "image", "variant": "emphasis" },
+    { "from": "mediaType", "to": "slide", "label": "slide", "variant": "emphasis" },
+    { "from": "mediaType", "to": "video", "label": "video", "variant": "emphasis" },
+    { "from": "video", "to": "videoPaused", "label": "PAUSE", "variant": "default" },
+    { "from": "videoPaused", "to": "video", "label": "PLAY", "variant": "dashed", "route": "top-channel" },
+    { "from": "image", "to": "itemEnd", "label": "时长到", "variant": "default", "route": "drop" },
+    { "from": "slide", "to": "itemEnd", "label": "页时长到", "variant": "default", "route": "drop" },
+    { "from": "video", "to": "itemEnd", "label": "播放结束", "variant": "default", "route": "drop" },
+    { "from": "itemEnd", "to": "waitNext", "label": "非末项", "variant": "emphasis" },
+    { "from": "waitNext", "to": "loading", "label": "NEXT / PREV / JUMP", "variant": "dashed", "route": "top-channel" },
+    { "from": "itemEnd", "to": "loading", "label": "自动推进 · 待确认", "variant": "dashed", "route": "top-channel" },
+    { "from": "itemEnd", "to": "sessionEnd", "label": "最后一项", "variant": "emphasis" },
+    { "from": "sessionEnd", "to": "loading", "label": "重播 · 策略待确认", "variant": "dashed", "route": "top-channel" },
+    { "from": "sessionEnd", "to": "returnHome", "label": "EXIT", "variant": "emphasis" },
+    { "from": "returnHome", "to": "home", "label": "清理完成", "variant": "dashed", "route": "bottom-channel" },
+    { "from": "loading", "to": "error", "label": "失败 / 错配 / 超时", "variant": "security", "route": "drop" },
+    { "from": "error", "to": "recovering", "label": "重试", "variant": "dashed" },
+    { "from": "recovering", "to": "loading", "label": "恢复成功", "variant": "dashed", "route": "top-channel" },
+    { "from": "recovering", "to": "offline", "label": "不可恢复", "variant": "security" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "已确认",
+      "items": ["Pad 01=成果案例", "Pad 02=产品介绍", "PPT 仅转图或 H.264 MP4"]
+    },
+    {
+      "dot": "amber",
+      "title": "待客户确认",
+      "items": ["现场 target/display 绑定", "自动推进与末条策略", "每条素材与时长"]
+    },
+    {
+      "dot": "rose",
+      "title": "待开发 / 门禁",
+      "items": ["当前 V1 仍单视频", "无双 Pad 已实现项", "项目经理定版前 NO-GO"]
+    }
+  ]
+}

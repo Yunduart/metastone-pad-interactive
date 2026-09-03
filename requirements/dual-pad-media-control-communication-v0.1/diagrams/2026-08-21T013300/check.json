@@ -1,0 +1,25 @@
+{
+  "code": 0,
+  "data": {
+    "to": "check",
+    "metadata": {
+      "width": 0,
+      "height": 0,
+      "nodeCount": 33,
+      "connectorCount": 6
+    },
+    "check": {
+      "errors": 0,
+      "warnings": 0,
+      "summary": {
+        "textOverflow": 0,
+        "nodeOverlap": 0,
+        "textOcclusion": 0
+      },
+      "issues": []
+    }
+  },
+  "error": "",
+  "deployment_input": "diagram.board.json",
+  "degradation": "Self-contained diagram.svg remains the design source. Because whiteboard-cli does not render embedded data-URI images, the verified 3300x4240 diagram.png is uploaded as one target-whiteboard media node, with searchable title, status, topic and connector nodes above it."
+}

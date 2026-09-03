@@ -1,0 +1,18 @@
+<table>
+  <colgroup><col width="150"/><col width="220"/><col width="280"/><col width="150"/><col width="230"/></colgroup>
+  <thead><tr><th background-color="light-gray">影响域</th><th background-color="light-gray">现有基线</th><th background-color="light-gray">新增 / 修订要求</th><th background-color="light-gray">当前状态</th><th background-color="light-gray">进入开发前的门</th></tr></thead>
+  <tbody>
+    <tr><td>内容模型</td><td>V1 仍以单主题 domain.video 映射为主</td><td>改为 catalog → topic / product → mixed-media playlist → item</td><td>待评估 / 待开发</td><td>客户冻结主题顺序、产品映射和逐条清单</td></tr>
+    <tr><td>双端身份</td><td>未实现 Pad 01 / Pad 02 固定身份与通道锁</td><td>分别锁定 controllerId、channel、catalogId 与目标播放端</td><td>待开发</td><td>确认物理播放端绑定和设备参数</td></tr>
+    <tr><td>主题编号</td><td>V0.2 已替代 V0.1 成为最新视觉沟通参考，但概念稿不冻结排序</td><td>CASE-01—07 全部标为暂定；确认首页顺序后才冻结 topicId 与文件前缀</td><td>P0 待客户确认</td><td>客户签字确认最终首页排序</td></tr>
+    <tr><td>渲染器</td><td>以视频播放为主</td><td>增加 IMAGE / SLIDE_SHOWING 与 VIDEO_PLAYING 的独立渲染和切换</td><td>待开发</td><td>逐条确认媒体类型与转换结果</td></tr>
+    <tr><td>命令</td><td>已有 PLAY、PAUSE、SEEK、MUTE、EXIT 等基础方向</td><td>增加 OPEN_TOPIC、NEXT_ITEM、PREV_ITEM、JUMP_ITEM；全局文案改为“返回主题 / 返回列表”</td><td>待评估 / 待开发</td><td>状态机和接口评审</td></tr>
+    <tr><td>推进策略</td><td>当前未冻结逐条自动 / 手动行为</td><td>每个 item 独立配置 advanceMode、duration、endAction</td><td>P1 待客户确认</td><td>逐条填写方式、秒数及末项策略</td></tr>
+    <tr><td>素材清单</td><td>候选素材、页码与视频尚未形成冻结 manifest</td><td>以唯一 filename、绝对源路径、sourceHash、itemIndex、itemType 建立可追溯清单</td><td>待冻结</td><td>文件名确认与 SHA256 复核</td></tr>
+    <tr><td>异常与恢复</td><td>现有缺失素材测试兜底不足以覆盖完整 playlist</td><td>增加素材预检、缺失 / 解码失败、错通道、超时、断线恢复和幂等控制</td><td>待开发</td><td>异常用例与真实双端联调</td></tr>
+    <tr><td>验收</td><td>单机页面或概念画板不等于现场验收</td><td>Pad 01 / Pad 02 分别与真实播放端联调，并验证不串控、断线重连、连续运行</td><td>未执行</td><td>现场设备、LAN、屏幕与客户验收</td></tr>
+  </tbody>
+</table>
+<callout emoji="⛔" background-color="light-red" border-color="red">
+  <p><b>本节只描述对程序基线的影响，不是启动开发的授权。</b>现有程序不得按候选产品名、暂定 CASE 编号或未确认的播放顺序进行硬编码。</p>
+</callout>

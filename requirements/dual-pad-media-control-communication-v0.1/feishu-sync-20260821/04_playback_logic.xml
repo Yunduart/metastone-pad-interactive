@@ -1,0 +1,30 @@
+<callout emoji="🔒" background-color="light-blue" border-color="blue">
+  <p><b>双 Pad 固定分工：</b>Pad 01 锁定成果案例，Pad 02 锁定产品介绍。两端可共用播放内核，但 controllerId、channel、catalogId、target playback endpoint 必须分别锁定，状态与命令不得串控。</p>
+</callout>
+<h3>当前交互口径</h3>
+<table>
+  <colgroup><col width="130"/><col width="240"/><col width="240"/><col width="260"/></colgroup>
+  <thead><tr><th background-color="light-gray">对象</th><th background-color="light-gray">Pad 可见动作</th><th background-color="light-gray">协议 / 状态</th><th background-color="light-gray">说明</th></tr></thead>
+  <tbody>
+    <tr><td>PPT 转图 / 图片</td><td>上一页、下一页、跳转</td><td>PREV_ITEM / NEXT_ITEM / JUMP_ITEM</td><td>每一页作为独立 playlist item；现场不直接打开原生 PPT。</td></tr>
+    <tr><td>视频</td><td>播放、暂停、进度、静音、下一项</td><td>PLAY / PAUSE / SEEK / MUTE / NEXT_ITEM</td><td>视频结束进入 ITEM_END / WAIT_NEXT；是否自动推进逐条确认。</td></tr>
+    <tr><td>全局导航</td><td>返回主题 / 返回列表</td><td>EXIT 或 RETURN_LIST（接口名待技术评估）</td><td>不再把全局动作写成含义不清的“上一步”。</td></tr>
+    <tr><td>最后一项</td><td>重播或回主题列表</td><td>SESSION_END</td><td>默认停留、自动返回或重播策略仍为 P1。</td></tr>
+  </tbody>
+</table>
+<h3>媒体处理规则</h3>
+<ul>
+  <li>无动画、转场、音频的 PPT：逐页导出 PNG / JPG，推荐保留原 16:9 比例并至少输出 1920×1080。</li>
+  <li>有动画、转场、音频或大体积 GIF：转 H.264 MP4，必要时按主题 / 章节拆分。</li>
+  <li>0714 第 5 页和第 6 页含 GIF；0817 第 1 页含 GIF，均应转 H.264。0714 第 7、12 页只有播放封面，没有内嵌 MP4，必须连接独立视频。</li>
+  <li>新品发布 PPT 第 5、16 页含内嵌 MP4，可提取为独立候选条目；第 9 页为 KV Cache，本轮排除。</li>
+  <li>当前 PPT 转图仅为沟通预览，不是最终清晰度生产输出；客户确认前不批量改名覆盖原文件。</li>
+</ul>
+<h3>拓扑与状态</h3>
+<ul>
+  <li>旧会议里的“图片屏 / 视频屏”拓扑已被“Pad 01 成果案例 / Pad 02 产品介绍 + mixed-media playlist”口径取代。</li>
+  <li>两端分别维护 controllerId、channel、topicId、itemIndex、itemType、status、progress；目标播放端的物理绑定与设备参数仍待确认。</li>
+  <li>建议状态链：选择主题 → PLAYLIST_READY → ITEM_LOADING → IMAGE / SLIDE_SHOWING 或 VIDEO_PLAYING → ITEM_END / WAIT_NEXT → NEXT_ITEM / 自动推进 → 下一项 → 最后一项 → SESSION_END。</li>
+  <li>异常状态需覆盖离线、加载失败、解码失败、素材缺失、通道错配、超时、恢复和回首页。</li>
+</ul>
+<p><b>文件命名说明：</b>在 Pad 01 首页顺序与 CASE 编号冻结前，topicId 和正式文件名前缀不得锁定。暂仅使用占位模式：P01_{FROZEN_CASE}_{itemIndex}_{内容简称}.ext / P02_{FROZEN_PRODUCT}_{itemIndex}_{内容简称}.ext。</p>

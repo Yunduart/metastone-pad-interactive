@@ -1,0 +1,3289 @@
+{
+  "version": 2,
+  "nodes": [
+    {
+      "type": "frame",
+      "id": "root",
+      "x": 40,
+      "y": 40,
+      "layout": "vertical",
+      "gap": 26,
+      "padding": 30,
+      "width": 2500,
+      "height": "fit-content",
+      "fillColor": "#F2F7FC",
+      "borderColor": "#AFC5DD",
+      "borderWidth": 2,
+      "borderRadius": 24,
+      "children": [
+        {
+          "type": "frame",
+          "id": "header",
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 28,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#0B2D5B",
+          "borderColor": "#0B2D5B",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "title",
+              "text": "Pad 01｜成果案例 01—07｜真实媒体与建议顺序",
+              "width": 2384,
+              "height": "fit-content",
+              "fontSize": 32,
+              "textColor": "#FFFFFF",
+              "textAlign": "left"
+            },
+            {
+              "type": "frame",
+              "id": "header-tags",
+              "layout": "horizontal",
+              "gap": 12,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "tag-source",
+                  "text": "乔双丽群反馈 2026-08-21",
+                  "width": 240,
+                  "height": "fit-content",
+                  "fillColor": "#EAF3FF",
+                  "borderColor": "#8CB9F0",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-order",
+                  "text": "CASE编号及首页顺序暂定",
+                  "width": 220,
+                  "height": "fit-content",
+                  "fillColor": "#FFF3DE",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "rect",
+                  "id": "tag-nogo",
+                  "text": "程序未开发 · 生产 NO-GO",
+                  "width": 220,
+                  "height": "fit-content",
+                  "fillColor": "#FFF0F0",
+                  "borderColor": "#D64545",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#D64545",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "header-note",
+              "text": "15个独立真实缩略图 + 1个 ROMS 待收件卡｜旧 ROMS 封面已撤下｜异构并行优化视频已移出成果案例",
+              "width": 2384,
+              "height": "fit-content",
+              "fontSize": 14,
+              "textColor": "#D7E8FA",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "change-callout",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 18,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#FFF0F0",
+          "borderColor": "#D64545",
+          "borderWidth": 2,
+          "borderDash": "dashed",
+          "borderRadius": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "change-title",
+              "text": "本轮关键修订",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 19,
+              "textColor": "#D64545",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "change-body",
+              "text": "海洋模拟：新增“最新视频号 ROMS 视频”待收件项，移除补充稿第04页/旧封面。AI for Science：只保留0714第13页；ROMS-1080P/4K“异构并行优化”转为产品视频待归属确认。",
+              "width": 2404,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#183153",
+              "textAlign": "left"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-internet",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-internet",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-internet",
+                  "text": "主题 01（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-internet",
+                  "text": "互联网",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-internet",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-internet",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-internet",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-internet-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-internet-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "N3RTbfO39ogahaxkiPecLMg2nAd"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-internet-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-internet-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-internet-01",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-internet-01",
+                      "text": "0714总稿｜第01页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-internet-01",
+                      "text": "真实文件/页｜waic成功案例0714｜第01页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-internet-01",
+                      "text": "状态｜本地页预览已存在｜顺序/时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-internet-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-internet-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-internet-02",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "Qnv6blwnKoipRyxHXZqci12znIf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-internet-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-internet-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-internet-02",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-internet-02",
+                      "text": "0714总稿｜第02页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-internet-02",
+                      "text": "真实文件/页｜waic成功案例0714｜第02页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-internet-02",
+                      "text": "状态｜本地页预览已存在｜顺序/时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-internet-02",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-internet",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-internet",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-internet",
+                  "text": "CASE 编号与首页顺序仍待客户冻结。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-internet",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-llm",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-llm",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-llm",
+                  "text": "主题 02（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-llm",
+                  "text": "大模型",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-llm",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-llm",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-llm",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-llm-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-llm-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "NPJsbPCz9onasBxY6arcWMuEnig"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-llm-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-llm-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-llm-01",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-llm-01",
+                      "text": "0714总稿｜第03页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-llm-01",
+                      "text": "真实文件/页｜waic成功案例0714｜第03页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-llm-01",
+                      "text": "状态｜本地页预览已存在｜顺序/时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-llm-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-llm-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-llm-02",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "TWEEbYWNnokkWExcMzzckPEkn63"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-llm-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-llm-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-llm-02",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-llm-02",
+                      "text": "0714总稿｜第04页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-llm-02",
+                      "text": "真实文件/页｜waic成功案例0714｜第04页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-llm-02",
+                      "text": "状态｜本地页预览已存在｜顺序/时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-llm-02",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-llm",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-llm",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-llm",
+                  "text": "两页内容、停留时长和结束动作待客户确认。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-llm",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-aerospace",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-aerospace",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-aerospace",
+                  "text": "主题 03（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-aerospace",
+                  "text": "航空航天",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-aerospace",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-aerospace",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-aerospace",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-aerospace-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-aerospace-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "TnOvbwpKoovIeLx7ad5cyNHEn9e"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-aerospace-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-aerospace-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-aerospace-01",
+                          "text": "GIF→H.264",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-aerospace-01",
+                      "text": "0714总稿｜第05页内嵌GIF",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-aerospace-01",
+                      "text": "真实文件/页｜waic成功案例0714｜第05页动图",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-aerospace-01",
+                      "text": "状态｜代表帧已存在｜转码与时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-aerospace-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-aerospace",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-aerospace",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-aerospace",
+                  "text": "0714第05页 GIF 必须转 H.264；转码参数与播放方式待确认。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-aerospace",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-manufacturing",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-manufacturing",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-manufacturing",
+                  "text": "主题 04（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-manufacturing",
+                  "text": "高端制造",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-manufacturing",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-manufacturing",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-manufacturing",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-manufacturing-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-manufacturing-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "XtBXbR2btoo2SpxpvPFcDcI0nQd"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-manufacturing-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-manufacturing-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-manufacturing-01",
+                          "text": "GIF→H.264",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-manufacturing-01",
+                      "text": "20260817补充稿｜第01页GIF",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-manufacturing-01",
+                      "text": "真实文件/页｜20260817成功案例补充｜第01页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-manufacturing-01",
+                      "text": "状态｜代表帧已存在｜替换关系待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-manufacturing-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-manufacturing-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-manufacturing-02",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "Ee6Gb2JzroXAaXxxqowcyBAGnEQ"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-manufacturing-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-manufacturing-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-manufacturing-02",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-manufacturing-02",
+                      "text": "20260817补充稿｜第02页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-manufacturing-02",
+                      "text": "真实文件/页｜20260817成功案例补充｜第02页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-manufacturing-02",
+                      "text": "状态｜本地页预览已存在｜是否保留待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-manufacturing-02",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-manufacturing-03",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-manufacturing-03",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "QZEhbczpBovFfnxqFkOcg8qKnHf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-manufacturing-03",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-manufacturing-03",
+                          "text": "条目 03",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-manufacturing-03",
+                          "text": "视频",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-manufacturing-03",
+                      "text": "独立视频｜代表帧",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-manufacturing-03",
+                      "text": "真实文件/页｜4-是石科技x云道智造-并行优化-高端制造案例视频_飞书下载.mp4",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-manufacturing-03",
+                      "text": "状态｜文件已校验｜播放方式待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-manufacturing-03",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-manufacturing",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-manufacturing",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-manufacturing",
+                  "text": "补充稿第01/02页与独立视频的组合及顺序待客户确认。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-manufacturing",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-research",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-research",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-research",
+                  "text": "主题 05（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-research",
+                  "text": "科研院所",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-research",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-research",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-research",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-research-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-research-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "LiyHbX7mqoecM3xqjwfcIsBinYb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-research-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-research-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-research-01",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-research-01",
+                      "text": "0714总稿｜第08页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-research-01",
+                      "text": "真实文件/页｜waic成功案例0714｜第08页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-research-01",
+                      "text": "状态｜最新版/顺序待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-research-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-research-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-research-02",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "V4fCbA3qfo3hEUxiVpEcIg18nKh"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-research-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-research-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-research-02",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-research-02",
+                      "text": "0714总稿｜第09页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-research-02",
+                      "text": "真实文件/页｜waic成功案例0714｜第09页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-research-02",
+                      "text": "状态｜最新版/顺序待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-research-02",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-research-03",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-research-03",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "C6DObkH7zoQpP4xoD2BctXRHnbc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-research-03",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-research-03",
+                          "text": "条目 03",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-research-03",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-research-03",
+                      "text": "0714总稿｜第10页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-research-03",
+                      "text": "真实文件/页｜waic成功案例0714｜第10页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-research-03",
+                      "text": "状态｜最新版/顺序待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-research-03",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-research-04",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-research-04",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "T4XLb3mpTobwkex6VKncdNqpnvf"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-research-04",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-research-04",
+                          "text": "条目 04",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-research-04",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-research-04",
+                      "text": "0714总稿｜第11页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-research-04",
+                      "text": "真实文件/页｜waic成功案例0714｜第11页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-research-04",
+                      "text": "状态｜最新版/顺序待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-research-04",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-research",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-research",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-research",
+                  "text": "四页是否为最新版，仍需徐霞/乔双丽确认。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-research",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-marine",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#F8FBFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-marine",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-marine",
+                  "text": "主题 06（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-marine",
+                  "text": "海洋模拟",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-marine",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-marine",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-marine",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-marine-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-marine-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "T4z7b9crpoen06xFCMPcFRpWnZb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-marine-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-marine-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-marine-01",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-marine-01",
+                      "text": "20260817补充稿｜第03页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-marine-01",
+                      "text": "真实文件/页｜20260817成功案例补充｜第03页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-marine-01",
+                      "text": "状态｜本地页预览已存在｜顺序待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-marine-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-marine-02",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-marine-02",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "DGUrburgzokKYKxcVl6cDJsznkb"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-marine-02",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-marine-02",
+                          "text": "条目 02",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-marine-02",
+                          "text": "视频",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#DDF8FA",
+                          "borderColor": "#0AA9B8",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#087985",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-marine-02",
+                      "text": "独立视频｜代表帧",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-marine-02",
+                      "text": "真实文件/页｜6-是石科技x港科大-淘海数字孪生地球系统-并行优化-案例视频_飞书下载.mp4",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-marine-02",
+                      "text": "状态｜文件已校验｜播放方式待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-marine-02",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "card-marine-roms-latest",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pending-panel-marine-roms-latest",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 20,
+                      "width": 330,
+                      "height": 186,
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderDash": "dashed",
+                      "borderRadius": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pending-title-marine-roms-latest",
+                          "text": "原视频待徐霞提供",
+                          "width": 290,
+                          "height": "fit-content",
+                          "fontSize": 22,
+                          "textColor": "#D64545",
+                          "textAlign": "left"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pending-desc-marine-roms-latest",
+                          "text": "仅确认目录需求；尚无可交付媒体文件。",
+                          "width": 290,
+                          "height": "fit-content",
+                          "fontSize": 13,
+                          "textColor": "#183153",
+                          "textAlign": "left"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-marine-roms-latest",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-marine-roms-latest",
+                          "text": "条目 03",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-marine-roms-latest",
+                          "text": "视频｜待收件",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#FFF0F0",
+                          "borderColor": "#D64545",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#D64545",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-marine-roms-latest",
+                      "text": "最新视频号发布 ROMS 视频",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-marine-roms-latest",
+                      "text": "真实文件/页｜真实文件名待徐霞提供",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-marine-roms-latest",
+                      "text": "状态｜待收件｜不得以截图/封面代替交付文件",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF0F0",
+                      "borderColor": "#D64545",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#D64545",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-marine-roms-latest",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-marine",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-marine",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-marine",
+                  "text": "旧“补充稿第04页/ROMS封面”已撤下。最新视频号 ROMS 原视频待徐霞提供，未收件前不得用于程序。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-marine",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "topic-ai-science",
+          "layout": "horizontal",
+          "gap": 34,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "alignItems": "start",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "label-ai-science",
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 18,
+              "width": 250,
+              "height": "fit-content",
+              "fillColor": "#EAF3FF",
+              "borderColor": "#BBD4F4",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "rect",
+                  "id": "order-ai-science",
+                  "text": "主题 07（暂定）",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#2F80ED",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#1E5FBD",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                },
+                {
+                  "type": "text",
+                  "id": "name-ai-science",
+                  "text": "AI for Science",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 25,
+                  "textColor": "#0B2D5B",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "tree-ai-science",
+                  "text": "Pad01成果案例 → 主题 → 条目",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 11,
+                  "textColor": "#60758F",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "freeze-ai-science",
+                  "text": "建议顺序 / 编号暂定",
+                  "width": 214,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "items-ai-science",
+              "layout": "horizontal",
+              "gap": 42,
+              "padding": 0,
+              "width": "fit-content",
+              "height": "fit-content",
+              "alignItems": "start",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "card-ai-science-01",
+                  "layout": "vertical",
+                  "gap": 7,
+                  "padding": [
+                    0,
+                    0,
+                    12,
+                    0
+                  ],
+                  "width": 330,
+                  "height": "fit-content",
+                  "children": [
+                    {
+                      "type": "image",
+                      "id": "image-ai-science-01",
+                      "width": 330,
+                      "height": 186,
+                      "image": {
+                        "src": "OZSfbA8mZop15ExdDXicVpelnwc"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tags-ai-science-01",
+                      "layout": "horizontal",
+                      "gap": 8,
+                      "padding": [
+                        0,
+                        12,
+                        0,
+                        12
+                      ],
+                      "width": 330,
+                      "height": "fit-content",
+                      "children": [
+                        {
+                          "type": "rect",
+                          "id": "no-ai-science-01",
+                          "text": "条目 01",
+                          "width": 72,
+                          "height": "fit-content",
+                          "fillColor": "#0B2D5B",
+                          "borderColor": "#0B2D5B",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#FFFFFF",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        },
+                        {
+                          "type": "rect",
+                          "id": "type-ai-science-01",
+                          "text": "PPT转图",
+                          "width": 130,
+                          "height": "fit-content",
+                          "fillColor": "#EAF3FF",
+                          "borderColor": "#2F80ED",
+                          "borderWidth": 2,
+                          "borderRadius": 11,
+                          "fontSize": 11,
+                          "textColor": "#1E5FBD",
+                          "textAlign": "center",
+                          "verticalAlign": "middle"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "page-ai-science-01",
+                      "text": "0714总稿｜第13页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 13,
+                      "textColor": "#183153",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "text",
+                      "id": "file-ai-science-01",
+                      "text": "真实文件/页｜waic成功案例0714｜第13页",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#60758F",
+                      "textAlign": "left"
+                    },
+                    {
+                      "type": "rect",
+                      "id": "status-ai-science-01",
+                      "text": "状态｜本地页预览已存在｜顺序/时长待确认",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fillColor": "#FFF3DE",
+                      "borderColor": "#F2994A",
+                      "borderWidth": 2,
+                      "borderRadius": 11,
+                      "fontSize": 11,
+                      "textColor": "#B85C00",
+                      "textAlign": "center",
+                      "verticalAlign": "middle"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fields-ai-science-01",
+                      "text": "播放：□手动下一步 □自动　时长：____秒　确认人：____",
+                      "width": 304,
+                      "height": "fit-content",
+                      "fontSize": 10,
+                      "textColor": "#B85C00",
+                      "textAlign": "left"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "note-ai-science",
+              "layout": "vertical",
+              "gap": 10,
+              "padding": 16,
+              "width": 360,
+              "height": "fit-content",
+              "fillColor": "#FFF3DE",
+              "borderColor": "#F2994A",
+              "borderWidth": 2,
+              "borderRadius": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "note-title-ai-science",
+                  "text": "待确认事项",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 17,
+                  "textColor": "#B85C00",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "text",
+                  "id": "note-body-ai-science",
+                  "text": "ROMS-1080P/4K“异构并行优化”属于产品视频，已移出成果案例；产品归属未确认前不映射。",
+                  "width": 328,
+                  "height": "fit-content",
+                  "fontSize": 12,
+                  "textColor": "#183153",
+                  "textAlign": "left"
+                },
+                {
+                  "type": "rect",
+                  "id": "note-state-ai-science",
+                  "text": "状态：未冻结",
+                  "width": 150,
+                  "height": "fit-content",
+                  "fillColor": "#FFFFFF",
+                  "borderColor": "#F2994A",
+                  "borderWidth": 2,
+                  "borderRadius": 11,
+                  "fontSize": 11,
+                  "textColor": "#B85C00",
+                  "textAlign": "center",
+                  "verticalAlign": "middle"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "footer",
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 22,
+          "width": 2440,
+          "height": "fit-content",
+          "fillColor": "#FFFFFF",
+          "borderColor": "#C7D6E8",
+          "borderWidth": 2,
+          "borderRadius": 18,
+          "children": [
+            {
+              "type": "text",
+              "id": "footer-title",
+              "text": "确认门与证据口径",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 20,
+              "textColor": "#0B2D5B",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-rule",
+              "text": "客户逐项确认 → 顺序确认 → 真实文件名确认 → 播放方式/时长确认 → 确认人/日期/版本 → 项目经理标记已定版 → 才能进入开发。",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#183153",
+              "textAlign": "left"
+            },
+            {
+              "type": "text",
+              "id": "footer-evidence",
+              "text": "wiki 勾选仅证明目录存在；待收件项不得以群截图、封面或代表帧冒充已交付原视频。",
+              "width": 2396,
+              "height": "fit-content",
+              "fontSize": 13,
+              "textColor": "#B85C00",
+              "textAlign": "left"
+            },
+            {
+              "type": "rect",
+              "id": "footer-nogo",
+              "text": "当前：客户确认输入 / 非定版开发指令 / 程序 NO-GO",
+              "width": 2396,
+              "height": "fit-content",
+              "fillColor": "#FFF0F0",
+              "borderColor": "#D64545",
+              "borderWidth": 2,
+              "borderRadius": 11,
+              "fontSize": 11,
+              "textColor": "#D64545",
+              "textAlign": "center",
+              "verticalAlign": "middle"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "connector",
+      "id": "flow-internet-01-internet-02",
+      "connector": {
+        "from": "image-internet-01",
+        "to": "image-internet-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-llm-01-llm-02",
+      "connector": {
+        "from": "image-llm-01",
+        "to": "image-llm-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-manufacturing-01-manufacturing-02",
+      "connector": {
+        "from": "image-manufacturing-01",
+        "to": "image-manufacturing-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-manufacturing-02-manufacturing-03",
+      "connector": {
+        "from": "image-manufacturing-02",
+        "to": "image-manufacturing-03",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-research-01-research-02",
+      "connector": {
+        "from": "image-research-01",
+        "to": "image-research-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-research-02-research-03",
+      "connector": {
+        "from": "image-research-02",
+        "to": "image-research-03",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-research-03-research-04",
+      "connector": {
+        "from": "image-research-03",
+        "to": "image-research-04",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-marine-01-marine-02",
+      "connector": {
+        "from": "image-marine-01",
+        "to": "image-marine-02",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "flow-marine-02-marine-roms-latest",
+      "connector": {
+        "from": "image-marine-02",
+        "to": "pending-panel-marine-roms-latest",
+        "fromAnchor": "right",
+        "toAnchor": "left",
+        "lineShape": "straight",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "endArrow": "triangle",
+        "label": "建议播放顺序"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-1-2",
+      "connector": {
+        "from": "label-internet",
+        "to": "label-llm",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-2-3",
+      "connector": {
+        "from": "label-llm",
+        "to": "label-aerospace",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-3-4",
+      "connector": {
+        "from": "label-aerospace",
+        "to": "label-manufacturing",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-4-5",
+      "connector": {
+        "from": "label-manufacturing",
+        "to": "label-research",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-5-6",
+      "connector": {
+        "from": "label-research",
+        "to": "label-marine",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    },
+    {
+      "type": "connector",
+      "id": "topic-flow-6-7",
+      "connector": {
+        "from": "label-marine",
+        "to": "label-ai-science",
+        "fromAnchor": "bottom",
+        "toAnchor": "top",
+        "lineShape": "rightAngle",
+        "lineColor": "#0AA9B8",
+        "lineWidth": 3,
+        "lineStyle": "dashed",
+        "endArrow": "arrow",
+        "label": "主题顺序暂定"
+      }
+    }
+  ]
+}

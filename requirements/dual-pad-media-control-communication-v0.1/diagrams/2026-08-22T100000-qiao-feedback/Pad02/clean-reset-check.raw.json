@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "angle": 0,
+      "composite_shape": {
+        "type": "round_rect"
+      },
+      "height": 60,
+      "id": "o1:831",
+      "style": {
+        "border_color": "#c7d6e8",
+        "border_color_type": 1,
+        "border_opacity": 100,
+        "border_style": "solid",
+        "border_width": "narrow",
+        "fill_color": "#f2f7fc",
+        "fill_color_type": 1,
+        "fill_opacity": 100
+      },
+      "text": {
+        "angle": 0,
+        "font_size": 14,
+        "font_weight": "regular",
+        "horizontal_align": "center",
+        "italic": false,
+        "line_through": false,
+        "text": "正在同步 Pad02 修订版",
+        "text_background_color_type": 0,
+        "text_color": "#183153",
+        "text_color_type": 1,
+        "theme_text_background_color_code": -1,
+        "underline": false,
+        "vertical_align": "mid"
+      },
+      "type": "composite_shape",
+      "width": 120,
+      "x": 0,
+      "y": 0,
+      "z_index": 0
+    }
+  ]
+}

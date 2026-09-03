@@ -1,0 +1,112 @@
+[
+  {
+    "id": "P02-CAND-V05",
+    "file": "P02_CANDIDATE_VECTRON_新品发布PPT第05页内嵌视频.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\10_成果案例与产品介绍_整合_20260821\\02_本地素材引用\\Pad02_产品介绍候选\\拓元Vectron_新品发布PPT内嵌视频\\P02_CANDIDATE_VECTRON_新品发布PPT第05页内嵌视频.mp4",
+    "frame_file": "cand-v05-frame.png",
+    "sample_sec": 5.05,
+    "duration_sec": 10.1,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-V16",
+    "file": "P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\10_成果案例与产品介绍_整合_20260821\\02_本地素材引用\\Pad02_产品介绍候选\\拓元Vectron_新品发布PPT内嵌视频\\P02_CANDIDATE_VECTRON_新品发布PPT第16页内嵌视频.mp4",
+    "frame_file": "cand-v16-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 63.1,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": "P02-CAND-01",
+    "file": "1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\1-是石科技国产Token优化工厂产品介绍-60s横版-4k.mp4",
+    "frame_file": "cand-01-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 61.333,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-02",
+    "file": "2-是石科技超智算集群介绍-(4K).mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\2-是石科技超智算集群介绍-(4K).mp4",
+    "frame_file": "cand-02-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 38.8,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-03",
+    "file": "3-是石科技国产Token优化工厂产品优势盘点-4k.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\3-是石科技国产Token优化工厂产品优势盘点-4k.mp4",
+    "frame_file": "cand-03-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 78.233,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-04",
+    "file": "4-是石科技AIinfra行业介绍-4K.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\4-是石科技AIinfra行业介绍-4K.mp4",
+    "frame_file": "cand-04-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 70.933,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-05",
+    "file": "5-是石科技国产Token优化工厂-PD分离-1080P.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\5-是石科技国产Token优化工厂-PD分离-1080P.mp4",
+    "frame_file": "cand-05-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 54.967,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": "P02-CAND-06",
+    "file": "6-是石科技国产Token优化工厂-投机解码-1080p.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\6-是石科技国产Token优化工厂-投机解码-1080p.mp4",
+    "frame_file": "cand-06-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 60.0,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": "P02-CAND-08",
+    "file": "8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\8-是石科技国产Token优化工厂-CPU国产移植GPU-1080P.mp4",
+    "frame_file": "cand-08-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 60.0,
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "id": "P02-CAND-09",
+    "file": "9-行业Agent产品规划介绍-4K.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技waic物料\\WAIC大屏和电视视频\\9-行业Agent产品规划介绍-4K.mp4",
+    "frame_file": "cand-09-frame.png",
+    "sample_sec": 20.0,
+    "duration_sec": 70.133,
+    "width": 3840,
+    "height": 2160
+  },
+  {
+    "id": "P02-CAND-EXPERIENCE",
+    "file": "【控台】拓元体验台.mp4",
+    "source_path": "D:\\FOR_WORK\\260818_MetaStone\\是石科技内容中心库\\品牌物料文件\\是石科技新品发布会PPT\\是石科技新品发布会PPT\\【控台】拓元体验台.mp4",
+    "frame_file": "cand-experience-frame.png",
+    "sample_sec": 40.0,
+    "duration_sec": 63.1,
+    "width": 1920,
+    "height": 1080
+  }
+]
