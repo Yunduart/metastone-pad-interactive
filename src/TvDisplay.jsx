@@ -9,6 +9,8 @@ const EMPTY_REMOTE_STATE = {
   command: "IDLE",
   catalogId: null,
   domainId: null,
+  itemIndex: 0,
+  itemId: null,
   playing: false,
   muted: false,
   playbackRate: 1,
@@ -78,7 +80,7 @@ function TvStandbyGalaxy({ active }) {
   );
 }
 
-function TvFallback({ catalog, domain }) {
+function TvFallback({ catalog, domain, media }) {
   return (
     <div className="tv-fallback" role="status">
       <img src="/assets/metastone-domain-map-source.png" alt="" />
@@ -87,7 +89,7 @@ function TvFallback({ catalog, domain }) {
         <small>TEST SLOT · {catalog.english} · {domain.number}</small>
         <strong>{domain.title}</strong>
         <span>{domain.english}</span>
-        <em>等待视频文件：{domain.fileName}</em>
+        <em>等待媒体文件：{media.fileName}</em>
       </div>
     </div>
   );
@@ -109,9 +111,13 @@ export function TvDisplay() {
     () => catalog?.items.find((item) => item.id === remoteState.domainId) ?? null,
     [catalog, remoteState.domainId],
   );
+  const media = useMemo(
+    () => domain?.playlist?.[remoteState.itemIndex] ?? domain?.playlist?.[0] ?? null,
+    [domain, remoteState.itemIndex],
+  );
 
   useEffect(() => {
-    const stream = new EventSource("/api/events");
+    const stream = new EventSource("/api/events?role=tv");
     stream.onopen = () => setConnected(true);
     stream.onmessage = (event) => {
       try {
@@ -128,15 +134,15 @@ export function TvDisplay() {
   useEffect(() => {
     setMediaError(false);
     setMediaAttempt(0);
-  }, [domain?.id]);
+  }, [media?.id]);
 
   useEffect(() => {
-    if (!domain?.video || !mediaError) return undefined;
+    if (!media?.video || !mediaError) return undefined;
 
     let cancelled = false;
     const retryMedia = async () => {
       try {
-        const response = await fetch(`${domain.video}?availability=${Date.now()}`, {
+        const response = await fetch(`${media.video}?availability=${Date.now()}`, {
           method: "HEAD",
           cache: "no-store",
         });
@@ -155,11 +161,11 @@ export function TvDisplay() {
       cancelled = true;
       window.clearInterval(timer);
     };
-  }, [domain?.video, mediaError]);
+  }, [media?.video, mediaError]);
 
   useEffect(() => {
     const video = videoRef.current;
-    if (!video || !domain || mediaError) return;
+    if (!video || !media || mediaError) return;
     const baseRate = normalizePlaybackRate(remoteState.playbackRate, 1);
     const correction = planPlaybackCorrection({
       currentTime: video.currentTime,
@@ -172,7 +178,7 @@ export function TvDisplay() {
     if (correction.seekTo !== null && video.readyState >= 1) video.currentTime = correction.seekTo;
     if (remoteState.playing && armed) video.play().catch(() => undefined);
     else video.pause();
-  }, [armed, domain, mediaError, remoteState]);
+  }, [armed, media, mediaError, remoteState]);
 
   const armDisplay = async () => {
     setArmed(true);
@@ -192,8 +198,8 @@ export function TvDisplay() {
       >
         客户体验测试版 · 非验收 / 非生产
       </div>
-      <header className="tv-display__header">
-        <img src="/assets/shishi-logo.svg" alt="METASTONE 是石科技" />
+      <header className={`tv-display__header${domain ? " is-media-active" : ""}`}>
+        {!domain ? <img src="/assets/shishi-logo.svg" alt="METASTONE 是石科技" /> : null}
         <div className={`tv-display__connection${connected ? " is-connected" : ""}`}>
           {connected ? <WifiHigh size={20} weight="duotone" /> : <WifiSlash size={20} weight="duotone" />}
           <span>
@@ -229,14 +235,15 @@ export function TvDisplay() {
         </div>
       </section>
 
-      {domain && catalog ? (
-        <section className="tv-display__stage" aria-label={`${catalog.title}·${domain.title}电视播放画面`}>
+      {domain && catalog && media ? (
+        <section className="tv-display__stage" aria-label={`${catalog.title}·${domain.title}·${media.title}电视播放画面`}>
           {!mediaError ? (
             <video
-              key={`${domain.id}-${mediaAttempt}`}
+              key={`${domain.id}-${media.id}-${mediaAttempt}`}
               ref={videoRef}
-              src={`${domain.video}?attempt=${mediaAttempt}`}
+              src={`${media.video}?attempt=${mediaAttempt}`}
               playsInline
+              loop={media.loop}
               preload="auto"
               onLoadedMetadata={(event) => {
                 if (Number.isFinite(remoteState.progress)) event.currentTarget.currentTime = remoteState.progress;
@@ -250,13 +257,13 @@ export function TvDisplay() {
               onError={() => setMediaError(true)}
             />
           ) : (
-            <TvFallback catalog={catalog} domain={domain} />
+            <TvFallback catalog={catalog} domain={domain} media={media} />
           )}
 
           <div className="tv-display__meta">
             <small>{catalog.number} · {catalog.english}</small>
             <strong>{domain.title}</strong>
-            <span>{domain.english}</span>
+            <span>{remoteState.itemIndex + 1} / {domain.playlist.length} · {media.title}</span>
           </div>
         </section>
       ) : null}

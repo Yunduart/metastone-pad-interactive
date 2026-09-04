@@ -24,7 +24,6 @@ import {
   SpeakerSlash,
   Stack,
   Waves,
-  X,
 } from "@phosphor-icons/react";
 import { OrbitScene } from "./OrbitScene.jsx";
 import { TvDisplay } from "./TvDisplay.jsx";
@@ -51,8 +50,19 @@ function getDeviceRole() {
   const pathRole = window.location.pathname.split("/").filter(Boolean).at(-1);
   const queryRole = new URLSearchParams(window.location.search).get("role");
   const role = queryRole ?? pathRole;
-  if (["pad", "tv"].includes(role)) return role;
+  if (role === "tv") return "tv";
+  if (["pad", "pad01", "pad-01", "pad02", "pad-02"].includes(role)) return "pad";
   return "standalone";
+}
+
+function getAssignedCatalogId() {
+  const params = new URLSearchParams(window.location.search);
+  const pathRole = window.location.pathname.split("/").filter(Boolean).at(-1)?.toLowerCase();
+  const requested = (params.get("pad") ?? params.get("channel") ?? params.get("catalog") ?? pathRole ?? "").toLowerCase();
+  if (["02", "pad02", "pad-02", "products", "product-introduction"].includes(requested)) {
+    return "product-introduction";
+  }
+  return "success-cases";
 }
 
 function createRuntimeId(prefix) {
@@ -231,7 +241,7 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
             type="button"
             style={{ "--label-x": `${domain.portal.x}%`, "--label-y": `${domain.portal.y}%` }}
             onClick={() => onSelect(domain.id)}
-            aria-label={`播放${domain.title}视频`}
+            aria-label={`发送${domain.title}到电视`}
             aria-pressed={active}
           >
             <Icon className="planet-label__icon" size={active ? 39 : 32} weight="light" aria-hidden="true" />
@@ -245,6 +255,7 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
 }
 
 function FocusDock({ catalog, domain, total, onPlay }) {
+  const firstMedia = domain.playlist?.[0];
   return (
     <aside className="focus-dock" aria-live="polite">
       <div className="focus-dock__meta">
@@ -257,19 +268,19 @@ function FocusDock({ catalog, domain, total, onPlay }) {
           <strong>{domain.title}</strong>
           <span>{domain.english}</span>
           {domain.marker ? (
-            <small>{domain.marker} · {domain.mediaCount ?? 1} 部源影片</small>
+            <small>{domain.marker} · {domain.mediaCount ?? 1} 个可播项目</small>
           ) : domain.placeholder ? <small>待接入正式产品素材</small> : null}
         </div>
         <div className="focus-dock__time">
           <span>00:00</span>
-          <span>{formatTime(DEMO_DURATION)}</span>
+          <span>{formatTime(firstMedia?.duration ?? DEMO_DURATION)}</span>
         </div>
         <div className="focus-dock__track" aria-hidden="true"><i /></div>
       </div>
 
-      <button className="focus-dock__play" type="button" onClick={onPlay} aria-label={`播放${catalog.title}·${domain.title}视频`}>
+      <button className="focus-dock__play" type="button" onClick={onPlay} aria-label={`在电视端播放${catalog.title}·${domain.title}`}>
         <span><Play size={38} weight="fill" aria-hidden="true" /></span>
-        <strong>播放影片</strong>
+        <strong>发送到电视</strong>
       </button>
     </aside>
   );
@@ -278,6 +289,9 @@ function FocusDock({ catalog, domain, total, onPlay }) {
 function PlaybackControls({
   catalog,
   domain,
+  media,
+  itemIndex,
+  itemTotal,
   total,
   duration,
   playing,
@@ -294,31 +308,12 @@ function PlaybackControls({
 }) {
   return (
     <div className={`player-controls${controlsVisible ? " is-visible" : ""}`}>
-      <div className="player-controls__identity">
-        <button className="icon-button" type="button" onClick={onClose} aria-label={`返回${catalog.title}`}>
-          <X size={23} weight="bold" />
-        </button>
-        <div>
-          <small>{domain.number} / {String(total).padStart(2, "0")} · {catalog.title}</small>
-          <strong>{domain.title}</strong>
-          <span>{domain.english}</span>
-        </div>
-      </div>
-
-      <div className="player-controls__transport">
-        <button type="button" onClick={onPrevious} aria-label="上一个视频">
-          <CaretLeft size={25} weight="bold" />
-        </button>
-        <button className="player-controls__play" type="button" onClick={onToggle} aria-label={playing ? "暂停视频" : "播放视频"}>
-          {playing ? <Pause size={27} weight="fill" /> : <Play size={27} weight="fill" />}
-        </button>
-        <button type="button" onClick={onNext} aria-label="下一个视频">
-          <CaretRight size={25} weight="bold" />
-        </button>
-      </div>
-
       <div className="player-controls__timeline">
-        <span>{formatTime(progress)}</span>
+        <div className="player-controls__readout">
+          <span>{formatTime(progress)}</span>
+          <small>电视端同步进度 · 只读</small>
+          <span>{formatTime(duration)}</span>
+        </div>
         <div
           className="player-controls__progress"
           role="progressbar"
@@ -329,7 +324,39 @@ function PlaybackControls({
         >
           <i style={{ width: `${(progress / Math.max(duration, 0.1)) * 100}%` }} />
         </div>
-        <span>{formatTime(duration)}</span>
+      </div>
+
+      <div className="player-controls__identity">
+        <button className="icon-button player-controls__return" type="button" onClick={onClose} aria-label={`返回${catalog.title}`}>
+          <CaretLeft size={28} weight="bold" />
+          <span>返回</span>
+        </button>
+        <div>
+          <small>{domain.number} / {String(total).padStart(2, "0")} · {catalog.title} · 第 {itemIndex + 1}/{itemTotal} 项</small>
+          <strong>{domain.title}</strong>
+          <span>{media.title}</span>
+        </div>
+      </div>
+
+      <div className="player-controls__console">
+        <div className={`player-controls__transport${itemTotal > 1 ? " has-multiple-items" : ""}`}>
+          <button className="player-controls__previous" type="button" onClick={onPrevious} aria-label="上一项" disabled={itemTotal <= 1}>
+            <CaretLeft size={28} weight="bold" />
+            <span>上一项</span>
+          </button>
+          <div className="player-controls__core">
+            <button className="player-controls__play" type="button" onClick={onToggle} aria-label={playing ? "暂停电视播放" : "继续电视播放"}>
+              {playing ? <Pause size={34} weight="fill" /> : <Play size={34} weight="fill" />}
+            </button>
+          </div>
+          <button className="player-controls__next" type="button" onClick={onNext} aria-label="下一项" disabled={itemTotal <= 1}>
+            <CaretRight size={28} weight="bold" />
+            <span>下一项</span>
+          </button>
+        </div>
+      </div>
+
+      <div className="player-controls__secondary">
         <div className="player-controls__rates" role="group" aria-label="播放速度">
           {PLAYBACK_RATES.map((rate) => (
             <button
@@ -344,18 +371,56 @@ function PlaybackControls({
             </button>
           ))}
         </div>
-        <button className="icon-button" type="button" onClick={onMute} aria-label={muted ? "开启声音" : "静音"}>
-          {muted ? <SpeakerSlash size={22} /> : <SpeakerHigh size={22} />}
+        <button className="icon-button player-controls__mute" type="button" onClick={onMute} aria-label={muted ? "开启声音" : "静音"}>
+          {muted ? <SpeakerSlash size={28} /> : <SpeakerHigh size={28} />}
+          <span>{muted ? "已静音" : "声音"}</span>
         </button>
       </div>
     </div>
   );
 }
 
+function MediaDirectory({ catalog, domain, itemIndex, onSelectItem }) {
+  return (
+    <aside className="pad-media-directory" aria-label={`${domain.title}资源目录`}>
+      <header>
+        <small>{catalog.padId} · 播放目录（按顺序）· {domain.playlist.length} 项</small>
+        <strong>{catalog.sourceFolder} / {domain.sourceFolder}</strong>
+      </header>
+      <ol>
+        {domain.playlist.map((item, index) => {
+          const active = index === itemIndex;
+          const mediaType = item.kind === "ppt-slide-video"
+            ? `PPT 第 ${item.sourcePage} 页 → 循环 MP4`
+            : "原始视频";
+          return (
+            <li key={item.id}>
+              <button
+                type="button"
+                className={active ? "is-active" : ""}
+                aria-current={active ? "true" : undefined}
+                aria-label={`发送目录第 ${index + 1} 项到电视：${item.sourceFile}`}
+                onClick={() => onSelectItem(index)}
+              >
+                <b>{String(index + 1).padStart(2, "0")}</b>
+                <span>
+                  <strong>{item.sourceFile}</strong>
+                  <small>{mediaType}</small>
+                </span>
+                {active ? <em>当前</em> : <CaretRight size={18} weight="bold" />}
+              </button>
+            </li>
+          );
+        })}
+      </ol>
+    </aside>
+  );
+}
+
 function DemoFilm({ catalog, domain, playing }) {
   return (
     <div className={`demo-film${playing ? " is-playing" : ""}`} role="img" aria-label={`${catalog.title}·${domain.title}影片演示画面`}>
-      <img src="/assets/metastone-domain-map-source.png" alt="" />
+      <img src="/assets/orbital-space-background.png" alt="" />
       <div className="demo-film__shade" aria-hidden="true" />
       <div className="demo-film__copy">
         <span>METASTONE · {catalog.english} · {domain.number}</span>
@@ -368,21 +433,24 @@ function DemoFilm({ catalog, domain, playing }) {
 
 function EndSlate({ catalog, onReplay, onNext, onClose }) {
   return (
-    <div className="end-slate" role="dialog" aria-label="视频播放结束">
-      <small>{catalog.english} · FILM COMPLETE</small>
-      <strong>影片播放完毕</strong>
+    <div className="end-slate" role="dialog" aria-label="当前内容播放结束">
+      <small>{catalog.english} · ITEM COMPLETE</small>
+      <strong>当前内容播放完毕</strong>
       <div>
         <button type="button" onClick={onReplay}><ArrowCounterClockwise size={21} />重播</button>
-        <button type="button" onClick={onNext}><ArrowRight size={21} />下一视频</button>
+        <button type="button" onClick={onNext}><ArrowRight size={21} />下一项</button>
         <button type="button" onClick={onClose}><House size={21} />返回总览</button>
       </div>
     </div>
   );
 }
 
-function VideoPortal({
+function ControlPortal({
   catalog,
   domain,
+  media,
+  itemIndex,
+  itemTotal,
   total,
   duration,
   viewState,
@@ -392,27 +460,15 @@ function VideoPortal({
   progress,
   onEntered,
   onExited,
-  onProgress,
-  onDurationChange,
-  onMediaFallbackChange,
   onPlayingChange,
   onRateChange,
-  onSyncSample,
-  onEnded,
   onClose,
   onPrevious,
   onNext,
+  onSelectItem,
   onMute,
 }) {
-  const videoRef = useRef(null);
-  const progressRef = useRef(progress);
-  progressRef.current = progress;
   const [open, setOpen] = useState(false);
-  const [controlsVisible, setControlsVisible] = useState(true);
-  const [mediaReady, setMediaReady] = useState(!domain.video);
-  const [mediaError, setMediaError] = useState(false);
-  const [mediaAttempt, setMediaAttempt] = useState(0);
-  const [showBuffering, setShowBuffering] = useState(false);
 
   useEffect(() => {
     let secondFrame = 0;
@@ -429,145 +485,37 @@ function VideoPortal({
     if (viewState === "VIDEO_EXIT") setOpen(false);
   }, [viewState]);
 
-  useEffect(() => {
-    setMediaReady(!domain.video);
-    setMediaError(false);
-    setMediaAttempt(0);
-    setShowBuffering(false);
-    setControlsVisible(true);
-    onMediaFallbackChange(false);
-  }, [domain, onMediaFallbackChange]);
-
-  useEffect(() => {
-    if (!domain.video || !mediaError) return undefined;
-
-    let cancelled = false;
-    const retryMedia = async () => {
-      try {
-        const response = await fetch(`${domain.video}?availability=${Date.now()}`, {
-          method: "HEAD",
-          cache: "no-store",
-        });
-        if (!cancelled && response.ok) {
-          setMediaAttempt((attempt) => attempt + 1);
-          setMediaReady(false);
-          setMediaError(false);
-          setShowBuffering(true);
-          onMediaFallbackChange(false);
-        }
-      } catch {
-        // The test slot is allowed to stay empty; retry quietly after media is copied in.
-      }
-    };
-
-    retryMedia();
-    const timer = window.setInterval(retryMedia, 3000);
-    return () => {
-      cancelled = true;
-      window.clearInterval(timer);
-    };
-  }, [domain.video, mediaError, onMediaFallbackChange]);
-
-  useEffect(() => {
-    if (!domain.video || mediaReady || mediaError) return undefined;
-    const timer = window.setTimeout(() => setShowBuffering(true), 1500);
-    return () => window.clearTimeout(timer);
-  }, [domain.video, mediaError, mediaReady]);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video || !domain.video || !mediaReady) return;
-    video.muted = muted;
-    video.playbackRate = normalizePlaybackRate(playbackRate, 1);
-    if (playing) video.play().catch(() => onPlayingChange(false));
-    else video.pause();
-  }, [domain.video, mediaReady, muted, onPlayingChange, playbackRate, playing]);
-
-  useEffect(() => {
-    const interval = window.setInterval(() => {
-      const videoProgress = videoRef.current?.currentTime;
-      onSyncSample(Number.isFinite(videoProgress) ? videoProgress : progressRef.current);
-    }, 500);
-    return () => window.clearInterval(interval);
-  }, [onSyncSample]);
-
-  useEffect(() => {
-    if (!playing || viewState === "VIDEO_END") {
-      setControlsVisible(true);
-      return undefined;
-    }
-    const timer = window.setTimeout(() => setControlsVisible(false), 2800);
-    return () => window.clearTimeout(timer);
-  }, [playing, progress, viewState]);
-
-  const showControls = () => setControlsVisible(true);
-
   return (
     <section
       className={`video-portal${open ? " is-open" : ""}${viewState === "VIDEO_EXIT" ? " is-closing" : ""}`}
       style={{ "--portal-x": `${domain.portal.x}%`, "--portal-y": `${domain.portal.y}%` }}
-      aria-label={`${domain.title}视频播放器`}
+      aria-label={`${domain.title}电视播控面板`}
       onTransitionEnd={(event) => {
         if (event.target !== event.currentTarget || event.propertyName !== "clip-path") return;
         if (open && viewState === "VIDEO_ENTER") onEntered();
         if (!open && viewState === "VIDEO_EXIT") onExited();
       }}
-      onPointerMove={showControls}
     >
-      <div
-        className="video-stage"
-        onClick={(event) => {
-          if (event.target.closest("button, input")) return;
-          onPlayingChange(!playing);
-          setControlsVisible(true);
-        }}
-      >
-        {domain.video && !mediaError ? (
-          <video
-            key={`${domain.id}-${mediaAttempt}`}
-            ref={videoRef}
-            src={`${domain.video}?attempt=${mediaAttempt}`}
-            autoPlay
-            playsInline
-            muted={muted}
-            preload="metadata"
-            onLoadedMetadata={(event) => {
-              const nextDuration = event.currentTarget.duration;
-              if (Number.isFinite(nextDuration) && nextDuration > 0) onDurationChange(nextDuration);
-            }}
-            onCanPlay={() => {
-              setMediaReady(true);
-              setMediaError(false);
-              setShowBuffering(false);
-              onMediaFallbackChange(false);
-            }}
-            onTimeUpdate={(event) => onProgress(event.currentTarget.currentTime)}
-            onEnded={onEnded}
-            onError={() => {
-              setMediaError(true);
-              setShowBuffering(false);
-              onDurationChange(DEMO_DURATION);
-              onMediaFallbackChange(true);
-            }}
-          />
-        ) : (
-          <DemoFilm catalog={catalog} domain={domain} playing={playing} />
-        )}
-
-        {showBuffering ? <div className="buffering" aria-label="视频加载中"><i /></div> : null}
-
-        {mediaError ? (
-          <div className="media-fallback-note" role="status">
-            <strong>测试槽位</strong>
-            <span>等待 {domain.fileName.split("/").at(-1)}</span>
+      <div className="video-stage pad-control-stage">
+        <DemoFilm catalog={catalog} domain={domain} playing={false} />
+        <div className="pad-control-cluster">
+          <div className={`pad-control-status${playing ? " is-playing" : " is-paused"}`} role="status" aria-live="polite">
+            <small>PAD 控制端 · 本机不播放视频</small>
+            <strong>{playing ? "电视端正在播放" : "电视端已暂停"}</strong>
+            <span>{media.title}</span>
+            <em>
+              第 {itemIndex + 1} / {itemTotal} 项 · {media.kind === "ppt-slide-video" ? "PPT 页面循环 MP4" : "视频"}
+            </em>
+            <i aria-hidden="true" />
           </div>
-        ) : null}
 
-        {!playing && viewState !== "VIDEO_END" ? (
-          <button className="video-stage__resume" type="button" onClick={() => onPlayingChange(true)} aria-label="继续播放">
-            <Play size={42} weight="fill" />
-          </button>
-        ) : null}
+          <MediaDirectory
+            catalog={catalog}
+            domain={domain}
+            itemIndex={itemIndex}
+            onSelectItem={onSelectItem}
+          />
+        </div>
 
         {viewState === "VIDEO_END" ? (
           <EndSlate catalog={catalog} onReplay={() => onPlayingChange(true)} onNext={onNext} onClose={onClose} />
@@ -577,13 +525,16 @@ function VideoPortal({
       <PlaybackControls
         catalog={catalog}
         domain={domain}
+        media={media}
+        itemIndex={itemIndex}
+        itemTotal={itemTotal}
         total={total}
         duration={duration}
         playing={playing}
         muted={muted}
         playbackRate={playbackRate}
         progress={progress}
-        controlsVisible={controlsVisible || viewState === "VIDEO_END"}
+        controlsVisible
         onClose={onClose}
         onPrevious={onPrevious}
         onNext={onNext}
@@ -595,10 +546,10 @@ function VideoPortal({
   );
 }
 
-function CatalogSwitch({ activeId, disabled, onChange }) {
+function CatalogSwitch({ activeId, disabled, catalogs = CONTENT_CATALOGS, locked = false, onChange }) {
   return (
-    <nav className="catalog-switch" aria-label="内容板块">
-      {CONTENT_CATALOGS.map((item) => {
+    <nav className={`catalog-switch${locked ? " is-locked" : ""}`} aria-label={locked ? "当前 Pad 固定板块" : "内容板块"}>
+      {catalogs.map((item) => {
         const active = item.id === activeId;
         return (
           <button
@@ -622,23 +573,24 @@ function CatalogSwitch({ activeId, disabled, onChange }) {
   );
 }
 
-function PadConsole({ remoteEnabled = false }) {
+function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
   const isTestEnvironment = remoteEnabled;
-  const [catalogId, setCatalogId] = useState(DEFAULT_CATALOG_ID);
+  const initialCatalog = CONTENT_CATALOGS.find((item) => item.id === assignedCatalogId) ?? CONTENT_CATALOGS[0];
+  const [catalogId, setCatalogId] = useState(initialCatalog.id ?? DEFAULT_CATALOG_ID);
   const catalog = useMemo(
     () => CONTENT_CATALOGS.find((item) => item.id === catalogId) ?? CONTENT_CATALOGS[0],
     [catalogId],
   );
   const domains = catalog.items;
-  const [selectedId, setSelectedId] = useState(CONTENT_CATALOGS[0].items[0].id);
+  const [selectedId, setSelectedId] = useState(initialCatalog.items[0].id);
   const [activeId, setActiveId] = useState(null);
+  const [activeMediaIndex, setActiveMediaIndex] = useState(0);
   const [viewState, setViewState] = useState("BOOT");
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
   const [playbackRate, setPlaybackRate] = useState(1);
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(DEMO_DURATION);
-  const [mediaFallback, setMediaFallback] = useState(false);
   const [controlServerReady, setControlServerReady] = useState(!remoteEnabled);
   const [tvConnected, setTvConnected] = useState(false);
   const [activityVersion, setActivityVersion] = useState(0);
@@ -724,11 +676,35 @@ function PadConsole({ remoteEnabled = false }) {
     [activeId, domains],
   );
   const activeDomain = activeIndex >= 0 ? domains[activeIndex] : null;
+  const activeMedia = activeDomain?.playlist?.[activeMediaIndex] ?? activeDomain?.playlist?.[0] ?? null;
 
   const applyControlStatus = useCallback((state) => {
     setControlServerReady(true);
     setTvConnected(Number(state?.displayClients ?? 0) > 0);
-  }, []);
+    if (assignedCatalogId && state?.catalogId && state.catalogId !== assignedCatalogId) return;
+    if (Number.isFinite(state?.progress)) setProgress(Math.max(0, state.progress));
+    if (Number.isFinite(state?.duration) && state.duration > 0) setDuration(state.duration);
+    if (typeof state?.playing === "boolean") setPlaying(state.playing);
+    if (typeof state?.muted === "boolean") setMuted(state.muted);
+    if (state?.playbackRate) setPlaybackRate(normalizePlaybackRate(state.playbackRate, 1));
+    if (Number.isInteger(state?.itemIndex) && state.itemIndex >= 0) setActiveMediaIndex(state.itemIndex);
+
+    if (state?.catalogId && state?.domainId) {
+      const remoteCatalog = CONTENT_CATALOGS.find((item) => item.id === state.catalogId);
+      const remoteDomain = remoteCatalog?.items.find((item) => item.id === state.domainId);
+      if (remoteCatalog && remoteDomain) {
+        setCatalogId(remoteCatalog.id);
+        setSelectedId(remoteDomain.id);
+        setActiveId(remoteDomain.id);
+        if (state.command === "ENDED") setViewState("VIDEO_END");
+        else setViewState((current) => (
+          ["BOOT", "HOME_IDLE", "HOME_ATTRACT", "VIDEO_END"].includes(current)
+            ? state.playing ? "VIDEO_PLAYING" : "VIDEO_PAUSED"
+            : current
+        ));
+      }
+    }
+  }, [assignedCatalogId]);
 
   const sendRemoteControl = useCallback((command) => {
     if (!remoteEnabled) return;
@@ -760,27 +736,21 @@ function PadConsole({ remoteEnabled = false }) {
 
   useEffect(() => {
     if (!remoteEnabled) return undefined;
-    let active = true;
-    const checkLink = () => {
-      fetch("/api/state", { cache: "no-store" })
-        .then((response) => {
-          if (!response.ok) throw new Error(`state-${response.status}`);
-          return response.json();
-        })
-        .then((state) => {
-          if (active) applyControlStatus(state);
-        })
-        .catch(() => {
-          if (!active) return;
-          setControlServerReady(false);
-          setTvConnected(false);
-        });
+    const stream = new EventSource("/api/events?role=pad");
+    stream.onopen = () => setControlServerReady(true);
+    stream.onmessage = (event) => {
+      try {
+        applyControlStatus(JSON.parse(event.data));
+      } catch {
+        setControlServerReady(false);
+      }
     };
-    checkLink();
-    const interval = window.setInterval(checkLink, 2000);
+    stream.onerror = () => {
+      setControlServerReady(false);
+      setTvConnected(false);
+    };
     return () => {
-      active = false;
-      window.clearInterval(interval);
+      stream.close();
     };
   }, [applyControlStatus, remoteEnabled]);
 
@@ -1033,47 +1003,6 @@ function PadConsole({ remoteEnabled = false }) {
     return () => window.clearInterval(interval);
   }, [activeId, domains, viewState]);
 
-  useEffect(() => {
-    if (activeIndex < 0 || !playing || (activeDomain.video && !mediaFallback)) return undefined;
-    const interval = window.setInterval(() => {
-      setProgress((current) => {
-        const next = current + 0.1 * playbackRate;
-        if (next >= duration) {
-          window.setTimeout(() => {
-            setPlaying(false);
-            setViewState("VIDEO_END");
-          }, 0);
-          return duration;
-        }
-        return next;
-      });
-    }, 100);
-    return () => window.clearInterval(interval);
-  }, [activeDomain, activeIndex, duration, mediaFallback, playbackRate, playing]);
-
-  useEffect(() => {
-    if (viewState !== "VIDEO_END") return undefined;
-    const timer = window.setTimeout(() => {
-      setPlaying(false);
-      setPlaybackRate(1);
-      setViewState("VIDEO_EXIT");
-      sendRemoteControl({ type: "STOP" });
-      playbackIdRef.current = null;
-    }, 8000);
-    return () => window.clearTimeout(timer);
-  }, [sendRemoteControl, viewState]);
-
-  useEffect(() => {
-    if (viewState !== "VIDEO_PAUSED") return undefined;
-    const timer = window.setTimeout(() => {
-      setPlaybackRate(1);
-      setViewState("VIDEO_EXIT");
-      sendRemoteControl({ type: "STOP" });
-      playbackIdRef.current = null;
-    }, 100000);
-    return () => window.clearTimeout(timer);
-  }, [activityVersion, sendRemoteControl, viewState]);
-
   useEffect(() => () => {
     window.clearTimeout(enterTimerRef.current);
     catalogTimerRefs.current.forEach((timer) => window.clearTimeout(timer));
@@ -1084,11 +1013,14 @@ function PadConsole({ remoteEnabled = false }) {
     if (activeId && viewState !== "VIDEO_EXIT") return;
     window.clearTimeout(enterTimerRef.current);
     const playbackId = createRuntimeId("playback");
+    const domain = domains.find((item) => item.id === id);
+    const media = domain?.playlist?.[0];
+    if (!domain || !media) return;
     playbackIdRef.current = playbackId;
     setSelectedId(id);
+    setActiveMediaIndex(0);
     setProgress(0);
-    setDuration(DEMO_DURATION);
-    setMediaFallback(false);
+    setDuration(media.duration);
     setPlaybackRate(1);
     setPlaying(false);
     setViewState("FOCUSING");
@@ -1100,13 +1032,14 @@ function PadConsole({ remoteEnabled = false }) {
         type: "PLAY",
         catalogId: catalog.id,
         domainId: id,
+        itemIndex: 0,
         playbackId,
         progress: 0,
         muted,
         playbackRate: 1,
       });
     }, 360);
-  }, [activeId, catalog.id, muted, sendRemoteControl, viewState]);
+  }, [activeId, catalog.id, domains, muted, sendRemoteControl, viewState]);
 
   const setPlayback = useCallback((nextPlaying) => {
     const nextProgress = nextPlaying && progress >= duration ? 0 : progress;
@@ -1136,43 +1069,34 @@ function PadConsole({ remoteEnabled = false }) {
     setActivityVersion((value) => value + 1);
   }, [muted, playing, progress, sendRemoteControl]);
 
-  const syncPlayback = useCallback((sampleProgress) => {
-    if (!activeId || !playbackIdRef.current) return;
-    sendRemoteControl({
-      type: "SYNC",
-      catalogId: catalog.id,
-      domainId: activeId,
-      progress: sampleProgress,
-      playing,
-      muted,
-      playbackRate,
-    });
-  }, [activeId, catalog.id, muted, playbackRate, playing, sendRemoteControl]);
-
-  const stepDomain = useCallback((direction) => {
-    const current = activeIndex < 0 ? 0 : activeIndex;
-    const next = (current + direction + domains.length) % domains.length;
-    const domain = domains[next];
+  const playMediaAtIndex = useCallback((requestedIndex) => {
+    if (!activeDomain?.playlist?.length) return;
+    const next = (requestedIndex + activeDomain.playlist.length) % activeDomain.playlist.length;
+    const media = activeDomain.playlist[next];
     const playbackId = createRuntimeId("playback");
     playbackIdRef.current = playbackId;
-    setSelectedId(domain.id);
-    setActiveId(domain.id);
+    setActiveMediaIndex(next);
     setProgress(0);
-    setDuration(DEMO_DURATION);
-    setMediaFallback(false);
+    setDuration(media.duration);
     setPlaybackRate(1);
     setPlaying(true);
     setViewState("VIDEO_PLAYING");
     sendRemoteControl({
       type: "PLAY",
       catalogId: catalog.id,
-      domainId: domain.id,
+      domainId: activeDomain.id,
+      itemIndex: next,
       playbackId,
       progress: 0,
       muted,
       playbackRate: 1,
     });
-  }, [activeIndex, catalog.id, domains, muted, sendRemoteControl]);
+  }, [activeDomain, catalog.id, muted, sendRemoteControl]);
+
+  const stepMedia = useCallback((direction) => {
+    if (!activeDomain?.playlist?.length) return;
+    playMediaAtIndex(activeMediaIndex + direction);
+  }, [activeDomain, activeMediaIndex, playMediaAtIndex]);
 
   const beginClose = useCallback(() => {
     setPlaying(false);
@@ -1192,9 +1116,9 @@ function PadConsole({ remoteEnabled = false }) {
 
   const finishClose = useCallback(() => {
     setActiveId(null);
+    setActiveMediaIndex(0);
     setProgress(0);
     setDuration(DEMO_DURATION);
-    setMediaFallback(false);
     setPlaying(false);
     setPlaybackRate(1);
     playbackIdRef.current = null;
@@ -1231,9 +1155,9 @@ function PadConsole({ remoteEnabled = false }) {
       setCatalogId(nextCatalog.id);
       setSelectedId(nextCatalog.items[0].id);
       setActiveId(null);
+      setActiveMediaIndex(0);
       setProgress(0);
       setDuration(DEMO_DURATION);
-      setMediaFallback(false);
       setPlaying(false);
       setPlaybackRate(1);
       playbackIdRef.current = null;
@@ -1282,12 +1206,14 @@ function PadConsole({ remoteEnabled = false }) {
         <img src="/assets/shishi-logo.svg" alt="METASTONE 是石科技" />
         <i aria-hidden="true" />
         <div>
-          <strong>视频播控图谱</strong>
+          <strong>{remoteEnabled ? `${catalog.padId} · 视频播控` : "视频播控图谱"}</strong>
           <small>{catalog.status}</small>
         </div>
         <CatalogSwitch
           activeId={catalog.id}
-          disabled={Boolean(activeId) || isCatalogSwitching}
+          disabled={Boolean(activeId) || isCatalogSwitching || Boolean(assignedCatalogId)}
+          catalogs={assignedCatalogId ? [catalog] : CONTENT_CATALOGS}
+          locked={Boolean(assignedCatalogId)}
           onChange={switchCatalog}
         />
       </header>
@@ -1305,7 +1231,13 @@ function PadConsole({ remoteEnabled = false }) {
 
       <div className={`scene-instruction${isGalaxyDragging ? " is-dragging" : ""}`} role="status" aria-live="polite">
         <Crosshair size={36} weight="duotone" />
-        <span>{isGalaxyDragging ? "探索轨道 · 松手回到默认构图" : "切换板块 · 拖动星系 · 轻触播放"}</span>
+        <span>
+          {isGalaxyDragging
+            ? "探索轨道 · 松手回到默认构图"
+            : assignedCatalogId
+              ? "拖动星系浏览 · 轻触内容发送到电视"
+              : "切换板块 · 拖动星系 · 轻触发送到电视"}
+        </span>
       </div>
 
       <FocusDock catalog={catalog} domain={selectedDomain} total={domains.length} onPlay={() => selectDomain(selectedId)} />
@@ -1316,10 +1248,13 @@ function PadConsole({ remoteEnabled = false }) {
         <i />
       </div>
 
-      {activeDomain ? (
-        <VideoPortal
+      {activeDomain && activeMedia ? (
+        <ControlPortal
           catalog={catalog}
           domain={activeDomain}
+          media={activeMedia}
+          itemIndex={activeMediaIndex}
+          itemTotal={activeDomain.playlist.length}
           total={domains.length}
           duration={duration}
           viewState={viewState}
@@ -1329,24 +1264,12 @@ function PadConsole({ remoteEnabled = false }) {
           progress={progress}
           onEntered={() => setViewState(playing ? "VIDEO_PLAYING" : "VIDEO_PAUSED")}
           onExited={finishClose}
-          onProgress={(value) => setProgress(clamp(value, 0, duration))}
-          onDurationChange={(value) => {
-            setDuration(value);
-            setProgress((current) => clamp(current, 0, value));
-          }}
-          onMediaFallbackChange={setMediaFallback}
           onPlayingChange={setPlayback}
           onRateChange={changePlaybackRate}
-          onSyncSample={syncPlayback}
-          onEnded={() => {
-            setPlaying(false);
-            setProgress(duration);
-            setViewState("VIDEO_END");
-            sendRemoteControl({ type: "PAUSE", progress: duration, muted, playbackRate });
-          }}
           onClose={beginClose}
-          onPrevious={() => stepDomain(-1)}
-          onNext={() => stepDomain(1)}
+          onPrevious={() => stepMedia(-1)}
+          onNext={() => stepMedia(1)}
+          onSelectItem={playMediaAtIndex}
           onMute={toggleMute}
         />
       ) : null}
@@ -1357,5 +1280,10 @@ function PadConsole({ remoteEnabled = false }) {
 export function App() {
   const role = getDeviceRole();
   if (role === "tv") return <TvDisplay />;
-  return <PadConsole remoteEnabled={role === "pad"} />;
+  return (
+    <PadConsole
+      remoteEnabled={role === "pad"}
+      assignedCatalogId={role === "pad" ? getAssignedCatalogId() : null}
+    />
+  );
 }

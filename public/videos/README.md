@@ -1,41 +1,40 @@
-# 双板块视频替换说明
+# 双板块媒体库与替换说明
 
-正式视频统一放在 `public/videos/` 下，并按板块分目录。
+当前媒体库依据以下两个最新目录同步：
 
-## 成果案例
+- 成果案例：`D:\FOR_WORK\260818_MetaStone\0824案例介绍`
+- 产品介绍：`D:\FOR_WORK\260818_MetaStone\0817是石科技产品视频互动展示`
 
-放入 `public/videos/cases/`：
+执行 `scripts/sync-latest-media.ps1` 可重新核对源文件、按稳定英文路径复制独立视频，并将每个 PPT 页面导出为独立的 H.264 MP4。执行结果写入 `media-build/latest-media/media-sync-report.json`。
 
-1. `01-large-models.mp4` — 大模型
-2. `02-research-institutes.mp4` — 科研院所
-3. `03-high-end-manufacturing.mp4` — 高端制造
-4. `04-ocean-simulation.mp4` — 海洋模拟
-5. `05-internet.mp4` — 互联网
-6. `06-aerospace.mp4` — 航空航天
-7. `07-ai-for-science.mp4` — AI FOR SCIENCE
+## 播放口径
 
-这些路径已自动映射，放入文件后 Pad / TV 会在约 3 秒内自动重新检测，不需要再修改代码或手动刷新。
+- Pad 是纯控制端，不加载、不解码、不播放任何 MP4。
+- 电视 / 播放盒浏览器是唯一媒体渲染端。
+- 每个 PPT 页面当前生成一个 1920×1080、H.264、约 30fps 的临时循环 MP4；Pad 的上一项 / 下一项切换页面。
+- 静态 PPT 页默认 8 秒一轮。
+- 航空航天与高端制造页含动态 GIF，导出时分别保留两个完整 GIF 周期（约 10.08 秒、12.66 秒），不能替换为静帧。
+- 最终动态设计视频可按相同 `media.id` 与稳定路径一对一替换，playlist 顺序无需改程序。
 
-Windows 如果开启了“隐藏已知文件类型的扩展名”，重命名时请特别确认最终名称不是
-`01-large-models.mp4.mp4` 这类双扩展名。可在本目录运行 `npm run content:check`
-核对系统实际识别到的文件名。
+## 成果案例（14 项）
 
-## 产品介绍
+1. `CASE-01 互联网`：2 个 PPT 页面循环 MP4。
+2. `CASE-02 大模型`：2 个 PPT 页面循环 MP4。
+3. `CASE-03 航空航天`：1 个含动态 GIF 的页面循环 MP4。
+4. `CASE-04 高端制造`：1 个含动态 GIF 的页面循环 MP4 + 1 支 CAE 案例视频。
+5. `CASE-05 科研院所`：4 个 PPT 页面循环 MP4。
+6. `CASE-06 海洋模拟`：2 支独立视频。
+7. `CASE-07 AI FOR SCIENCE`：1 个 PPT 页面循环 MP4。
 
-产品页已映射 9 个产品名称和 11 条源影片。测试环境中的稳定投放槽位仍使用数字文件名，不要直接改动客户源文件：
+## 产品介绍（11 项）
 
-1. `01-product-film.mp4` — 国产 Token 优化工厂
-2. `02-product-film.mp4` — 超智算集群
-3. `03-product-film.mp4` — 国产异构超智算中心（当前星球入口；该产品共 3 部影片）
-4. `04-product-film.mp4` — 国产 Token 优化工厂计算速度大比拼：CPU vs GPU
-5. `05-product-film.mp4` — 国产 Token 优化工厂－技术优势
-6. `06-product-film.mp4` — AI Infra
-7. `07-product-film.mp4` — PD 分离
-8. `08-product-film.mp4` — 投机解码
-9. `09-product-film.mp4` — 多层级 KV Cache
+`PRODUCT-01—09` 已全部映射；其中 `PRODUCT-03 国产异构超智算中心` 含第 1—3 集，其他产品各 1 支视频。实际稳定路径与源文件名见 `src/domains.js` 和同步报告。
 
-PRODUCT-03 的第 2/3 集已在 `src/domains.js` 的 `sourceMedia` 中登记；完整 playlist 切换逻辑仍按 PRD 的 mixed-media playlist 阶段实现。
+## 校验
 
-建议统一为 1920 × 1080、H.264 MP4、AAC 音频。测试服务会直接读取本目录并支持视频字节范围请求；投放或替换文件后会自动重新检测，不需要重新构建。
+```powershell
+npm run content:check
+npm run media:qc
+```
 
-执行 `npm run content:check` 可查看全部 16 个槽位中哪些已放入素材。当前客户体验测试包为 2/16 READY，其余 14 个槽位仅显示明确的演示/缺失提示。
+目标结果：`25/25 READY`、`MEDIA_QC=25/25 PASS`。媒体 QC 同时验证 H.264、分辨率、时长以及两个 GIF 页面输出中的多帧变化。

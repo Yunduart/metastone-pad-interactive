@@ -1,0 +1,792 @@
+{
+  "url": "http://127.0.0.1:4175",
+  "browser": "Chrome (temporary local QC fallback)",
+  "responsive": [
+    {
+      "viewport": {
+        "width": 1920,
+        "height": 1200
+      },
+      "dock": {
+        "x": 180,
+        "y": 998.203125,
+        "width": 1560,
+        "height": 171.796875,
+        "right": 1740,
+        "bottom": 1170,
+        "cy": 1084.1015625
+      },
+      "directory": {
+        "x": 822.46875,
+        "y": 367,
+        "width": 747.53125,
+        "height": 250,
+        "right": 1570,
+        "bottom": 617,
+        "cy": 492
+      },
+      "buttons": [
+        {
+          "label": "返回成果案例",
+          "rect": {
+            "x": 209,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 289,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "上一项",
+          "rect": {
+            "x": 822,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 902,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "暂停电视播放",
+          "rect": {
+            "x": 920,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1000,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "下一项",
+          "rect": {
+            "x": 1018,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1098,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "原速播放",
+          "rect": {
+            "x": 1372,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1452,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "2倍速播放",
+          "rect": {
+            "x": 1452,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1532,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "4倍速播放",
+          "rect": {
+            "x": 1532,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1612,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        },
+        {
+          "label": "静音",
+          "rect": {
+            "x": 1631,
+            "y": 1068,
+            "width": 80,
+            "height": 80,
+            "right": 1711,
+            "bottom": 1148,
+            "cy": 1108
+          },
+          "font": "18px",
+          "disabled": false
+        }
+      ],
+      "checks": {
+        "eightControls": true,
+        "equalWidths": true,
+        "equalHeights": true,
+        "sharedCenterline": true,
+        "minimum64px": true,
+        "readableControlLabels": true,
+        "noPageOverflow": true,
+        "allButtonsInsideDock": true,
+        "dockInsideViewport": true,
+        "noDirectoryOverlap": true,
+        "padIsControlOnly": true,
+        "progressReadOnly": true,
+        "glassPreserved": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1536,
+        "height": 1024
+      },
+      "dock": {
+        "x": 36,
+        "y": 826.75,
+        "width": 1464,
+        "height": 171.65625,
+        "right": 1500,
+        "bottom": 998.40625,
+        "cy": 912.578125
+      },
+      "directory": {
+        "x": 626.6875,
+        "y": 294.828125,
+        "width": 751.3125,
+        "height": 250,
+        "right": 1378,
+        "bottom": 544.828125,
+        "cy": 419.828125
+      },
+      "buttons": [
+        {
+          "label": "返回成果案例",
+          "rect": {
+            "x": 65,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 144.859375,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "上一项",
+          "rect": {
+            "x": 632.84375,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 712.703125,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "暂停电视播放",
+          "rect": {
+            "x": 728.0625,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 807.921875,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "下一项",
+          "rect": {
+            "x": 823.28125,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 903.140625,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "原速播放",
+          "rect": {
+            "x": 1135.203125,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 1215.0625,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "2倍速播放",
+          "rect": {
+            "x": 1215.0625,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 1294.921875,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "4倍速播放",
+          "rect": {
+            "x": 1294.921875,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 1374.78125,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        },
+        {
+          "label": "静音",
+          "rect": {
+            "x": 1391.140625,
+            "y": 896.546875,
+            "width": 79.859375,
+            "height": 79.859375,
+            "right": 1471,
+            "bottom": 976.40625,
+            "cy": 936.4765625
+          },
+          "font": "17.664px",
+          "disabled": false
+        }
+      ],
+      "checks": {
+        "eightControls": true,
+        "equalWidths": true,
+        "equalHeights": true,
+        "sharedCenterline": true,
+        "minimum64px": true,
+        "readableControlLabels": true,
+        "noPageOverflow": true,
+        "allButtonsInsideDock": true,
+        "dockInsideViewport": true,
+        "noDirectoryOverlap": true,
+        "padIsControlOnly": true,
+        "progressReadOnly": true,
+        "glassPreserved": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "dock": {
+        "x": 36,
+        "y": 616,
+        "width": 1208,
+        "height": 164,
+        "right": 1244,
+        "bottom": 780,
+        "cy": 698
+      },
+      "directory": {
+        "x": 517.625,
+        "y": 204.5,
+        "width": 647.171875,
+        "height": 247,
+        "right": 1164.796875,
+        "bottom": 451.5,
+        "cy": 328
+      },
+      "buttons": [
+        {
+          "label": "返回成果案例",
+          "rect": {
+            "x": 65,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 131.546875,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "上一项",
+          "rect": {
+            "x": 527.375,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 593.921875,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "暂停电视播放",
+          "rect": {
+            "x": 606.71875,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 673.265625,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "下一项",
+          "rect": {
+            "x": 686.0625,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 752.609375,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "原速播放",
+          "rect": {
+            "x": 935.015625,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 1001.5625,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "2倍速播放",
+          "rect": {
+            "x": 1001.5625,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 1068.109375,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "4倍速播放",
+          "rect": {
+            "x": 1068.109375,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 1134.65625,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "静音",
+          "rect": {
+            "x": 1148.453125,
+            "y": 689.765625,
+            "width": 66.546875,
+            "height": 66.546875,
+            "right": 1215,
+            "bottom": 756.3125,
+            "cy": 723.0390625
+          },
+          "font": "16px",
+          "disabled": false
+        }
+      ],
+      "checks": {
+        "eightControls": true,
+        "equalWidths": true,
+        "equalHeights": true,
+        "sharedCenterline": true,
+        "minimum64px": true,
+        "readableControlLabels": true,
+        "noPageOverflow": true,
+        "allButtonsInsideDock": true,
+        "dockInsideViewport": true,
+        "noDirectoryOverlap": true,
+        "padIsControlOnly": true,
+        "progressReadOnly": true,
+        "glassPreserved": true
+      }
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dock": {
+        "x": 20,
+        "y": 584,
+        "width": 984,
+        "height": 164,
+        "right": 1004,
+        "bottom": 748,
+        "cy": 666
+      },
+      "directory": {
+        "x": 422.8828125,
+        "y": 201.875,
+        "width": 508.953125,
+        "height": 226,
+        "right": 931.8359375,
+        "bottom": 427.875,
+        "cy": 314.875
+      },
+      "buttons": [
+        {
+          "label": "返回成果案例",
+          "rect": {
+            "x": 53,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 117,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "上一项",
+          "rect": {
+            "x": 404,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 468,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "暂停电视播放",
+          "rect": {
+            "x": 480,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 544,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "下一项",
+          "rect": {
+            "x": 556,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 620,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "原速播放",
+          "rect": {
+            "x": 702,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 766,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "2倍速播放",
+          "rect": {
+            "x": 766,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 830,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "4倍速播放",
+          "rect": {
+            "x": 830,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 894,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        },
+        {
+          "label": "静音",
+          "rect": {
+            "x": 907,
+            "y": 659.046875,
+            "width": 64,
+            "height": 64,
+            "right": 971,
+            "bottom": 723.046875,
+            "cy": 691.046875
+          },
+          "font": "16px",
+          "disabled": false
+        }
+      ],
+      "checks": {
+        "eightControls": true,
+        "equalWidths": true,
+        "equalHeights": true,
+        "sharedCenterline": true,
+        "minimum64px": true,
+        "readableControlLabels": true,
+        "noPageOverflow": true,
+        "allButtonsInsideDock": true,
+        "dockInsideViewport": true,
+        "noDirectoryOverlap": true,
+        "padIsControlOnly": true,
+        "progressReadOnly": true,
+        "glassPreserved": true
+      }
+    }
+  ],
+  "productGeometry": {
+    "viewport": {
+      "width": 1920,
+      "height": 1200
+    },
+    "dock": {
+      "x": 180,
+      "y": 998.203125,
+      "width": 1560,
+      "height": 171.796875,
+      "right": 1740,
+      "bottom": 1170,
+      "cy": 1084.1015625
+    },
+    "directory": {
+      "x": 822.46875,
+      "y": 367,
+      "width": 747.53125,
+      "height": 250,
+      "right": 1570,
+      "bottom": 617,
+      "cy": 492
+    },
+    "buttons": [
+      {
+        "label": "返回产品介绍",
+        "rect": {
+          "x": 209,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 289,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": false
+      },
+      {
+        "label": "上一项",
+        "rect": {
+          "x": 822,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 902,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": true
+      },
+      {
+        "label": "暂停电视播放",
+        "rect": {
+          "x": 920,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1000,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "16px",
+        "disabled": false
+      },
+      {
+        "label": "下一项",
+        "rect": {
+          "x": 1018,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1098,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": true
+      },
+      {
+        "label": "原速播放",
+        "rect": {
+          "x": 1372,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1452,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": false
+      },
+      {
+        "label": "2倍速播放",
+        "rect": {
+          "x": 1452,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1532,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": false
+      },
+      {
+        "label": "4倍速播放",
+        "rect": {
+          "x": 1532,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1612,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": false
+      },
+      {
+        "label": "静音",
+        "rect": {
+          "x": 1631,
+          "y": 1068,
+          "width": 80,
+          "height": 80,
+          "right": 1711,
+          "bottom": 1148,
+          "cy": 1108
+        },
+        "font": "18px",
+        "disabled": false
+      }
+    ],
+    "checks": {
+      "eightControls": true,
+      "equalWidths": true,
+      "equalHeights": true,
+      "sharedCenterline": true,
+      "minimum64px": true,
+      "readableControlLabels": true,
+      "noPageOverflow": true,
+      "allButtonsInsideDock": true,
+      "dockInsideViewport": true,
+      "noDirectoryOverlap": true,
+      "padIsControlOnly": true,
+      "progressReadOnly": true,
+      "glassPreserved": true
+    }
+  },
+  "actions": {
+    "hoverKeepsFootprint": true,
+    "keyboardFocusVisible": true,
+    "pause": true,
+    "resume": true,
+    "next": true,
+    "previous": true,
+    "rate2": true,
+    "rate4": true,
+    "rate1": true,
+    "mute": true,
+    "returnHome": true,
+    "singleItemNavigationDisabled": true
+  },
+  "errors": [],
+  "warnings": [
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead.",
+    "THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."
+  ],
+  "passed": true
+}

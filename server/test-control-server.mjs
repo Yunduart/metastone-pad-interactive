@@ -15,9 +15,14 @@ const clientRoot = resolve(projectRoot, "dist/client");
 const sourceVideoRoot = resolve(projectRoot, "public/videos");
 const host = "0.0.0.0";
 const port = Number(process.env.TEST_PORT || 4175);
-const sseClients = new Set();
-const validContent = new Set(
-  CONTENT_CATALOGS.flatMap((catalog) => catalog.items.map((item) => `${catalog.id}:${item.id}`)),
+const sseClients = new Map();
+const validContent = new Map(
+  CONTENT_CATALOGS.flatMap((catalog) => catalog.items.flatMap((domain) => (
+    domain.playlist.map((media, itemIndex) => [
+      `${catalog.id}:${domain.id}:${itemIndex}`,
+      { catalog, domain, media, itemIndex },
+    ])
+  ))),
 );
 
 const initialTime = Date.now();
@@ -30,10 +35,14 @@ let controlState = {
   playbackId: null,
   catalogId: null,
   domainId: null,
+  itemIndex: 0,
+  itemId: null,
   playing: false,
   muted: false,
   playbackRate: 1,
   progress: 0,
+  duration: 0,
+  loop: false,
   anchorAtMs: initialTime,
   updatedAtMs: initialTime,
   updatedAt: new Date(initialTime).toISOString(),
@@ -56,13 +65,40 @@ const MIME = {
   ".woff2": "font/woff2",
 };
 
+function settleTimedState(nowMs = Date.now()) {
+  if (!controlState.playing) return;
+  const projected = projectPlaybackProgress(controlState, nowMs);
+  if (controlState.loop && controlState.duration > 0 && projected >= controlState.duration) {
+    controlState = {
+      ...controlState,
+      progress: projected % controlState.duration,
+      anchorAtMs: nowMs,
+    };
+    return;
+  }
+  if (!controlState.loop && controlState.duration > 0 && projected >= controlState.duration) {
+    controlState = {
+      ...controlState,
+      sequence: controlState.sequence + 1,
+      command: "ENDED",
+      playing: false,
+      progress: controlState.duration,
+      anchorAtMs: nowMs,
+      updatedAtMs: nowMs,
+      updatedAt: new Date(nowMs).toISOString(),
+    };
+  }
+}
+
 function snapshot() {
   const nowMs = Date.now();
+  settleTimedState(nowMs);
   return {
     ...controlState,
     progress: projectPlaybackProgress(controlState, nowMs),
     serverTimeMs: nowMs,
-    displayClients: sseClients.size,
+    displayClients: [...sseClients.values()].filter((role) => role === "tv").length,
+    controllerClients: [...sseClients.values()].filter((role) => role === "pad").length,
   };
 }
 
@@ -78,7 +114,7 @@ function sendJson(response, status, payload) {
 
 function broadcast() {
   const message = `data: ${JSON.stringify(snapshot())}\n\n`;
-  sseClients.forEach((client) => client.write(message));
+  sseClients.forEach((role, client) => client.write(message));
 }
 
 function resolveInside(root, relativePath) {
@@ -146,6 +182,7 @@ function updateControlState(input) {
   }
 
   const nowMs = Date.now();
+  settleTimedState(nowMs);
   const controllerId = typeof input.controllerId === "string" ? input.controllerId : null;
   const clientSequence = Number(input.clientSequence);
   if (
@@ -180,9 +217,15 @@ function updateControlState(input) {
   if (Number.isFinite(clientSequence)) next.clientSequence = clientSequence;
 
   if (type === "PLAY") {
-    if (!validContent.has(`${input.catalogId}:${input.domainId}`)) throw new Error("unknown-content");
+    const requestedItemIndex = Number.isInteger(Number(input.itemIndex)) ? Number(input.itemIndex) : 0;
+    const content = validContent.get(`${input.catalogId}:${input.domainId}:${requestedItemIndex}`);
+    if (!content) throw new Error("unknown-content");
     next.catalogId = input.catalogId;
     next.domainId = input.domainId;
+    next.itemIndex = content.itemIndex;
+    next.itemId = content.media.id;
+    next.duration = content.media.duration;
+    next.loop = Boolean(content.media.loop);
     next.playbackId = typeof input.playbackId === "string"
       ? input.playbackId
       : `playback-${nowMs}-${next.sequence}`;
@@ -219,10 +262,14 @@ function updateControlState(input) {
   } else if (type === "STOP") {
     next.catalogId = null;
     next.domainId = null;
+    next.itemIndex = 0;
+    next.itemId = null;
     next.playbackId = null;
     next.playing = false;
     next.playbackRate = 1;
     next.progress = 0;
+    next.duration = 0;
+    next.loop = false;
   }
 
   next.anchorAtMs = nowMs;
@@ -249,7 +296,9 @@ const server = createServer(async (request, response) => {
       "X-Accel-Buffering": "no",
     });
     response.write(`data: ${JSON.stringify(snapshot())}\n\n`);
-    sseClients.add(response);
+    const requestedRole = url.searchParams.get("role");
+    const role = requestedRole === "tv" ? "tv" : requestedRole === "pad" ? "pad" : "unknown";
+    sseClients.set(response, role);
     broadcast();
     request.on("close", () => {
       sseClients.delete(response);
@@ -303,7 +352,7 @@ const server = createServer(async (request, response) => {
 });
 
 const keepAlive = setInterval(() => {
-  sseClients.forEach((client) => client.write(": keep-alive\n\n"));
+  sseClients.forEach((role, client) => client.write(": keep-alive\n\n"));
 }, 15000);
 keepAlive.unref();
 
@@ -328,7 +377,7 @@ server.listen(port, host, () => {
 function shutdown() {
   clearInterval(keepAlive);
   clearInterval(playbackTicker);
-  sseClients.forEach((client) => client.end());
+  sseClients.forEach((role, client) => client.end());
   server.close(() => process.exit(0));
 }
 

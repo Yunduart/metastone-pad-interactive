@@ -6,6 +6,7 @@ output/
 # Customer media and distributable archives are published as release assets,
 # not committed to Git history.
 public/videos/**/*.mp4
+media-build/
 *.zip
 
 # Local runtime and credentials.

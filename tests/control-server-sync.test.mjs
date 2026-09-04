@@ -48,8 +48,9 @@ test("the LAN control server advances progress, applies rate, and rejects stale 
     await waitForServer(child);
     const playResponse = await post({
       type: "PLAY",
-      catalogId: "success-cases",
-      domainId: "large-models",
+      catalogId: "product-introduction",
+      domainId: "product-01",
+      itemIndex: 0,
       progress: 10,
       muted: false,
       playbackRate: 1,
@@ -60,6 +61,8 @@ test("the LAN control server advances progress, applies rate, and rejects stale 
     const running = await fetch(`${endpoint}/api/state`).then((response) => response.json());
     assert.ok(running.progress > 10.45, `expected live progress, received ${running.progress}`);
     assert.equal(running.playbackRate, 1);
+    assert.equal(running.itemId, "product-01-video-01");
+    assert.equal(running.loop, false);
 
     const rateResponse = await post({
       type: "RATE",
@@ -100,6 +103,30 @@ test("the LAN control server advances progress, applies rate, and rejects stale 
     const paused = await fetch(`${endpoint}/api/state`).then((response) => response.json());
     assert.equal(paused.playing, false);
     assert.equal(paused.progress, 20);
+
+    const loopPlaybackId = "sync-test-loop-playback";
+    const loopResponse = await fetch(`${endpoint}/api/control`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        type: "PLAY",
+        controllerId,
+        playbackId: loopPlaybackId,
+        clientSequence: ++clientSequence,
+        catalogId: "success-cases",
+        domainId: "aerospace",
+        itemIndex: 0,
+        progress: 9.9,
+        playing: true,
+        playbackRate: 4,
+      }),
+    });
+    assert.equal(loopResponse.status, 200);
+    await wait(200);
+    const looped = await fetch(`${endpoint}/api/state`).then((response) => response.json());
+    assert.equal(looped.itemId, "case-03-slide-01");
+    assert.equal(looped.loop, true);
+    assert.ok(looped.progress >= 0 && looped.progress < looped.duration, "loop progress was not wrapped");
   } finally {
     child.kill();
     child.stdout.destroy();

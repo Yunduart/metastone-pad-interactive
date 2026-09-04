@@ -1,4 +1,76 @@
-# Design QA — 图一 WebGL 轨道中枢
+# Design QA — Pad 操作尺寸统一（2026-09-04，当前）
+
+## Findings and verification gate
+
+- [P1, fixed and visually verified] User feedback: `底部的操作UI过小，有大有小，非常奇怪。` The preceding 1920 × 1200 capture shows a 1080 × 122 dock with 32 px rate controls, 46 px return/mute, 56 px previous/next height, and a 68 px playback core. The inconsistent scale and small labels made the Pad controls difficult to scan and operate.
+- Source visual truth: the existing glass material and cosmic artwork, scoped by the user's new size/alignment correction. Evidence: `audit/control-scale-qc-20260904/before-1920x1200.png` (1920 × 1200, DPR 1, TV playing / first item).
+- Implementation: `src/App.jsx` and `src/styles.css`, local `/pad`. All eight buttons now use the same responsive 64–80 px width/height token; previous/next are identical; the dock maximum width is 1560 px. Playback remains differentiated by its white glass core, not size. A dedicated top timeline row allows every action to share the same centerline.
+- Rendered implementation: `audit/control-scale-qc-20260904/pad-1920x1200.png`, captured fresh using the installed Chrome channel after the user asked to continue optimization and GitHub synchronization. This temporary local QC fallback does not establish that the in-app browser bootstrap issue is repaired.
+- Full-view / focused comparisons: `audit/control-scale-qc-20260904/before-after-full.png` and `before-after-controls.png`. Both compare the same Pad01 / first playlist item / playing state at 1920 × 1200, DPR 1; capture time differs naturally while playback runs. The control crop preserves equal pixel scale. The previous day's PASS is not reused as evidence for this revision.
+
+## Required fidelity surfaces
+
+- Fonts / typography: control labels share 16–18 px; previous/next/return/mute use one 28 px icon family; metadata is 12 px and main identity 18–24 px. Fresh captures show no clipped control labels and a coherent, larger action hierarchy.
+- Spacing / rhythm: common 64–80 px button token, symmetric navigation, full-width read-only timeline above the action row. Browser geometry passes at 1920 × 1200, 1536 × 1024, 1280 × 800 and 1024 × 768: eight equal controls, shared centerline, no page overflow, no dock clipping and no directory collision. At 1920 × 1200 every button is 80 × 80 px, and the dock is 1560 × 171.8 px.
+- Colors / tokens: previous glass fill, backdrop blur, fine edge and reflection are preserved. No material restyling or extra glow added.
+- Image fidelity: existing starfield and icon library are unchanged; no new or substitute raster assets.
+- Copy / content: added visible `返回` and `声音 / 已静音` labels. Kept exact media identity, original/2×/4×, controller-only Pad and read-only progress. No extra shuffle/repeat or seek controls were introduced. Media mapping and TV behavior are outside this specific size correction.
+
+## Implementation checklist / completed verification
+
+- Completed: scoped JSX/CSS and common touch-scale regression test; all 30 automatic tests and Vite / Sites packaging build pass.
+- Completed: fresh default, paused and Pad02 single-item captures; all 13 geometry/material checks pass at four viewports and Pad02. All 12 browser action checks pass: hover footprint, visible keyboard focus, pause/resume, next/previous, three rates, mute, return and single-item disabled navigation.
+- Completed: removed hover scaling/translation so button size and alignment do not jump; added scoped touch-action and a visible keyboard focus ring. Browser console/request errors: 0; one pre-existing non-blocking THREE.Clock deprecation warning remains.
+- Senior-style visual comparison and independent read-only review found no remaining P0/P1/P2 blocker in the requested bottom control scope. P3 follow-up: directory metadata is small/quiet, and the single-item directory retains generous whitespace; these are separate from this footer correction. Real Pad brightness, touch distance and venue network/TV acceptance remain unverified.
+- Current result covers local Web UI only, not production approval or a newly released client package. Historical larger-next-button guidance below is superseded by this current equal-size requirement.
+
+---
+
+# Historical Design QA — Pad 轻量播控坞（2026-09-03，返工版）
+
+## Current visual truth and evidence
+
+- Source visual truth: `C:\Users\visua\AppData\Local\Temp\codex-clipboard-f79e44f3-0f84-4f4d-8e0f-6dc1902f0f65.png`.
+- Source pixels: 224 × 448, portrait music-player reference. It is a control-language reference, not a request to copy its portrait, music metadata, shuffle, or repeat functions.
+- Browser implementation: `audit/control-ui-qc-20260903/pad01-orbital-control-default.png`.
+- Implementation viewport and pixels: 1920 × 1200 CSS px at DPR 1, matching the target 3:2 Pad landscape surface.
+- Full-view same-input comparison: `audit/control-ui-qc-20260903/control-reference-comparison-v2.png`.
+- Focused control comparison: `audit/control-ui-qc-20260903/control-focus-comparison-v2.png`.
+- Browser machine result: `audit/control-ui-qc-20260903/browser-qc.json`.
+- Compared states: TV playing, TV paused, next playlist item, and 2× rate selected.
+
+The source and implementation intentionally use different orientations. The full comparison preserves both complete screens. The focused comparison crops the source control area at 224 × 268 and the implementation footer at 1360 × 210, then places both into one image for hierarchy and proportion review. Pixel parity is not claimed across unrelated device orientations.
+
+## Current fidelity surfaces
+
+- Fonts and typography: the existing exhibit type system is retained. `电视端正在播放`, exact media name, current item, `上一项`, `下一项`, and speed labels remain readable without wrapping. The former play/pause caption under the core was removed because the icon and state-specific accessible name already communicate the action.
+- Spacing and layout rhythm: the first rejected version's three bottom cards and 154 px half-dome are gone. One 1080 × 122 px transport dock is centered at viewport X=960 px. Its 68 × 68 px play/pause core sits between a 56 × 56 px previous control and a 128 × 56 px next-item control. The directory ends at Y=617 px and the dock begins at Y=1048 px, leaving a clear separation.
+- Colors and visual tokens: one white core, one restrained cobalt halo, a quiet indigo dock, and cyan progress/active accents translate the reference without stacking multiple neon rings. The directory and transport dock now use true background-visible glass: 37–38% base tint, 30 px backdrop blur, 145–150% saturation lift, a fine cold edge, restrained inner highlight, and a soft off-axis reflection. The next button uses a low-saturation blue fill rather than the rejected bright cyan gradient.
+- Image quality and asset fidelity: the existing clean `orbital-space-background.png` is used in control mode. The former rasterized overview screenshot—which visibly duplicated planet labels and old controls behind the new UI—was removed. No placeholder or new generated asset was introduced.
+- Copy and content: the read-only `电视端同步进度 · 只读`, `原速 / 2× / 4×`, mute, exact filename, item count, return action, and ordered playlist remain present. Unapproved shuffle/repeat controls remain absent.
+- Accessibility and interaction: Pad mounts zero `<video>` elements. Play/pause, next item, and 2× rate were browser-tested. Persistent controls remain inside the viewport with zero page overflow, and the larger next-item touch target remains larger than previous.
+
+## Current findings
+
+- No actionable P0, P1, or P2 issue remains in the current focused comparison.
+- Accepted product deviation: `下一项` stays larger and text-labeled rather than mirroring the icon-only previous button. This is a deliberate task-priority choice for the exhibition Pad.
+- Accepted product deviation: the controls are translated into a restrained landscape dock rather than recreating the reference's portrait half-circle.
+- P3 follow-up: verify white-core brightness and the smallest metadata at the real Xiaomi Pad viewing distance and exhibition ambient light.
+
+## Current comparison history
+
+- Pass 11 P1: the old full-width desktop toolbar lacked the source's clear circular playback focus.
+- First fix: added a luminous central core, but also introduced three disconnected bottom cards, a large half-dome, stacked neon rings, and an oversized cyan next button.
+- User verdict: `太丑了`.
+- Pass 12 P1: the first fix was visually heavy, game-HUD-like, and competed with the media directory.
+- Second fix: removed the half-dome and extra rings, consolidated the footer into one lower-opacity dock, reduced core and previous-control scale, quieted the next control, converted the left status block to typography rather than another card, and replaced the duplicated overview screenshot with the clean orbital-space plate.
+- User clarification: `效果图是有玻璃质感`.
+- Final fix: kept the lightweight geometry, replaced the remaining flat navy surfaces with genuinely translucent, background-filtered glass, and added only a fine cold rim plus one soft internal reflection so the material reads as glass without returning to the rejected neon HUD treatment.
+- Post-fix evidence: `audit/control-ui-qc-20260903/control-reference-comparison-v2.png` and `control-focus-comparison-v2.png`. Browser QC reports exact horizontal centering, 0 overflow, 0 directory collision, 0 Pad video elements, and working play/pause, next-item, and rate actions. Console errors are 0; the sole warning is the existing non-blocking `THREE.Clock` deprecation.
+
+---
+
+# Historical Design QA — 图一 WebGL 轨道中枢
 
 ## Visual truth and browser evidence
 
