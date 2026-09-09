@@ -4,6 +4,12 @@
 
 独立于 ROMS CPU / GPU 系统的 Xiaomi Pad 8 Pro 3:2 横屏播控程序。总览采用 Three.js / WebGL 实时轨道场景，并在同一套播控内核中承载 `成果案例` 与 `产品介绍` 两个固定频道。本期测试环境由 Pad 控制端与电视播放端组成；Pad 本机不加载或播放视频。
 
+## 2026-09-09 配套下载包
+
+[最新体验包 v0.2.0-review.20260909](https://github.com/Yunduart/metastone-pad-interactive/releases/tag/v0.2.0-review.20260909) 提供 Windows 启动包、成果案例媒体包和产品介绍媒体包。三个 ZIP 解压到同一父目录，合并 `Metastone-PadTV-20260909` 文件夹后双击 `START.cmd`；无需另装 Node.js。
+
+本轮以 2026-09-04 玻璃控制区与媒体映射版为运行基线，包含当前 25/25 播放项（14 成果案例 + 11 产品影片），替代仅含 2 条测试素材的旧下载包。源码构建/测试通过不代表现场验收，单服务器仍是一套全局播放状态。Release 另附 30 秒实际 Pad/TV 操作录像与文件校验说明；源代码 ZIP 本身不含 MP4。
+
 ## 内容板块
 
 - `成果案例 / SUCCESS CASES`：按最新目录编号为互联网、大模型、航空航天、高端制造、科研院所、海洋模拟、AI FOR SCIENCE；共 14 个可播项目。
