@@ -1,4 +1,86 @@
-# Design QA — Pad 操作尺寸统一（2026-09-04，当前）
+# Design QA — 首页构图、玻璃星球与双轴拖拽（2026-09-10，当前）
+
+## 2026-09-10 15:29 本机预览恢复与接续核验
+
+- 接续当前已完成、未上传的首页修正，没有重复重写既有实现。已重新启动独立本机预览 `http://127.0.0.1:4191/pad` 与 `/pad02`，在用户授权的独立测试浏览器中核验；实际载入 `index-VPFx5_Ck.js`。
+- 当前自动测试重新执行 34 / 34 PASS。两栏目各左、右、上、下拖动共 8 次 PASS；最大回位误差 0.251601 CSS px，0 误发控制命令，卡片拖动让位与回位恢复均通过，场景滚动为 `[0,0]`，0 页面溢出，Pad 0 video，0 浏览器运行/HTTP 错误。
+- 新证据目录：`E:\Yun\知识库\codex\home\artifacts\metastone-home-fix-20260910\output\playwright\20260910-1527`；机器记录 `browser-result.json` 的检查时间为 `2026-09-10T07:29:31.735Z`。两栏目截图均为 1536 × 1024 / DPR 1，成果案例为大模型选中，与源图一致的状态。
+- 本轮已打开检查新鲜首页截图、`comparison.png` 全图同尺寸对照、`globe-detail.png` 主球细节和 `card-detail.png` 卡片细节。未发现新增 P0/P1/P2；主球密集地理光点和高光的柔和程度仍按既有 P3 精修项保留，不宣称 100% 还原。
+- 本轮仅新增核验资料与本记录；程序实现沿用本日已有修正版，未改动媒体目录、Pad/TV 播控协议或生产设备，未上传 GitHub。实体触控、现场联调、客户视觉验收仍待完成。
+- 工具边界：CLI 临时会话打开时中断，随后使用已安装的稳定浏览器运行库在独立可见测试浏览器中完成上述全部检查；浏览器截图并非旧缓存证据。
+
+## 2026-09-10 12:18 交付前复核
+
+- 本机页面实际加载 `index-VPFx5_Ck.js`；`/pad` 和 `/pad02` 两栏目在 1536 × 1024 同尺寸复核。34 / 34 自动检查通过。
+- 浏览器四向手势共 8 次通过：左拖主球向右、右拖向左，上下为独立反向视差；松手回默认构图，最大回位差 0.252 CSS px。拖动时预览卡片让位，结束后恢复；0 误发控制命令、0 页面溢出、场景滚动 `[0,0]`、Pad 0 video、0 运行/HTTP 错误。已有 THREE.Clock 警告保留。
+- 本轮独立记录：`E:\Yun\知识库\codex\home\artifacts\metastone-home-fix-20260910\recheck-result-20260910-1218.json`。
+- 本轮最终截图与对照已单独存入 `E:\Yun\知识库\codex\home\artifacts\metastone-home-fix-20260910\output\playwright\20260910-1218`：两栏目首页、左拖状态、全图对照、主球细节、玻璃卡片细节。全图与局部对照确认保留不对称层次与共同轨道投影，未发现新增 P0/P1/P2；源图更密的地理微光仍为 P3。
+- 本轮延续已完成的首页修正，没有追加改动媒体目录、播放协议或 TV 同步算法；未上传 GitHub、未更新飞书、未做实体 Pad/TV 现场验收。当前状态：本机修正/复核完成，待用户视觉确认。
+
+## 2026-09-10 11:49 本机复核
+
+- 已重新启动独立本机服务 `http://127.0.0.1:4191/pad` 与 `/pad02`，实际浏览器加载 `index-VPFx5_Ck.js`；未将旧 4175 页面视作更新证据。
+- 重新执行现有自动测试：34 / 34 PASS。两栏目各左、右、上、下拖动，共 8 次复核通过；方向与反向视差一致，松手恢复、卡片让位/恢复、0 误发控制命令、0 溢出、场景滚动 `[0,0]`、Pad 无 video 元素。回位误差最大 0.253 CSS px。
+- 新证据：证据根目录下 `recheck-result-20260910-1149.json`；截图 `output/playwright/recheck-cases-1536x1024.png`、`recheck-products-1536x1024.png`、`recheck-reference-before-after.png`、`recheck-globe-detail.png`、`recheck-glass-card-detail.png`。源图和新截图按 1536 × 1024 同尺寸合并比较，确认构图/文案/玻璃表面没有新增 P0/P1/P2 偏差。
+- 新浏览器检查 0 运行错误、0 HTTP 错误；已有 THREE.Clock 弃用警告保留。本次没有重新进行实体 Pad/TV 联调，没有修改媒体、同步逻辑或上传 GitHub。
+- 本机修正结果仍为 passed；静态效果图中更细密的地理高光/玻璃反射保留为 P3 精修，不宣称 100% 还原或客户视觉验收。
+
+## Scope and visual truth
+
+- User request: correct the homepage after the original-artwork fidelity review. This is a local implementation, not permission for a new GitHub release.
+- Source visual truth: `C:\Users\visua\Documents\ChatGPT\是石科技_空间体验升级项目\交付\是石科技_领域视频互动台_V1\design\图一_轨道中枢_选定视觉稿_v1.png` (1536 × 1024).
+- Evidence root: `E:\Yun\知识库\codex\home\artifacts\metastone-home-fix-20260910`.
+- Source copy: `reference-selected.png`; pre-fix capture: `before-large-models.png`; revised capture: `output\playwright\02-after-large-models-1536x1024.png`, all relative to the evidence root.
+- Comparison state: Pad01 homepage, 大模型 selected, 1536 × 1024 CSS pixels; measured devicePixelRatio ≈ 1 (1.0000000298), screenshots explicitly captured at CSS scale, no browser chrome. The complete comparison contains the three native-size captures, not separate unrelated image views. `final-preview-metadata.json` also verifies the final loaded client asset names and zero scene scroll.
+- Full-view evidence: `output\playwright\reference-before-after.png` (4688 × 1099 including captions and spacing). Focused comparisons: `globe-detail.png`, `glass-card-detail.png`, and `drag-detail.png` in the same directory. All four were opened and visually reviewed.
+- Explicit product deviations retained: the later requested near-black/indigo background; current Pad01/Pad02 identities, real media counts, and “发送到电视” wording. 大模型 remains CASE-02 in the current catalog, even though the original concept image showed 01. The source artwork is not a rasterized replacement for the working interface.
+
+## Findings, fixes and comparison history
+
+| ID | Earlier finding | Fix and post-fix evidence | Result |
+| --- | --- | --- | --- |
+| H01 / P1 | Rings were centered on the left brand sphere, cutting the large outer orbit at the left edge and changing the selected composition. | Separate composition centers for visible tracks; preserve unequal theme spacing and shared label/planet projection. Full comparison and all eight viewport captures show complete default rings. | Fixed |
+| H02 / P2 | Coarse polygon wire and thick halo bands flattened the globe into a frosted sphere; the brand mark was undersized. | Reuse the existing Earth/normal/brand assets; grade ocean and illuminated coast separately, reduce cloud wash and network opacity, refine the thin rim, enlarge the actual brand asset. `globe-detail.png`. | Fixed; micro-lighting remains P3 |
+| H03 / P2 | The lower-right card had an opaque split action panel instead of one glass surface. | One translucent, background-filtered surface, restrained highlight and continuous border; retain a clear TV-send action. `glass-card-detail.png`. | Fixed |
+| H04 / P2 | Case titles were too quiet and AI FOR SCIENCE wrapped. | Increase case title hierarchy and keep the English-led theme on one line; no change to catalog identity. Full capture. | Fixed |
+| H05 / P2 | Nine-product labels became small and broke at arbitrary characters. | Display-only semantic line breaks, larger labels and consistent line heights; preserve full canonical names in the catalog and detail card. `products-home-1536x1024.png` and `products-home-1024x768.png`. | Fixed |
+| H06 / P1 | Drag could clip themes or place them under the fixed preview card; CSS scale also offset some labels from their WebGL anchors. | Constrain the whole galaxy rather than individual nodes; fade the preview card during drag/return; compose CSS translation and scale in one transform. 32 drag checks plus `drag-detail.png`. | Fixed |
+| H07 / P1 | Touch drag ended prematurely when implicit capture moved from a child canvas to the main scene. | Ignore only that bubbling capture handoff; preserve actual pointer-up, cancellation and capture-loss handling. `touch-before.json`, `touch-after.json` and final `playback-smoke-verified.json`. | Fixed |
+| H08 / P1 | After a node-origin drag and playback return, focusing a transformed/hidden home action could scroll the clipped main scene and shift the entire composition. | Use `overflow: clip` and make hidden home actions inert. Final check explicitly measures scene scroll, not just document overflow. `browser-qc-verified.json`: scroll `[0,0]`, projection error below 0.014 CSS px. | Fixed |
+
+Intermediate evidence is not reused as a final pass. In particular, the earlier `browser-qc-final.json` filename predates the H08 discovery and is historical; `browser-qc-verified.json` is the canonical post-fix browser result. Initial playback-harness retries also assumed an unmuted, idle session; the final harness returns an existing session through the UI and handles its current mute state before testing.
+
+## Required fidelity surfaces
+
+- **Typography:** retain the project Bahnschrift / DIN / Microsoft YaHei UI / Noto Sans SC stack. At 1536 × 1024, case titles are about 20.58 px, selected 大模型 29.95 px; AI FOR SCIENCE is single-line. Product labels use intentional two-line groupings instead of character wrapping. The source font is not separately supplied, so exact font-file equivalence is not claimed.
+- **Spacing/layout:** the large core stays at 34% / 48%; independent oval centers retain the left-heavy, asymmetric source composition. No uniform radial menu was introduced. The card remains lower right. The same transforms drive sphere positions, tracks and labels; no per-node edge clamping.
+- **Color/surfaces:** retain the user-requested dark indigo setting rather than restoring the earlier brighter blue background. Cobalt oceans, finer icy edges and restrained transparent glass replace thick pale halos and hard card panels. Playback controls retain the previously agreed equal-size glass style.
+- **Image fidelity:** existing Earth, normal, starfield and brand assets are reused; no new generated assets, approximate logos or screenshot-as-interface. The live Earth longitude and continent lighting naturally differ from the static concept. Fine geographic highlights are still softer than the artwork and are listed below as P3 polish, not claimed pixel-identical.
+- **Copy/content:** actual seven-case / nine-product catalogs and 14 / 11 media items are unchanged. The Pad remains a controller, not a local player; the homepage CTA continues to say it sends to TV. No seek slider, new media mapping or cross-channel selector was added.
+
+## Verification
+
+- Build: PASS; client assets `index-VPFx5_Ck.js`, `index-xVD7vH7q.css`. Automated suite: **34 / 34 PASS**. Detailed record: `build-and-test-result.json`.
+- Browser geometry: both catalogs at 1536 × 1024, 1920 × 1280, 1280 × 800 and 1024 × 768; **8 viewport/catalog combinations, 32 mouse gestures**.
+- Final browser result: 0 document overflow, 0 offscreen gesture labels, 0 accidental control commands, 0 Pad video elements. Maximum default-pose restore error 0.0000763 CSS px; maximum DOM-anchor projection error 0.01361 px. Reduced-motion return core error 0.00959 px. Final main-scene scroll `[0,0]`.
+- Touch: browser-emulated continuous drag remains `is-galaxy-dragging`; touch cancellation returns to `state-home_idle`. This is not physical Xiaomi Pad certification.
+- Pad/TV regression: actual first MP4 starts on TV, pause/resume works, next/previous select the expected two 大模型 films, 2× / 4× / original speed and mute work, return removes the TV video. The Pad has zero `<video>` and zero range inputs; all eight controls measure about 79.86 × 79.86 CSS px at the test viewport.
+- The original-speed browser sample briefly read 0.96 while its existing drift correction was active; this is recorded, not misreported as an exact constant 1.00. No synchronization algorithm was changed in this homepage pass.
+- Console/runtime and HTTP errors: 0 in the final homepage run. One existing `THREE.Clock` deprecation warning remains. Build retains the existing large-bundle warning.
+- Canonical behavior evidence: `browser-qc-verified.json`, `playback-smoke-verified.json`; default/drag/product screenshots under `output\playwright`.
+
+## Follow-up polish and release boundary
+
+- P3: the source's denser pinpoint coastline glow and brighter glass reflections can be further art-directed after user review. This pass resolves the identified geometry, hierarchy and interaction defects; it does not assert 100% screenshot identity or customer visual approval.
+- Physical Pad touch/brightness, Redmi TV, venue LAN/reconnect, prolonged running and installation acceptance were not tested. Mobile portrait is outside this landscape exhibition-console scope.
+- Local program changes are uncommitted and unuploaded. No GitHub release, Feishu update, source-media write or production approval occurred. Existing unrelated audit directories are preserved.
+- Implementation checklist: shared orbit geometry; material/typography/card changes; touch capture fix; focus-scroll prevention; automated/browser/visual comparisons; local preview — completed. Customer visual review and physical integration acceptance — pending.
+
+final result: passed
+
+---
+
+# Historical Design QA — Pad 操作尺寸统一（2026-09-04）
 
 ## Findings and verification gate
 
@@ -109,7 +191,7 @@ The full-view comparison retains each design at native 1:1 resolution, so the he
 
 ## Findings
 
-- Browser capture is now available through the installed Chrome channel. The `/tv` route was captured at the target 3840 × 2160 viewport; the selected asymmetric galaxy composition, left-mid core, right-side standby hierarchy, connection state and one-time activation control are all visible without clipping.
+- Browser capture is now available through the installed Chrome channel. The `/tv` route was captured at the target 3840 × 2160 viewport; the selected asymmetric galaxy composition, left-mid core, right-side standby hierarchy and connection state are all visible without clipping. TV playback activation is automatic after the Pad command; no TV-side activation control is rendered.
 - No actionable P0, P1, or P2 fidelity issues remain in the final 1:1 comparison or the left/right drag checks.
 - Accepted dynamic variation: the WebGL Earth texture rotates, so the visible landmass orientation will not remain pixel-identical to the static source; this is intentional and preserves the requested live spatial effect.
 - Accepted copy variation: the gesture hint is longer than the source because it documents the user-requested drag behavior; it remains inside the original lower-left instruction zone.
@@ -152,6 +234,6 @@ The full-view comparison retains each design at native 1:1 resolution, so the he
 - Post-fix evidence: `qa/galaxy-background-before-after.png` directly shows the reduction in blue dominance, while `qa/galaxy-deep-space-reference-comparison.png` compares the selected source and revised implementation at equal 3:2 scale. `qa/galaxy-deep-space-drag.png` verifies that the deeper grade remains coherent after spatial rotation. No actionable P0/P1/P2 issue remains.
 - Pass 8 verification gate: implemented the shared two-catalog content model, a 54 px tablet-safe catalog switch, product-film placeholders, a darker planet shader response, and a Phosphor spacecraft that follows the selected quadratic energy link tangent. Production build, four Sites packaging tests, the two-catalog data contract, and both localhost/LAN HTTP endpoints passed. Browser-rendered screenshot and live touch-journey evidence for this exact pass are still missing because the browser-control bootstrap is unavailable, so this pass cannot be marked visually accepted yet.
 - Pass 9 functional test environment: added separate `/pad` and `/tv` routes on the LAN test server, server-sent control state, direct source-video delivery with byte-range support, 14 automatic video-slot mappings, real-duration playback, and missing-media fallback. The connected TV route received `PLAY → PAUSE → SEEK → RESUME → MUTE → STOP`; its SSE connection remained live while the final `STOP` returned the state to standby. Both LAN routes and the state API returned HTTP 200, invalid commands returned 400, unknown API routes returned 404, and a range request returned 206.
-- Pass 10 TV standby: replaced the centered readiness icon with the live asymmetric WebGL galaxy, removed the selected-node energy line from standby, added a restrained 12-second loop, established the right-lower `成果案例 · 产品介绍` information hierarchy, lowered technical status prominence, and retained the truthful one-time playback activation. Browser capture at 3840 × 2160 shows no overflow, no title wrap, and no collision with the core or peripheral planets. Build and the current orbit, playback-sync and Sites suites all pass.
+- Pass 10 TV standby: replaced the centered readiness icon with the live asymmetric WebGL galaxy, removed the selected-node energy line from standby, added a restrained 12-second loop, established the right-lower `成果案例 · 产品介绍` information hierarchy, and lowered technical status prominence. Browser capture at 3840 × 2160 shows no overflow, no title wrap, and no collision with the core or peripheral planets. Build and the current orbit, playback-sync and Sites suites all pass.
 
 final result: passed

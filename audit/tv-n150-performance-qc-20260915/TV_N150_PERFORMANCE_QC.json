@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-15T10:35:00+08:00",
+  "targetIssue": "Intel N150 TV web playback stutter while system player is smooth",
+  "rootCauseHypothesis": "standby WebGL galaxy and postprocessing continued during video playback",
+  "implemented": {
+    "unmountStandbyWebglDuringVideo": true,
+    "disableStandbyBackgroundDuringVideo": true,
+    "tvStandbyDpr": 1,
+    "tvStandbyAntialias": false,
+    "tvStandbyPowerPreference": "low-power",
+    "tvStandbyBloom": false,
+    "progressOnlySseRerender": false,
+    "videoDriftCheckIntervalMs": 500,
+    "lazyRouteChunks": true,
+    "initialMainJsBytes": 317300,
+    "previousMainJsBytes": 1352466,
+    "mediaCacheControl": "public, max-age=86400",
+    "clearVideoOnReturn": true,
+    "clearVideoSequence": ["pause", "removeAttribute(src)", "load"]
+  },
+  "sourceTests": {"all": "36/36 PASS", "testStandby": "6/6 PASS", "build": "PASS"},
+  "browserVerification": {
+    "standbyCanvasCount": 1,
+    "playingCanvasCount": 0,
+    "playingPaused": false,
+    "playingReadyState": 4,
+    "returnVideoCount": 0,
+    "returnPlayingVideoCount": 0,
+    "screenshots": ["standby-low-power.png", "playing-no-webgl.png"]
+  },
+  "targetMachineMeasured": false,
+  "productionApproved": false,
+  "nextFieldCheck": [
+    "confirm Edge/Chrome hardware acceleration",
+    "1080p and 4K continuous playback for 30 minutes",
+    "record frame drops, CPU/GPU utilization and temperature"
+  ]
+}

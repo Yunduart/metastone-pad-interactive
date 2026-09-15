@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { Play, WifiHigh, WifiSlash } from "@phosphor-icons/react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { WifiHigh, WifiSlash } from "@phosphor-icons/react";
 import { CONTENT_CATALOGS } from "./domains.js";
 import { OrbitScene } from "./OrbitScene.jsx";
 import { normalizePlaybackRate, planPlaybackCorrection } from "./playbackSync.js";
@@ -18,6 +18,97 @@ const EMPTY_REMOTE_STATE = {
 };
 
 const STANDBY_LOOP_MS = 12000;
+
+const TV_STATE_FIELDS = [
+  "sequence",
+  "command",
+  "catalogId",
+  "domainId",
+  "itemIndex",
+  "itemId",
+  "playing",
+  "muted",
+  "playbackRate",
+  "duration",
+  "loop",
+  "playbackId",
+];
+
+function hasTvStateChanged(previous, next) {
+  return TV_STATE_FIELDS.some((field) => previous?.[field] !== next?.[field]);
+}
+
+/**
+ * The TV is a display endpoint, not a second controller.  Start playback as
+ * soon as the Pad publishes a PLAY/RESUME state.  Some Chromium builds still
+ * reject an audible play() call without a gesture, so retry muted and restore
+ * the requested sound state once the element is actually playing.  This keeps
+ * the TV route non-blocking without exposing a TV-side activation button.
+ */
+function startTvPlayback(video, requestedMuted) {
+  if (!video) return;
+  video.muted = requestedMuted;
+  const attempt = video.play();
+  if (!attempt || typeof attempt.catch !== "function") return;
+  attempt.catch(() => {
+    if (requestedMuted) return;
+    video.muted = true;
+    const mutedAttempt = video.play();
+    if (mutedAttempt && typeof mutedAttempt.then === "function") {
+      mutedAttempt
+        .then(() => {
+          if (!video.paused) video.muted = requestedMuted;
+        })
+        .catch(() => undefined);
+    }
+  });
+}
+
+function syncTvVideo(video, state) {
+  if (!video || !state) return;
+  const baseRate = normalizePlaybackRate(state.playbackRate, 1);
+  const correction = planPlaybackCorrection({
+    currentTime: video.currentTime,
+    targetTime: state.progress,
+    playing: state.playing,
+    playbackRate: baseRate,
+  });
+
+  if (video.muted !== Boolean(state.muted)) video.muted = Boolean(state.muted);
+  if (Math.abs(video.playbackRate - correction.playbackRate) > 0.01) {
+    video.playbackRate = correction.playbackRate;
+  }
+  if (
+    correction.seekTo !== null
+    && video.readyState >= 1
+    && Math.abs(video.currentTime - correction.seekTo) > 0.08
+  ) {
+    video.currentTime = correction.seekTo;
+  }
+
+  if (state.playing) {
+    if (video.paused) startTvPlayback(video, state.muted);
+  } else if (!video.paused && !video.seeking) {
+    video.pause();
+  }
+}
+
+/**
+ * Explicitly release the media element when the TV leaves playback mode.
+ * Removing the source and reloading it is important on low-power Windows
+ * playback boxes: pause() alone can leave the decoder/buffer alive after a
+ * stutter or a media switch, so a later return can accumulate hidden videos.
+ */
+function clearTvVideo(video) {
+  if (!video) return;
+  try {
+    video.pause();
+  } catch {
+    // The element may already be detached while React is replacing a keyed item.
+  }
+  video.removeAttribute("src");
+  video.load();
+}
 
 function TvStandbyGalaxy({ active }) {
   const galaxyAngleRef = useRef(0);
@@ -75,6 +166,7 @@ function TvStandbyGalaxy({ active }) {
         galaxyAngleRef={galaxyAngleRef}
         dragGuardRef={dragGuardRef}
         showEnergyLink={false}
+        renderProfile="tv-low"
       />
     </div>
   );
@@ -97,11 +189,19 @@ function TvFallback({ catalog, domain, media }) {
 
 export function TvDisplay() {
   const videoRef = useRef(null);
+  const remoteStateRef = useRef(EMPTY_REMOTE_STATE);
   const [remoteState, setRemoteState] = useState(EMPTY_REMOTE_STATE);
   const [connected, setConnected] = useState(false);
-  const [armed, setArmed] = useState(false);
   const [mediaError, setMediaError] = useState(false);
   const [mediaAttempt, setMediaAttempt] = useState(0);
+
+  const setVideoRef = useCallback((node) => {
+    // React invokes callback refs with null before a keyed video is removed or
+    // when the user taps 返回. Clear the exact old node before releasing it so
+    // no decoder, buffer, or hidden playback instance survives the transition.
+    if (!node && videoRef.current) clearTvVideo(videoRef.current);
+    videoRef.current = node;
+  }, []);
 
   const catalog = useMemo(
     () => CONTENT_CATALOGS.find((item) => item.id === remoteState.catalogId) ?? null,
@@ -121,7 +221,14 @@ export function TvDisplay() {
     stream.onopen = () => setConnected(true);
     stream.onmessage = (event) => {
       try {
-        setRemoteState(JSON.parse(event.data));
+        const nextState = JSON.parse(event.data);
+        remoteStateRef.current = nextState;
+        // Progress snapshots arrive twice per second. Keep them in a ref so
+        // the TV does not reconcile the whole display tree on every tick;
+        // only commands/media changes need a React render.
+        setRemoteState((previous) => (
+          hasTvStateChanged(previous, nextState) ? nextState : previous
+        ));
         setConnected(true);
       } catch {
         setConnected(false);
@@ -164,42 +271,20 @@ export function TvDisplay() {
   }, [media?.video, mediaError]);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video || !media || mediaError) return;
-    const baseRate = normalizePlaybackRate(remoteState.playbackRate, 1);
-    const correction = planPlaybackCorrection({
-      currentTime: video.currentTime,
-      targetTime: remoteState.progress,
-      playing: remoteState.playing,
-      playbackRate: baseRate,
-    });
-    video.muted = remoteState.muted;
-    video.playbackRate = correction.playbackRate;
-    if (correction.seekTo !== null && video.readyState >= 1) video.currentTime = correction.seekTo;
-    if (remoteState.playing && armed) video.play().catch(() => undefined);
-    else video.pause();
-  }, [armed, media, mediaError, remoteState]);
-
-  const armDisplay = async () => {
-    setArmed(true);
-    try {
-      await document.documentElement.requestFullscreen?.();
-    } catch {
-      // Fullscreen may be unavailable in an embedded browser; playback remains enabled.
-    }
-    if (remoteState.playing) videoRef.current?.play().catch(() => undefined);
-  };
+    if (!media || mediaError) return undefined;
+    const sync = () => syncTvVideo(videoRef.current, remoteStateRef.current);
+    sync();
+    // The server remains authoritative, but the TV only needs a light drift
+    // check. This avoids calling play(), assigning playbackRate, or seeking on
+    // every SSE progress broadcast.
+    const timer = window.setInterval(sync, 500);
+    return () => window.clearInterval(timer);
+  }, [media?.id, mediaError, remoteState.sequence]);
 
   return (
-    <main className="tv-display">
-      <div
-        className="tv-display__test-mark"
-        aria-label="客户体验测试版，仅供体验，不作为验收或生产放行"
-      >
-        客户体验测试版 · 非验收 / 非生产
-      </div>
+    <main className={`tv-display${domain ? " is-media-active" : ""}`}>
       <header className={`tv-display__header${domain ? " is-media-active" : ""}`}>
-        {!domain ? <img src="/assets/shishi-logo.svg" alt="METASTONE 是石科技" /> : null}
+        {!domain ? <img src="/assets/metastone-official-logo.png" alt="METASTONE 是石科技" /> : null}
         <div className={`tv-display__connection${connected ? " is-connected" : ""}`}>
           {connected ? <WifiHigh size={20} weight="duotone" /> : <WifiSlash size={20} weight="duotone" />}
           <span>
@@ -210,13 +295,12 @@ export function TvDisplay() {
       </header>
 
       <section className={`tv-display__standby${domain ? " is-hidden" : ""}`} aria-hidden={Boolean(domain)}>
-        <TvStandbyGalaxy active={!domain} />
+        {!domain ? <TvStandbyGalaxy active /> : null}
         <div className="tv-standby__depth" aria-hidden="true" />
 
         <div className="tv-standby__core-copy" aria-hidden="true">
           <i />
-          <strong>METASTONE</strong>
-          <span>是 石 科 技</span>
+          <img className="tv-standby__core-logo" src="/assets/metastone-official-logo.png" alt="METASTONE 是石科技" />
         </div>
 
         <div className="tv-standby__message">
@@ -240,19 +324,17 @@ export function TvDisplay() {
           {!mediaError ? (
             <video
               key={`${domain.id}-${media.id}-${mediaAttempt}`}
-              ref={videoRef}
+              ref={setVideoRef}
               src={`${media.video}?attempt=${mediaAttempt}`}
               playsInline
+              autoPlay={Boolean(remoteState.playing)}
               loop={media.loop}
               preload="auto"
               onLoadedMetadata={(event) => {
-                if (Number.isFinite(remoteState.progress)) event.currentTarget.currentTime = remoteState.progress;
-                event.currentTarget.playbackRate = normalizePlaybackRate(remoteState.playbackRate, 1);
+                syncTvVideo(event.currentTarget, remoteStateRef.current);
               }}
               onCanPlay={(event) => {
-                event.currentTarget.muted = remoteState.muted;
-                event.currentTarget.playbackRate = normalizePlaybackRate(remoteState.playbackRate, 1);
-                if (remoteState.playing && armed) event.currentTarget.play().catch(() => undefined);
+                syncTvVideo(event.currentTarget, remoteStateRef.current);
               }}
               onError={() => setMediaError(true)}
             />
@@ -266,13 +348,6 @@ export function TvDisplay() {
             <span>{remoteState.itemIndex + 1} / {domain.playlist.length} · {media.title}</span>
           </div>
         </section>
-      ) : null}
-
-      {!armed ? (
-        <button className="tv-display__arm" type="button" onClick={armDisplay}>
-          <Play size={22} weight="fill" />
-          启用电视播放
-        </button>
       ) : null}
     </main>
   );

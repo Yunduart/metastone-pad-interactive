@@ -15,6 +15,7 @@ const clientRoot = resolve(projectRoot, "dist/client");
 const sourceVideoRoot = resolve(projectRoot, "public/videos");
 const host = "0.0.0.0";
 const port = Number(process.env.TEST_PORT || 4175);
+const mediaCacheControl = process.env.MEDIA_CACHE_CONTROL || "public, max-age=86400";
 const sseClients = new Map();
 const validContent = new Map(
   CONTENT_CATALOGS.flatMap((catalog) => catalog.items.flatMap((domain) => (
@@ -338,7 +339,10 @@ const server = createServer(async (request, response) => {
   if (decodedPath.startsWith("/videos/")) {
     const relative = decodedPath.slice("/videos/".length);
     const videoPath = resolveInside(sourceVideoRoot, relative);
-    if (serveFile(request, response, videoPath, "no-store")) return;
+    // Media is immutable inside a delivery package. Allow the browser to
+    // reuse decoded/range-cached segments when a visitor replays an item;
+    // set MEDIA_CACHE_CONTROL=no-store for local media development.
+    if (serveFile(request, response, videoPath, mediaCacheControl)) return;
     sendJson(response, 404, { error: "video-not-found", path: relative });
     return;
   }

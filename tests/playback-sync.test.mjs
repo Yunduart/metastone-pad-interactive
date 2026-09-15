@@ -26,8 +26,7 @@ test("the Pad exposes a read-only progress indicator and approved speed controls
   assert.match(source, /assignedCatalogId/);
   assert.match(source, /PLAYBACK_RATES\.map/);
   assert.match(source, /rate === 1 \? "原速"/);
-  assert.match(source, /客户体验测试版/);
-  assert.match(source, /仅供体验 · 非验收 \/ 非生产/);
+  assert.doesNotMatch(source, /客户体验测试版|用户体验|待验收|非验收|非生产/);
   assert.match(source, /电视端同步进度 · 只读/);
   assert.match(styles, /grid-template-columns:\s*minmax\(0, 1fr\) clamp\(312px, 26vw, 440px\) minmax\(0, 1fr\)/);
   assert.match(styles, /\.player-controls__console::before/);
@@ -59,7 +58,7 @@ test("only the TV route owns an HTML video renderer", async () => {
   assert.match(source, /<video\b/);
   assert.match(source, /loop=\{media\.loop\}/);
   assert.match(source, /\/api\/events\?role=tv/);
-  assert.match(source, /!domain \? <img src="\/assets\/shishi-logo\.svg"/);
+  assert.match(source, /!domain \? <img src="\/assets\/metastone-official-logo\.png"/);
 });
 
 test("only the approved Pad playback rates are accepted", () => {

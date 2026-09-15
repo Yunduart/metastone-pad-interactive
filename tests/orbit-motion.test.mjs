@@ -4,12 +4,18 @@ import { CONTENT_CATALOGS } from "../src/domains.js";
 import {
   GALAXY_ELEVATION_LIMIT,
   GALAXY_SOURCE_CORE,
+  GALAXY_OUTER_TRACK,
+  GALAXY_PRIMARY_TRACK,
+  GALAXY_WIDE_TRACK,
+  constrainGalaxyMotion,
+  galaxyMotionClearance,
   galaxyCoreDragDelta,
   galaxyCoreDrift,
   galaxyOrbitTrack,
   galaxyPortalPhase,
   galaxyTrackPoint,
   galaxyViewportSize,
+  isGalaxyCaptureHandoff,
   projectGalaxyPoint,
   stepDampedSpring,
 } from "../src/orbitMath.js";
@@ -18,6 +24,17 @@ const WIDTH = 1500;
 const HEIGHT = 1000;
 const CASES = CONTENT_CATALOGS[0].items;
 const PRODUCTS = CONTENT_CATALOGS[1].items;
+
+test("touch implicit capture transfer is not mistaken for release or cancellation", () => {
+  const child = {};
+  const owner = { hasPointerCapture: id => id === 7 };
+  const event = { type: "lostpointercapture", pointerId: 7, target: child, currentTarget: owner };
+  assert.equal(isGalaxyCaptureHandoff(event), true);
+  assert.equal(isGalaxyCaptureHandoff({ ...event, target: owner }), false, "actual owner loss ends drag");
+  assert.equal(isGalaxyCaptureHandoff({ ...event, pointerId: 8 }), false, "uncaptured pointer is not a transfer");
+  assert.equal(isGalaxyCaptureHandoff({ ...event, type: "pointercancel" }), false);
+  assert.equal(isGalaxyCaptureHandoff({ ...event, type: "pointerup" }), false);
+});
 
 test("the left-side core uses inverse two-axis drag parallax", () => {
   const leftDrag = galaxyCoreDragDelta(-240, WIDTH);
@@ -138,8 +155,8 @@ test("every planet starts exactly on its assigned visible orbit ring", () => {
     const track = galaxyOrbitTrack(domain.orbitKey ?? domain.id);
     const phase = galaxyPortalPhase(domain.portal, { track });
     const [x, y] = galaxyTrackPoint(index, CASES.length, WIDTH, HEIGHT, 0, 0, { phase, track });
-    const normalized = (x / (WIDTH * track.radiusX)) ** 2
-      + (y / (HEIGHT * track.radiusY)) ** 2;
+    const normalized = ((x - (track.centerX - GALAXY_SOURCE_CORE.x) * WIDTH) / (WIDTH * track.radiusX)) ** 2
+      + ((y - (GALAXY_SOURCE_CORE.y - track.centerY) * HEIGHT) / (HEIGHT * track.radiusY)) ** 2;
     assert.ok(Math.abs(normalized - 1) < 1e-10, `${domain.title} is not on the ring`);
   });
 });
@@ -214,13 +231,56 @@ test("every planet remains on its tilted assigned ring while the galaxy rotates"
       elevation,
       { phase, track },
     );
-    const sourceY = Math.sin(theta) * height * track.radiusY;
-    const sourceZ = track.baseDepth + Math.sin(theta) * track.depth;
+    const sourceX = (track.centerX - GALAXY_SOURCE_CORE.x) * width + Math.cos(theta) * width * track.radiusX;
+    const sourceY = (GALAXY_SOURCE_CORE.y - track.centerY) * height + Math.sin(theta) * height * track.radiusY;
+    const sourceZ = track.baseDepth - Math.sin(theta) * track.depth;
     const cosine = Math.cos(elevation);
     const sine = Math.sin(elevation);
 
-    assert.ok(Math.abs(x - Math.cos(theta) * width * track.radiusX) < 0.000001);
+    assert.ok(Math.abs(x - sourceX) < 0.000001);
     assert.ok(Math.abs(y - (sourceY * cosine - sourceZ * sine)) < 0.000001);
     assert.ok(Math.abs(z - (sourceY * sine + sourceZ * cosine)) < 0.000001);
   });
+});
+
+test("visible rings have composition centres separate from the brand sphere and fit horizontally", () => {
+  for (const track of [GALAXY_PRIMARY_TRACK, GALAXY_OUTER_TRACK, GALAXY_WIDE_TRACK]) {
+    assert.notEqual(track.centerX, GALAXY_SOURCE_CORE.x);
+    assert.ok(track.centerX - track.radiusX >= 0.019);
+    assert.ok(track.centerX + track.radiusX <= 0.87);
+    assert.ok(track.baseDepth + track.depth > track.baseDepth - track.depth, "front/lower half is nearer the camera");
+  }
+});
+
+test("both catalogues start in a clear, asymmetric home pose at supported viewports", () => {
+  for (const [width, height] of [[1536, 1024], [1920, 1280], [1280, 800], [1024, 768]]) {
+    for (const catalog of CONTENT_CATALOGS) {
+      const clearance = galaxyMotionClearance(catalog.items, width, height, {});
+      assert.ok(clearance >= 0, `${catalog.id} ${width}x${height}: ${clearance}`);
+    }
+  }
+});
+
+test("drag bounds limit the whole galaxy, without moving any planet off its ring", () => {
+  for (const [width, height] of [[1536, 1024], [1920, 1280], [1280, 800], [1024, 768]]) {
+    for (const catalog of CONTENT_CATALOGS) {
+      for (const dx of [-700, -365, -120, 120, 365, 700]) {
+        for (const dy of [-300, 0, 300]) {
+          const target = {
+            angle: dx * 0.0011,
+            elevation: Math.max(-0.34, Math.min(0.34, dy * 0.00125)),
+            horizontalOffset: Math.max(-0.1, Math.min(0.1, galaxyCoreDragDelta(dx, width))),
+            verticalOffset: Math.max(-0.075, Math.min(0.075, galaxyCoreDragDelta(dy, height, 0.54))),
+          };
+          const safe = constrainGalaxyMotion(target, catalog.items, width, height);
+          assert.ok(safe.scale >= 0 && safe.scale <= 1);
+          assert.ok(galaxyMotionClearance(catalog.items, width, height, safe) >= -0.001,
+            `${catalog.id} ${width}x${height}, gesture ${dx},${dy}`);
+          for (const key of ["angle", "elevation", "horizontalOffset", "verticalOffset"]) {
+            assert.equal(safe[key], target[key] * safe.scale, "one common transform, no per-label clamps");
+          }
+        }
+      }
+    }
+  }
 });

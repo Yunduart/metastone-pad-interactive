@@ -46,6 +46,12 @@ test("the LAN control server advances progress, applies rate, and rejects stale 
 
   try {
     await waitForServer(child);
+    const mediaHead = await fetch(`${endpoint}/videos/cases/01-internet/01-slide-01-loop.mp4`, {
+      method: "HEAD",
+    });
+    assert.equal(mediaHead.status, 200);
+    assert.match(mediaHead.headers.get("cache-control") ?? "", /max-age=86400/);
+
     const playResponse = await post({
       type: "PLAY",
       catalogId: "product-introduction",

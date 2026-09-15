@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { memo, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, Line, useTexture } from "@react-three/drei";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
@@ -8,10 +8,12 @@ import {
   GALAXY_CAMERA_Z,
   GALAXY_OUTER_TRACK,
   GALAXY_PRIMARY_TRACK,
+  GALAXY_WIDE_TRACK,
   GALAXY_SOURCE_CORE,
   galaxyCoreDrift,
   galaxyOrbitTrack,
   galaxyPortalPhase,
+  galaxyPlanetRadius,
   galaxyTrackPoint,
 } from "./orbitMath.js";
 
@@ -35,7 +37,7 @@ const GLOW_FRAGMENT = `
 
   void main() {
     vec3 viewDirection = normalize(-vViewPosition);
-    float rim = pow(1.0 - clamp(dot(vNormal, viewDirection), 0.0, 1.0), 2.4);
+    float rim = pow(1.0 - clamp(dot(vNormal, viewDirection), 0.0, 1.0), 4.0);
     gl_FragColor = vec4(uColor, rim * uStrength);
   }
 `;
@@ -69,35 +71,40 @@ const PLANET_FRAGMENT = `
     vec3 source = texture2D(uEarthMap, vUv).rgb;
     vec3 relief = texture2D(uNormalMap, vUv).rgb * 2.0 - 1.0;
     float luminance = dot(source, vec3(0.2126, 0.7152, 0.0722));
-    float land = smoothstep(0.11, 0.48, luminance);
-    float ice = smoothstep(0.68, 0.96, luminance);
+    float land = smoothstep(-0.025, 0.035, source.r - source.b);
+    float ice = smoothstep(0.4, 0.83, luminance);
     float reliefEdge = clamp(length(relief.xy), 0.0, 1.0) * land;
 
-    vec3 deepOcean = vec3(0.0005, 0.004, 0.022);
-    vec3 glacier = vec3(0.16, 0.42, 0.88);
-    vec3 gradedSource = pow(max(source, vec3(0.0)), vec3(1.8));
-    vec3 color = deepOcean + gradedSource * vec3(0.30, 0.59, 0.94);
-    color += land * vec3(0.008, 0.052, 0.17) * (0.8 + uActive * 0.18);
-    color = mix(color, glacier, ice * (0.1 + uActive * 0.035));
+    vec3 deepOcean = vec3(0.002, 0.009, 0.105);
+    vec3 glacier = vec3(0.12, 0.29, 0.92);
+    vec3 color = deepOcean + land * luminance * vec3(0.06, 0.19, 0.59);
+    color = mix(color, glacier, ice * 0.12);
+    vec3 east = texture2D(uEarthMap, vUv + vec2(0.0007, 0.0)).rgb;
+    vec3 north = texture2D(uEarthMap, vUv + vec2(0.0, 0.0014)).rgb;
+    float coast = abs(land - smoothstep(-0.025, 0.035, east.r - east.b))
+      + abs(land - smoothstep(-0.025, 0.035, north.r - north.b));
 
     vec3 normal = normalize(vNormalView);
     vec3 viewDirection = normalize(-vViewPosition);
     vec3 lightDirection = normalize(vec3(-0.42, 0.58, 0.72));
     float keyLight = max(dot(normal, lightDirection), 0.0);
     float wrapLight = smoothstep(-0.62, 0.82, dot(normal, lightDirection));
-    float rim = pow(1.0 - clamp(dot(normal, viewDirection), 0.0, 1.0), 2.7);
+    float rim = pow(1.0 - clamp(dot(normal, viewDirection), 0.0, 1.0), 8.0);
     vec3 halfVector = normalize(lightDirection + viewDirection);
-    float specular = pow(max(dot(normal, halfVector), 0.0), 38.0);
+    float specular = pow(max(dot(normal, halfVector), 0.0), 96.0);
 
     float bodyLight = 0.34 + wrapLight * 0.33 + pow(keyLight, 1.35) * 0.15;
     bodyLight += uHero * 0.052 + uActive * 0.048;
     color *= bodyLight * (0.61 + uActive * 0.17 + uHero * 0.10);
-    color += reliefEdge * vec3(0.065, 0.22, 0.62) * (0.31 + uActive * 0.075 + uHero * 0.11);
-    color += specular * vec3(0.3, 0.62, 1.08) * (0.16 + uActive * 0.13);
-    color += rim * vec3(0.08, 0.31, 1.0) * (0.25 + uActive * 0.19 + uHero * 0.09);
+    color += reliefEdge * vec3(0.52, 0.74, 1.16) * (0.82 + uActive * 0.16 + uHero * 0.2);
+    color += coast * vec3(0.35, 0.63, 1.14) * (0.6 + uHero * 0.2);
+    color += specular * vec3(0.46, 0.72, 1.10) * (0.1 + uActive * 0.1);
+    color += rim * vec3(0.18, 0.34, 1.3) * (0.54 + uActive * 0.38 + uHero * 0.14)
+      * (0.42 + 0.58 * pow(keyLight, 0.4));
 
     float edgeFalloff = smoothstep(0.0, 0.18, dot(normal, viewDirection));
     color *= mix(0.72, 1.0, edgeFalloff) * mix(0.82, 1.08, uDepth);
+    color *= vec3(0.76, 0.87, 1.3);
     gl_FragColor = vec4(color, 1.0);
   }
 `;
@@ -115,37 +122,37 @@ const CLOUD_FRAGMENT = `
   void main() {
     vec3 cloudSource = texture2D(uCloudsMap, vUv).rgb;
     float cloud = dot(cloudSource, vec3(0.3333));
-    float structure = smoothstep(0.7, 0.99, cloud);
+    float structure = smoothstep(0.42, 0.9, cloud);
     vec3 normal = normalize(vNormalView);
     vec3 viewDirection = normalize(-vViewPosition);
     float rim = pow(1.0 - clamp(dot(normal, viewDirection), 0.0, 1.0), 2.4);
     float light = 0.7 + max(dot(normal, normalize(vec3(-0.36, 0.62, 0.7))), 0.0) * 0.3;
     vec3 color = mix(vec3(0.18, 0.58, 1.08), vec3(0.78, 0.95, 1.28), structure);
-    float alpha = (structure * uOpacity * light + rim * (0.018 + uHero * 0.018)) * mix(0.76, 1.08, uDepth);
+    float alpha = structure * uOpacity * light * mix(0.86, 1.08, uDepth);
     gl_FragColor = vec4(color, alpha);
   }
 `;
 
-function Atmosphere({ radius, active = false, hero = false }) {
+function Atmosphere({ radius, active = false, hero = false, lowPower = false }) {
   const innerUniforms = useMemo(
     () => ({
-      uColor: { value: new THREE.Color(active ? "#8bd7ff" : "#397bd8") },
-      uStrength: { value: active ? (hero ? 0.22 : 0.24) : 0.095 },
+      uColor: { value: new THREE.Color(active ? "#7399ff" : "#3c62d8") },
+      uStrength: { value: active ? 0.28 : 0.14 },
     }),
     [active, hero],
   );
   const outerUniforms = useMemo(
     () => ({
       uColor: { value: new THREE.Color(active ? "#2d7fff" : "#2259bd") },
-      uStrength: { value: active ? (hero ? 0.038 : 0.042) : 0.019 },
+      uStrength: { value: active ? 0.012 : 0.005 },
     }),
     [active, hero],
   );
 
   return (
     <>
-      <mesh scale={1.022}>
-        <sphereGeometry args={[radius, 48, 48]} />
+      <mesh scale={1.008}>
+        <sphereGeometry args={[radius, lowPower ? 24 : 48, lowPower ? 20 : 48]} />
         <shaderMaterial
           vertexShader={GLOW_VERTEX}
           fragmentShader={GLOW_FRAGMENT}
@@ -156,8 +163,8 @@ function Atmosphere({ radius, active = false, hero = false }) {
           blending={THREE.AdditiveBlending}
         />
       </mesh>
-      <mesh scale={1.09}>
-        <sphereGeometry args={[radius, 40, 40]} />
+      <mesh scale={1.065}>
+        <sphereGeometry args={[radius, lowPower ? 20 : 40, lowPower ? 16 : 40]} />
         <shaderMaterial
           vertexShader={GLOW_VERTEX}
           fragmentShader={GLOW_FRAGMENT}
@@ -180,8 +187,10 @@ function PlanetSurface({
   active,
   hero = false,
   depthRef,
+  dragGuardRef,
   rotationOffset = 0,
   rotationSpeed = 0.026,
+  lowPower = false,
 }) {
   const earthRef = useRef(null);
   const cloudsRef = useRef(null);
@@ -198,7 +207,7 @@ function PlanetSurface({
   const cloudUniforms = useMemo(
     () => ({
       uCloudsMap: { value: cloudsMap },
-      uOpacity: { value: active ? (hero ? 0.005 : 0.006) : 0.002 },
+      uOpacity: { value: active ? 0.009 : 0.004 },
       uHero: { value: hero ? 1 : 0 },
       uDepth: { value: hero ? 1 : 0.6 },
     }),
@@ -209,6 +218,7 @@ function PlanetSurface({
     const depth = depthRef?.current ?? (hero ? 1 : 0.6);
     surfaceUniforms.uDepth.value = active ? Math.max(0.72, depth) : depth;
     cloudUniforms.uDepth.value = active ? Math.max(0.72, depth) : depth;
+    if (dragGuardRef?.current?.reducedMotion) return;
     if (earthRef.current) earthRef.current.rotation.y += delta * rotationSpeed;
     if (cloudsRef.current) cloudsRef.current.rotation.y += delta * rotationSpeed * 1.42;
   });
@@ -216,7 +226,7 @@ function PlanetSurface({
   return (
     <>
       <mesh ref={earthRef} rotation={[0, rotationOffset, 0]}>
-        <sphereGeometry args={[radius, 64, 64]} />
+        <sphereGeometry args={[radius, lowPower ? 32 : 64, lowPower ? 32 : 64]} />
         <shaderMaterial
           vertexShader={PLANET_VERTEX}
           fragmentShader={PLANET_FRAGMENT}
@@ -226,7 +236,7 @@ function PlanetSurface({
       </mesh>
 
       <mesh ref={cloudsRef} scale={1.011} rotation={[0, rotationOffset + 0.2, 0]}>
-        <sphereGeometry args={[radius, 48, 48]} />
+        <sphereGeometry args={[radius, lowPower ? 24 : 48, lowPower ? 24 : 48]} />
         <shaderMaterial
           vertexShader={PLANET_VERTEX}
           fragmentShader={CLOUD_FRAGMENT}
@@ -239,29 +249,29 @@ function PlanetSurface({
       </mesh>
 
       <mesh>
-        <icosahedronGeometry args={[radius * 1.018, active || hero ? 3 : 2]} />
+        <icosahedronGeometry args={[radius * 1.003, lowPower ? 2 : 4]} />
         <meshBasicMaterial
           color={active ? "#98d8ff" : "#4b8cdb"}
           wireframe
           transparent
-          opacity={active ? (hero ? 0.024 : 0.022) : 0.007}
+          opacity={active ? (hero ? 0.004 : 0.003) : 0.0015}
           depthWrite={false}
           blending={THREE.AdditiveBlending}
           toneMapped={false}
         />
       </mesh>
 
-      <Atmosphere radius={radius} active={active} hero={hero} />
+      <Atmosphere radius={radius} active={active} hero={hero} lowPower={lowPower} />
     </>
   );
 }
 
-function CorePlanet({ position, radius, textures, onReset, dragGuardRef }) {
+function CorePlanet({ position, radius, textures, onReset, dragGuardRef, lowPower = false }) {
   const groupRef = useRef(null);
 
   useFrame((state, delta) => {
     if (!groupRef.current) return;
-    const pulse = 1 + Math.sin(state.clock.elapsedTime * 1.3) * 0.008;
+    const pulse = dragGuardRef?.current?.reducedMotion ? 1 : 1 + Math.sin(state.clock.elapsedTime * 1.3) * 0.004;
     const next = THREE.MathUtils.damp(groupRef.current.scale.x, pulse, 4, delta);
     groupRef.current.scale.setScalar(next);
   });
@@ -275,8 +285,10 @@ function CorePlanet({ position, radius, textures, onReset, dragGuardRef }) {
         cloudsMap={textures.cloudsMap}
         active
         hero
+        dragGuardRef={dragGuardRef}
         rotationOffset={-0.58}
         rotationSpeed={0.018}
+        lowPower={lowPower}
       />
 
       <mesh
@@ -296,21 +308,16 @@ function CorePlanet({ position, radius, textures, onReset, dragGuardRef }) {
   );
 }
 
-function ActiveOrbitHalo({ radius, active, hovered }) {
+function ActiveOrbitHalo({ radius, active, hovered, dragGuardRef }) {
   const primaryRef = useRef(null);
-  const secondaryRef = useRef(null);
   const visible = active || hovered;
 
   useFrame((state, delta) => {
-    if (!visible) return;
+    if (!visible || dragGuardRef?.current?.reducedMotion) return;
     const pulse = 1 + Math.sin(state.clock.elapsedTime * 2.15) * (active ? 0.028 : 0.014);
     if (primaryRef.current) {
       primaryRef.current.rotation.z += delta * 0.22;
       primaryRef.current.scale.setScalar(pulse);
-    }
-    if (secondaryRef.current) {
-      secondaryRef.current.rotation.z -= delta * 0.13;
-      secondaryRef.current.scale.setScalar(2 - pulse * 0.98);
     }
   });
 
@@ -319,22 +326,11 @@ function ActiveOrbitHalo({ radius, active, hovered }) {
   return (
     <group>
       <mesh ref={primaryRef} rotation={[0.44, 0.08, 0.1]}>
-        <torusGeometry args={[radius * 1.24, radius * 0.008, 8, 112]} />
+        <torusGeometry args={[radius * 1.08, radius * 0.003, 8, 112]} />
         <meshBasicMaterial
           color="#9eefff"
           transparent
-          opacity={active ? 0.28 : 0.14}
-          depthWrite={false}
-          blending={THREE.AdditiveBlending}
-          toneMapped={false}
-        />
-      </mesh>
-      <mesh ref={secondaryRef} rotation={[-0.34, 0.17, 1.1]}>
-        <torusGeometry args={[radius * 1.36, radius * 0.004, 8, 112]} />
-        <meshBasicMaterial
-          color="#5e9dff"
-          transparent
-          opacity={active ? 0.11 : 0.055}
+          opacity={active ? 0.08 : 0.05}
           depthWrite={false}
           blending={THREE.AdditiveBlending}
           toneMapped={false}
@@ -358,6 +354,7 @@ function DomainPlanet({
   galaxyAngleRef,
   dragGuardRef,
   viewport,
+  lowPower = false,
 }) {
   const groupRef = useRef(null);
   const depthRef = useRef(0.6);
@@ -395,11 +392,13 @@ function DomainPlanet({
         cloudsMap={textures.cloudsMap}
         active={active}
         depthRef={depthRef}
+        dragGuardRef={dragGuardRef}
         rotationOffset={-0.78 + Number(domain.number) * 0.27}
         rotationSpeed={0.028 + Number(domain.number) * 0.002}
+        lowPower={lowPower}
       />
 
-      <ActiveOrbitHalo radius={radius} active={active} hovered={hovered} />
+      <ActiveOrbitHalo radius={radius} active={active} hovered={hovered} dragGuardRef={dragGuardRef} />
 
       <mesh
         onClick={(event) => {
@@ -434,7 +433,7 @@ function GestureCamera({ dragGuardRef }) {
   return null;
 }
 
-function StarDust({ width, height, galaxyAngleRef, dragGuardRef }) {
+function StarDust({ width, height, galaxyAngleRef, dragGuardRef, lowPower = false }) {
   const farRef = useRef(null);
   const nearRef = useRef(null);
   const positions = useMemo(() => {
@@ -453,10 +452,10 @@ function StarDust({ width, height, galaxyAngleRef, dragGuardRef }) {
       return values;
     };
     return {
-      far: makeLayer(280, 173, 1.46, 1.38, -4.4, 7.4),
-      near: makeLayer(88, 911, 1.16, 1.12, -0.4, 3.6),
+      far: makeLayer(lowPower ? 120 : 280, 173, 1.46, 1.38, -4.4, 7.4),
+      near: makeLayer(lowPower ? 40 : 88, 911, 1.16, 1.12, -0.4, 3.6),
     };
-  }, [height, width]);
+  }, [height, lowPower, width]);
 
   useFrame((state, delta) => {
     if (!farRef.current || !nearRef.current) return;
@@ -469,8 +468,9 @@ function StarDust({ width, height, galaxyAngleRef, dragGuardRef }) {
       : THREE.MathUtils.clamp((motion?.velocityY ?? 0) / 0.0014, -1, 1);
     const horizontal = motion?.coreOffset ?? 0;
     const vertical = motion?.coreVerticalOffset ?? 0;
-    const farTarget = galaxyAngleRef.current * 0.018 + state.clock.elapsedTime * 0.0013;
-    const nearTarget = galaxyAngleRef.current * 0.064 + state.clock.elapsedTime * 0.0032;
+    const ambientTime = motion?.reducedMotion ? 0 : state.clock.elapsedTime;
+    const farTarget = galaxyAngleRef.current * 0.018 + ambientTime * 0.0013;
+    const nearTarget = galaxyAngleRef.current * 0.064 + ambientTime * 0.0032;
 
     farRef.current.rotation.z = THREE.MathUtils.damp(farRef.current.rotation.z, farTarget, 2.2, delta);
     nearRef.current.rotation.z = THREE.MathUtils.damp(nearRef.current.rotation.z, nearTarget, 3.4, delta);
@@ -546,14 +546,14 @@ function StarDust({ width, height, galaxyAngleRef, dragGuardRef }) {
   );
 }
 
-function ellipseArcPoints(radiusX, radiusY, depth, start, end, segments = 180) {
+function ellipseArcPoints(radiusX, radiusY, depth, start, end, offsetX = 0, offsetY = 0, segments = 180) {
   const points = [];
   for (let index = 0; index <= segments; index += 1) {
     const angle = start + (index / segments) * (end - start);
     points.push([
-      Math.cos(angle) * radiusX,
-      Math.sin(angle) * radiusY,
-      -0.18 + Math.sin(angle) * depth,
+      offsetX + Math.cos(angle) * radiusX,
+      offsetY + Math.sin(angle) * radiusY,
+      -0.18 - Math.sin(angle) * depth,
     ]);
   }
   return points;
@@ -573,15 +573,18 @@ function OrbitLine({
   galaxyAngleRef,
   dragGuardRef,
   lockToGalaxy = false,
+  segments = 180,
+  offsetX = 0,
+  offsetY = 0,
 }) {
   const groupRef = useRef(null);
   const frontPoints = useMemo(
-    () => ellipseArcPoints(radiusX, radiusY, depth, 0, Math.PI),
-    [depth, radiusX, radiusY],
+    () => ellipseArcPoints(radiusX, radiusY, depth, Math.PI, Math.PI * 2, offsetX, offsetY, segments),
+    [depth, offsetX, offsetY, radiusX, radiusY, segments],
   );
   const backPoints = useMemo(
-    () => ellipseArcPoints(radiusX, radiusY, depth, Math.PI, Math.PI * 2),
-    [depth, radiusX, radiusY],
+    () => ellipseArcPoints(radiusX, radiusY, depth, 0, Math.PI, offsetX, offsetY, segments),
+    [depth, offsetX, offsetY, radiusX, radiusY, segments],
   );
 
   useFrame((state, delta) => {
@@ -618,15 +621,15 @@ function OrbitLine({
     <group ref={groupRef} position={center} rotation={[tiltX, tiltY, rotation]}>
       <Line
         points={backPoints}
-        color="#4a84d7"
+        color="#6699dd"
         lineWidth={lineWidth * 0.72}
         transparent
-        opacity={opacity * 0.36}
+        opacity={opacity * 0.40}
         depthWrite={false}
       />
       <Line
         points={frontPoints}
-        color="#8bd4ff"
+        color="#b2d8ff"
         lineWidth={lineWidth}
         transparent
         opacity={opacity}
@@ -669,7 +672,7 @@ function EnergyLink({
   useEffect(() => {
     lastAngleRef.current = Number.NaN;
     lastElevationRef.current = Number.NaN;
-  }, [targetIndex]);
+  }, [targetIndex, width, height, phase, track, corePosition]);
 
   useFrame((state) => {
     if (!pulseRef.current || !broadRef.current || !coreRef.current || !active) return;
@@ -716,11 +719,13 @@ function EnergyLink({
       broadRef.current.geometry.setPositions(linePositions);
       coreRef.current.geometry.setPositions(linePositions);
     }
-    const progress = (state.clock.elapsedTime * 0.22) % 1;
+    const progress = dragGuardRef.current?.reducedMotion ? 0.72 : (state.clock.elapsedTime * 0.22) % 1;
     curve.getPoint(progress, pulseRef.current.position);
     curve.getTangent(progress, tangent);
     if (vesselRef.current) {
-      const screenAngle = Math.atan2(-tangent.y, tangent.x) - Math.PI / 4;
+      // RocketLaunch's artwork points up-right at rest. Add 45° so its nose
+      // follows the energy curve tangent instead of trailing it sideways.
+      const screenAngle = Math.atan2(-tangent.y, tangent.x) + Math.PI / 4;
       vesselRef.current.style.transform = `rotate(${screenAngle}rad)`;
     }
   });
@@ -758,30 +763,20 @@ function EnergyLink({
 
 function buildLayout(width, height, domains) {
   const unit = Math.min(height, width / 1.48);
-  const nodeRadius = unit * 0.05;
-  const radiusScale = {
-    "large-models": 1.28,
-    "research-institutes": 0.9,
-    "high-end-manufacturing": 1.08,
-    "ocean-simulation": 1.04,
-    internet: 1.1,
-    aerospace: 0.92,
-    "ai-for-science": 1.08,
-  };
   const corePosition = [
     (GALAXY_SOURCE_CORE.x - 0.5) * width,
     (0.5 - GALAXY_SOURCE_CORE.y) * height,
     0,
   ];
   return {
-    core: { position: corePosition, radius: unit * 0.153 },
+    core: { position: corePosition, radius: unit * 0.155 },
     nodes: Object.fromEntries(domains.map((domain, index) => {
       const track = galaxyOrbitTrack(domain.orbitKey ?? domain.id);
       const phase = galaxyPortalPhase(domain.portal, { track });
       const [x, y, z] = galaxyTrackPoint(index, domains.length, width, height, 0, 0, { phase, track });
       return [domain.id, {
         position: [corePosition[0] + x, corePosition[1] + y, z],
-        radius: nodeRadius * (radiusScale[domain.orbitKey ?? domain.id] ?? 1),
+        radius: galaxyPlanetRadius(domain.orbitKey ?? domain.id, width, height),
         index,
         phase,
         track,
@@ -816,10 +811,11 @@ function OrbitWorld({
   galaxyAngleRef,
   dragGuardRef,
   showEnergyLink,
+  lowPower,
 }) {
   const { gl, viewport } = useThree();
   const [earthMap, normalMap, cloudsMap] = useTexture([
-    "/assets/earth-blue-2048.jpg",
+    "/assets/earth-atmos-2048.jpg",
     "/assets/earth-normal-2048.jpg",
     "/assets/earth-clouds-1024.png",
   ]);
@@ -852,6 +848,7 @@ function OrbitWorld({
         height={viewport.height}
         galaxyAngleRef={galaxyAngleRef}
         dragGuardRef={dragGuardRef}
+        lowPower={lowPower}
       />
 
       <GalaxyAssembly
@@ -872,37 +869,29 @@ function OrbitWorld({
           spinFactor={0.028}
           galaxyAngleRef={galaxyAngleRef}
           dragGuardRef={dragGuardRef}
+          segments={lowPower ? 96 : 180}
         />
-        <OrbitLine
-          center={corePosition}
-          radiusX={viewport.width * GALAXY_PRIMARY_TRACK.radiusX}
-          radiusY={viewport.height * GALAXY_PRIMARY_TRACK.radiusY}
-          rotation={0}
-          opacity={0.4}
-          lineWidth={1.08}
-          depth={GALAXY_PRIMARY_TRACK.depth}
-          tiltX={0}
-          tiltY={0}
-          spinFactor={0}
-          galaxyAngleRef={galaxyAngleRef}
-          dragGuardRef={dragGuardRef}
-          lockToGalaxy
-        />
-        <OrbitLine
-          center={corePosition}
-          radiusX={viewport.width * GALAXY_OUTER_TRACK.radiusX}
-          radiusY={viewport.height * GALAXY_OUTER_TRACK.radiusY}
-          rotation={0}
-          opacity={0.23}
-          lineWidth={0.96}
-          depth={GALAXY_OUTER_TRACK.depth}
-          tiltX={0}
-          tiltY={0}
-          spinFactor={0}
-          galaxyAngleRef={galaxyAngleRef}
-          dragGuardRef={dragGuardRef}
-          lockToGalaxy
-        />
+        {[GALAXY_PRIMARY_TRACK, GALAXY_OUTER_TRACK, GALAXY_WIDE_TRACK].map((track, index) => (
+          <OrbitLine
+            key={index}
+            center={corePosition}
+            offsetX={(track.centerX - GALAXY_SOURCE_CORE.x) * viewport.width}
+            offsetY={(GALAXY_SOURCE_CORE.y - track.centerY) * viewport.height}
+            radiusX={viewport.width * track.radiusX}
+            radiusY={viewport.height * track.radiusY}
+            rotation={0}
+            opacity={index === 1 ? 0.62 : index === 0 ? 0.28 : 0.17}
+            lineWidth={index === 1 ? 1.25 : 0.9}
+            depth={track.depth}
+            tiltX={0}
+            tiltY={0}
+            spinFactor={0}
+            galaxyAngleRef={galaxyAngleRef}
+            dragGuardRef={dragGuardRef}
+            lockToGalaxy
+            segments={lowPower ? 72 : 180}
+          />
+        ))}
 
         {showEnergyLink ? (
           <EnergyLink
@@ -926,6 +915,7 @@ function OrbitWorld({
           textures={textures}
           onReset={onCoreReset}
           dragGuardRef={dragGuardRef}
+          lowPower={lowPower}
         />
 
         {domains.map((domain) => {
@@ -946,25 +936,28 @@ function OrbitWorld({
               galaxyAngleRef={galaxyAngleRef}
               dragGuardRef={dragGuardRef}
               viewport={viewport}
+              lowPower={lowPower}
             />
           );
         })}
       </GalaxyAssembly>
 
-      <EffectComposer multisampling={0} enableNormalPass={false}>
-        <Bloom
-          intensity={0.5}
-          luminanceThreshold={0.5}
-          luminanceSmoothing={0.52}
-          mipmapBlur
-          radius={0.62}
-        />
-      </EffectComposer>
+      {!lowPower ? (
+        <EffectComposer multisampling={0} enableNormalPass={false}>
+          <Bloom
+            intensity={0.5}
+            luminanceThreshold={0.5}
+            luminanceSmoothing={0.52}
+            mipmapBlur
+            radius={0.62}
+          />
+        </EffectComposer>
+      ) : null}
     </>
   );
 }
 
-export function OrbitScene({
+export const OrbitScene = memo(function OrbitScene({
   domains,
   selectedId,
   onSelect,
@@ -972,15 +965,17 @@ export function OrbitScene({
   galaxyAngleRef,
   dragGuardRef,
   showEnergyLink = true,
+  renderProfile = "default",
 }) {
   const fallbackAngleRef = useRef(0);
   const resolvedAngleRef = galaxyAngleRef ?? fallbackAngleRef;
+  const lowPower = renderProfile === "tv-low";
   return (
     <div className="orbit-canvas" aria-hidden="false">
       <Canvas
-        dpr={[1, 1.5]}
+        dpr={lowPower ? 1 : [1, 1.5]}
         camera={{ position: [0, 0, 12], fov: 40, near: 0.1, far: 80 }}
-        gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+        gl={{ antialias: !lowPower, alpha: true, powerPreference: lowPower ? "low-power" : "high-performance" }}
         onPointerMissed={() => { document.body.style.cursor = "default"; }}
       >
         <Suspense fallback={null}>
@@ -992,9 +987,10 @@ export function OrbitScene({
             galaxyAngleRef={resolvedAngleRef}
             dragGuardRef={dragGuardRef}
             showEnergyLink={showEnergyLink}
+            lowPower={lowPower}
           />
         </Suspense>
       </Canvas>
     </div>
   );
-}
+});

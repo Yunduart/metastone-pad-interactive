@@ -2,6 +2,7 @@
 
 - `metastone-domain-map-source.png` — user-supplied visual/source frame for the field-film demo slot.
 - `shishi-logo.svg` — existing METASTONE brand asset from the project workspace.
+- `metastone-official-logo.png` — original white METASTONE / 是石科技 logo extracted from the supplied brand artwork; used by both Pad and TV headers and the home core mark.
 - `earth-atmos-2048.jpg` — Three.js official planet example texture.
 - `earth-blue-2048.jpg` — blue-white duotone derivative of `earth-atmos-2048.jpg`, prepared locally to match the selected visual's luminous planetary treatment.
 - `earth-normal-2048.jpg` — Three.js official planet example texture.

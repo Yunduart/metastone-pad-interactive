@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-09-15T07:28:00+08:00",
+  "scope": "TV auto-start after Pad command; no visible TV-side activation step",
+  "base": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "name": "TV standby has no activation button",
+      "pass": true,
+      "evidence": {
+        "route": "/tv",
+        "hasActivationButton": false,
+        "connected": true,
+        "screenshot": "tv-standby-no-activation.png"
+      }
+    },
+    {
+      "name": "Pad PLAY starts TV video without TV click",
+      "pass": true,
+      "evidence": {
+        "padRoute": "/pad",
+        "tvRoute": "/tv",
+        "video": {
+          "paused": false,
+          "currentTimeSeconds": 6.318724,
+          "muted": false,
+          "readyState": 4
+        },
+        "screenshot": "tv-playing-auto-start.png"
+      }
+    },
+    {
+      "name": "Pad return restores TV standby",
+      "pass": true,
+      "evidence": {
+        "hasActivationButton": false,
+        "videoPresent": false,
+        "connected": true
+      }
+    }
+  ],
+  "pass": true,
+  "consoleErrors": 0,
+  "consoleWarnings": 1,
+  "warningNote": "Existing THREE.Clock warning retained; no new error introduced.",
+  "physicalTvTested": false,
+  "physicalPadTested": false,
+  "productionApproved": false
+}

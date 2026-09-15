@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { lazy, memo, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Atom,
   ArrowCounterClockwise,
@@ -25,19 +25,19 @@ import {
   Stack,
   Waves,
 } from "@phosphor-icons/react";
-import { OrbitScene } from "./OrbitScene.jsx";
-import { TvDisplay } from "./TvDisplay.jsx";
 import { CONTENT_CATALOGS, DEFAULT_CATALOG_ID, DEMO_DURATION } from "./domains.js";
 import { PLAYBACK_RATES, normalizePlaybackRate } from "./playbackSync.js";
 import {
   GALAXY_ELEVATION_LIMIT,
   GALAXY_SOURCE_CORE,
+  constrainGalaxyMotion,
   galaxyCoreDragDelta,
   galaxyCoreDrift,
   galaxyOrbitTrack,
   galaxyPortalPhase,
   galaxyTrackPoint,
   galaxyViewportSize,
+  isGalaxyCaptureHandoff,
   projectGalaxyPoint,
   stepDampedSpring,
 } from "./orbitMath.js";
@@ -93,10 +93,26 @@ const DOMAIN_ICONS = {
   waves: Waves,
 };
 
+const OrbitScene = lazy(() => import("./OrbitScene.jsx").then(({ OrbitScene: Scene }) => ({ default: Scene })));
+const TvDisplay = lazy(() => import("./TvDisplay.jsx").then(({ TvDisplay: Display }) => ({ default: Display })));
+
+function SceneLoading() {
+  return <div className="orbit-canvas orbit-canvas--loading" aria-hidden="true" />;
+}
+
 const GALAXY_CORE_PORTAL = { x: GALAXY_SOURCE_CORE.x * 100, y: GALAXY_SOURCE_CORE.y * 100 };
 const GALAXY_DRAG_THRESHOLD = 8;
 
-function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCoreReset, galaxyAngleRef, dragGuardRef }) {
+// Typography only: keep approved catalogue names and media IDs unchanged.
+const PRODUCT_LABEL_LINES = {
+  "product-01": "国产 Token\n优化工厂",
+  "product-03": "国产异构\n超智算中心",
+  "product-04": "CPU vs GPU\n速度比拼",
+  "product-05": "Token 优化工厂\n技术优势",
+  "product-09": "多层级\nKV Cache",
+};
+
+const OrbitLabels = memo(function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCoreReset, galaxyAngleRef, dragGuardRef }) {
   const focusing = viewState === "FOCUSING";
   const labelsRef = useRef(null);
   const coreRef = useRef(null);
@@ -196,8 +212,8 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
         node.style.setProperty("--label-x", `${projectedX}px`);
         node.style.setProperty("--label-y", `${projectedY}px`);
         node.style.setProperty("--orbit-depth-scale", perspective.toFixed(4));
-        node.style.setProperty("--orbit-depth-opacity", (0.76 + depthFactor * 0.24).toFixed(4));
-        node.style.setProperty("--orbit-depth-brightness", (0.88 + depthFactor * 0.16).toFixed(4));
+        node.style.setProperty("--orbit-depth-opacity", (0.94 + depthFactor * 0.06).toFixed(4));
+        node.style.setProperty("--orbit-depth-brightness", (0.98 + depthFactor * 0.04).toFixed(4));
         node.style.zIndex = String(18 + Math.round(planetWorld[2] * 10));
       });
       frame = window.requestAnimationFrame(renderPositions);
@@ -207,10 +223,11 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
       resizeObserver.disconnect();
       window.cancelAnimationFrame(frame);
     };
-  }, [domains, dragGuardRef, galaxyAngleRef, selectedId]);
+  }, [domains, dragGuardRef, galaxyAngleRef]);
 
   return (
-    <div ref={labelsRef} className="orbit-labels" aria-label={`${catalog.title}视频星球`}>
+    <div ref={labelsRef} className="orbit-labels" aria-label={`${catalog.title}视频星球`}
+      inert={!["BOOT", "HOME_IDLE", "HOME_ATTRACT"].includes(viewState)}>
       <button
         ref={coreRef}
         className="core-label"
@@ -219,7 +236,7 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
         aria-label={`返回${catalog.title}图谱中心`}
       >
         <span className="core-label__mark" aria-hidden="true">
-          <img src="/assets/shishi-logo.svg" alt="" draggable="false" />
+          <img src="/assets/metastone-official-logo.png" alt="" draggable="false" />
         </span>
         <strong>METASTONE</strong>
         <small>是 石 科 技</small>
@@ -245,19 +262,19 @@ function OrbitLabels({ catalog, domains, selectedId, viewState, onSelect, onCore
             aria-pressed={active}
           >
             <Icon className="planet-label__icon" size={active ? 39 : 32} weight="light" aria-hidden="true" />
-            <strong>{isEnglishLead ? domain.english : (domain.labelTitle ?? domain.title)}</strong>
+            <strong>{isEnglishLead ? domain.english : (PRODUCT_LABEL_LINES[domain.id] ?? domain.labelTitle ?? domain.title)}</strong>
             {isEnglishLead ? null : <span>{domain.english}</span>}
           </button>
         );
       })}
     </div>
   );
-}
+});
 
-function FocusDock({ catalog, domain, total, onPlay }) {
+const FocusDock = memo(function FocusDock({ catalog, domain, total, onPlay, inert = false }) {
   const firstMedia = domain.playlist?.[0];
   return (
-    <aside className="focus-dock" aria-live="polite">
+    <aside className="focus-dock" aria-live="polite" inert={inert}>
       <div className="focus-dock__meta">
         <div className="focus-dock__index">
           <strong>{domain.number}</strong>
@@ -284,7 +301,7 @@ function FocusDock({ catalog, domain, total, onPlay }) {
       </button>
     </aside>
   );
-}
+});
 
 function PlaybackControls({
   catalog,
@@ -380,7 +397,7 @@ function PlaybackControls({
   );
 }
 
-function MediaDirectory({ catalog, domain, itemIndex, onSelectItem }) {
+const MediaDirectory = memo(function MediaDirectory({ catalog, domain, itemIndex, onSelectItem }) {
   return (
     <aside className="pad-media-directory" aria-label={`${domain.title}资源目录`}>
       <header>
@@ -415,9 +432,9 @@ function MediaDirectory({ catalog, domain, itemIndex, onSelectItem }) {
       </ol>
     </aside>
   );
-}
+});
 
-function DemoFilm({ catalog, domain, playing }) {
+const DemoFilm = memo(function DemoFilm({ catalog, domain, playing }) {
   return (
     <div className={`demo-film${playing ? " is-playing" : ""}`} role="img" aria-label={`${catalog.title}·${domain.title}影片演示画面`}>
       <img src="/assets/orbital-space-background.png" alt="" />
@@ -429,7 +446,7 @@ function DemoFilm({ catalog, domain, playing }) {
       </div>
     </div>
   );
-}
+});
 
 function EndSlate({ catalog, onReplay, onNext, onClose }) {
   return (
@@ -546,7 +563,7 @@ function ControlPortal({
   );
 }
 
-function CatalogSwitch({ activeId, disabled, catalogs = CONTENT_CATALOGS, locked = false, onChange }) {
+const CatalogSwitch = memo(function CatalogSwitch({ activeId, disabled, catalogs = CONTENT_CATALOGS, locked = false, onChange }) {
   return (
     <nav className={`catalog-switch${locked ? " is-locked" : ""}`} aria-label={locked ? "当前 Pad 固定板块" : "内容板块"}>
       {catalogs.map((item) => {
@@ -571,10 +588,9 @@ function CatalogSwitch({ activeId, disabled, catalogs = CONTENT_CATALOGS, locked
       })}
     </nav>
   );
-}
+});
 
 function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
-  const isTestEnvironment = remoteEnabled;
   const initialCatalog = CONTENT_CATALOGS.find((item) => item.id === assignedCatalogId) ?? CONTENT_CATALOGS[0];
   const [catalogId, setCatalogId] = useState(initialCatalog.id ?? DEFAULT_CATALOG_ID);
   const catalog = useMemo(
@@ -595,6 +611,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
   const [tvConnected, setTvConnected] = useState(false);
   const [activityVersion, setActivityVersion] = useState(0);
   const [isGalaxyDragging, setIsGalaxyDragging] = useState(false);
+  const [isGalaxyReturning, setIsGalaxyReturning] = useState(false);
   const [isCatalogSwitching, setIsCatalogSwitching] = useState(false);
   const enterTimerRef = useRef(null);
   const catalogTimerRefs = useRef([]);
@@ -603,6 +620,8 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
   const playbackIdRef = useRef(null);
   const appRef = useRef(null);
   const galaxyAngleRef = useRef(0);
+  const galaxyConstraintsRef = useRef({ domains });
+  galaxyConstraintsRef.current.domains = domains;
   const galaxyMotionRef = useRef({
     dragging: false,
     dragActivated: false,
@@ -644,6 +663,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
       || Math.abs(motion.coreVerticalOffset) > 0.0001
     );
     motion.returning = animateReturn;
+    setIsGalaxyReturning(animateReturn);
     motion.reboundAngleVelocity = animateReturn ? clamp(motion.velocityX * 120, -0.42, 0.42) : 0;
     motion.reboundElevationVelocity = animateReturn ? clamp(motion.velocityY * 120, -0.2, 0.2) : 0;
     motion.reboundCoreVelocity = animateReturn ? clamp(motion.coreVelocity * 180, -0.075, 0.075) : 0;
@@ -805,6 +825,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
           && Math.abs(motion.reboundElevationVelocity) < 0.0015;
         if (settled) {
           motion.returning = false;
+          setIsGalaxyReturning(false);
           galaxyAngleRef.current = 0;
           motion.elevation = 0;
           motion.coreOffset = 0;
@@ -849,6 +870,17 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
           motion.targetCoreVerticalOffset - motion.coreVerticalOffset
         ) * follow;
       }
+      if ((motion.dragging || motion.returning) && galaxyConstraintsRef.current.width) {
+        const { domains: sceneDomains, width, height, bounds } = galaxyConstraintsRef.current;
+        const safe = constrainGalaxyMotion({
+          angle: galaxyAngleRef.current, elevation: motion.elevation,
+          horizontalOffset: motion.coreOffset, verticalOffset: motion.coreVerticalOffset,
+        }, sceneDomains, width, height, { top: bounds.top });
+        galaxyAngleRef.current = safe.angle;
+        motion.elevation = safe.elevation;
+        motion.coreOffset = safe.horizontalOffset;
+        motion.coreVerticalOffset = safe.verticalOffset;
+      }
       if (appRef.current) {
         appRef.current.style.setProperty("--galaxy-bg-x", `${(-motion.coreOffset * 118).toFixed(2)}px`);
         appRef.current.style.setProperty("--galaxy-bg-y", `${(-motion.coreVerticalOffset * 96).toFixed(2)}px`);
@@ -867,7 +899,20 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
     if (event.pointerType === "mouse" && event.button !== 0) return;
     if (event.target.closest?.("[data-no-galaxy-drag]")) return;
     const motion = galaxyMotionRef.current;
+    const scene = event.currentTarget.getBoundingClientRect();
+    const dock = event.currentTarget.querySelector(".focus-dock")?.getBoundingClientRect();
+    const header = event.currentTarget.querySelector(".domain-header")?.getBoundingClientRect();
+    galaxyConstraintsRef.current = {
+      domains: galaxyConstraintsRef.current.domains,
+      width: scene.width, height: scene.height,
+      bounds: {
+        top: Math.max(100, (header?.bottom ?? scene.top + 96) - scene.top + 20),
+        dock: dock ? { left: dock.left - scene.left, right: dock.right - scene.left,
+          top: dock.top - scene.top, bottom: dock.bottom - scene.top } : undefined,
+      },
+    };
     motion.dragging = true;
+    setIsGalaxyReturning(false);
     motion.dragActivated = false;
     motion.pointerId = event.pointerId;
     motion.startX = event.clientX;
@@ -915,7 +960,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
       motion.lastTime = now;
       return;
     }
-    const angleDelta = deltaX * 0.0026;
+    const angleDelta = deltaX * 0.0011;
     const elevationDelta = deltaY * 0.00125;
     const coreDelta = galaxyCoreDragDelta(deltaX, event.currentTarget.clientWidth);
     const coreVerticalDelta = galaxyCoreDragDelta(deltaY, event.currentTarget.clientHeight, 0.54);
@@ -967,6 +1012,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
   }, []);
 
   const endGalaxyDrag = useCallback((event) => {
+    if (isGalaxyCaptureHandoff(event)) return;
     const motion = galaxyMotionRef.current;
     if (!motion.dragging || motion.pointerId !== event.pointerId) return;
     motion.dragging = false;
@@ -1040,6 +1086,10 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
       });
     }, 360);
   }, [activeId, catalog.id, domains, muted, sendRemoteControl, viewState]);
+
+  const playSelectedDomain = useCallback(() => {
+    selectDomain(selectedId);
+  }, [selectDomain, selectedId]);
 
   const setPlayback = useCallback((nextPlaying) => {
     const nextProgress = nextPlaying && progress >= duration ? 0 : progress;
@@ -1174,7 +1224,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
   return (
     <main
       ref={appRef}
-      className={`domain-app catalog-${catalog.id} state-${viewState.toLowerCase()}${isGalaxyDragging ? " is-galaxy-dragging" : ""}${isCatalogSwitching ? " is-catalog-switching" : ""}`}
+      className={`domain-app catalog-${catalog.id} state-${viewState.toLowerCase()}${isGalaxyDragging ? " is-galaxy-dragging" : ""}${isGalaxyReturning ? " is-galaxy-returning" : ""}${isCatalogSwitching ? " is-catalog-switching" : ""}`}
       onPointerDownCapture={markActivity}
       onPointerDown={beginGalaxyDrag}
       onPointerMove={moveGalaxyDrag}
@@ -1182,14 +1232,16 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
       onPointerCancel={endGalaxyDrag}
       onLostPointerCapture={endGalaxyDrag}
     >
-      <OrbitScene
-        domains={domains}
-        selectedId={selectedId}
-        onSelect={selectDomain}
-        onCoreReset={resetHome}
-        galaxyAngleRef={galaxyAngleRef}
-        dragGuardRef={galaxyMotionRef}
-      />
+      <Suspense fallback={<SceneLoading />}>
+        <OrbitScene
+          domains={domains}
+          selectedId={selectedId}
+          onSelect={selectDomain}
+          onCoreReset={resetHome}
+          galaxyAngleRef={galaxyAngleRef}
+          dragGuardRef={galaxyMotionRef}
+        />
+      </Suspense>
 
       <OrbitLabels
         catalog={catalog}
@@ -1203,7 +1255,7 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
       />
 
       <header className="domain-header">
-        <img src="/assets/shishi-logo.svg" alt="METASTONE 是石科技" />
+        <img src="/assets/metastone-official-logo.png" alt="METASTONE 是石科技" />
         <i aria-hidden="true" />
         <div>
           <strong>{remoteEnabled ? `${catalog.padId} · 视频播控` : "视频播控图谱"}</strong>
@@ -1218,17 +1270,6 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
         />
       </header>
 
-      {isTestEnvironment ? (
-        <div
-          className={`test-environment-badge${tvConnected ? " is-linked" : ""}${!controlServerReady ? " is-offline" : ""}`}
-          aria-label="客户体验测试版，仅供体验，不作为验收或生产放行"
-        >
-          <strong>客户体验测试版</strong>
-          <span>{!controlServerReady ? "控制服务未连接" : tvConnected ? "电视端已连接" : "等待电视端"}</span>
-          <small>仅供体验 · 非验收 / 非生产</small>
-        </div>
-      ) : null}
-
       <div className={`scene-instruction${isGalaxyDragging ? " is-dragging" : ""}`} role="status" aria-live="polite">
         <Crosshair size={36} weight="duotone" />
         <span>
@@ -1240,10 +1281,11 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
         </span>
       </div>
 
-      <FocusDock catalog={catalog} domain={selectedDomain} total={domains.length} onPlay={() => selectDomain(selectedId)} />
+      <FocusDock catalog={catalog} domain={selectedDomain} total={domains.length} onPlay={playSelectedDomain}
+        inert={isGalaxyDragging || isGalaxyReturning || !["HOME_IDLE", "HOME_ATTRACT"].includes(viewState)} />
 
       <div className={`boot-screen${viewState === "BOOT" ? " is-visible" : ""}`} aria-hidden={viewState !== "BOOT"}>
-        <img src="/assets/shishi-logo.svg" alt="" />
+        <img src="/assets/metastone-official-logo.png" alt="" />
         <span>LOADING ORBITAL MAP</span>
         <i />
       </div>
@@ -1279,7 +1321,13 @@ function PadConsole({ remoteEnabled = false, assignedCatalogId = null }) {
 
 export function App() {
   const role = getDeviceRole();
-  if (role === "tv") return <TvDisplay />;
+  if (role === "tv") {
+    return (
+      <Suspense fallback={null}>
+        <TvDisplay />
+      </Suspense>
+    );
+  }
   return (
     <PadConsole
       remoteEnabled={role === "pad"}
