@@ -21,7 +21,7 @@ TV 播放态原先仍保持待机星系 WebGL、Bloom 后处理和待机背景�
 
 ## 验证
 
-- 全量源码测试：37/37 PASS（含 `test:standby` 7/7）。
+- 全量源码测试：38/38 PASS（含 `test:standby` 7/7、控制服务 9/9）。
 - `npm run build`：PASS。
 - 首屏构建分包：主入口约 317KB；三维场景独立懒加载 chunk 约 1.02MB。
 - 播放态 DOM：不再创建待机 WebGL canvas；返回待机后重新创建星系 canvas。
@@ -29,6 +29,7 @@ TV 播放态原先仍保持待机星系 WebGL、Bloom 后处理和待机背景�
 - 实际浏览器回读：待机 `canvasCount=1`；Pad 发出播放后 `canvasCount=0`、视频 `paused=false`、`readyState=4`；返回待机后恢复 `canvasCount=1`。
 - 返回清理回读：返回后 `videoCount=0`、`playingVideos=0`，且视频元素已从 DOM 移除；重复播放/返回不累积隐藏视频实例。
 - 切换清理强化：切换到下一项时旧节点由媒体 ID、重试序号和错误状态共同触发精确清理；旧节点的迟到 `loadedmetadata/canplay/error` 事件被忽略，不会重新唤醒已切走的视频。
+- 单 TV 播放端：同一控制服务只保留一个 `role=tv` SSE 连接；重复启动 TV 或旧窗口重连时，旧窗口被断开并立即回到待机，避免隐藏窗口继续发声。
 - 截图：`standby-low-power.png`、`playing-no-webgl.png`。
 
 ## 边界
