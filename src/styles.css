@@ -900,36 +900,6 @@ input:focus-visible {
   pointer-events: none;
 }
 
-.tv-standby__core-copy {
-  position: absolute;
-  z-index: 3;
-  left: 34%;
-  top: 64.5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #eaf7ff;
-  text-align: center;
-  text-shadow: 0 3px 22px rgb(0 4 20 / 90%);
-  transform: translateX(-50%);
-  animation: tv-core-breathe 12s ease-in-out infinite;
-}
-
-.tv-standby__core-copy > i {
-  width: clamp(24px, 2.2vw, 46px);
-  height: 1px;
-  margin-bottom: clamp(10px, 0.9vw, 18px);
-  background: linear-gradient(90deg, transparent, #65ddff, transparent);
-  box-shadow: 0 0 12px rgb(89 218 255 / 48%);
-}
-
-.tv-standby__core-logo {
-  display: block;
-  width: clamp(132px, 10.4vw, 220px);
-  height: auto;
-  filter: drop-shadow(0 0 14px rgb(92 185 255 / 38%));
-}
-
 .tv-standby__message {
   position: absolute;
   z-index: 4;
@@ -1028,14 +998,8 @@ input:focus-visible {
   50% { transform: scale(1.025) translate3d(-0.14%, 0.1%, 0); }
 }
 
-@keyframes tv-core-breathe {
-  0%, 100% { opacity: 0.78; transform: translateX(-50%) translateY(0); }
-  50% { opacity: 0.94; transform: translateX(-50%) translateY(-3px); }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .tv-display::before,
-  .tv-standby__core-copy {
+  .tv-display::before {
     animation: none;
   }
 }

@@ -18,9 +18,11 @@ test("standby keeps the galaxy but removes selected-node guidance", () => {
   assert.match(orbitSource, /\{showEnergyLink \? \(/);
 });
 
-test("TV standby uses the original METASTONE logo artwork", () => {
-  assert.match(tvSource, /className="tv-standby__core-logo" src="\/assets\/metastone-official-logo\.png"/);
-  assert.match(styles, /\.tv-standby__core-logo\s*\{/);
+test("TV standby keeps the galaxy clear below the core planet", () => {
+  assert.doesNotMatch(tvSource, /tv-standby__core-logo/);
+  assert.doesNotMatch(tvSource, /tv-standby__core-copy/);
+  assert.doesNotMatch(styles, /\.tv-standby__core-logo\s*\{/);
+  assert.doesNotMatch(styles, /\.tv-standby__core-copy\s*\{/);
 });
 
 test("visitor copy and Pad handoff stay explicit and unwrapped", () => {

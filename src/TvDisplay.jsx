@@ -326,11 +326,6 @@ export function TvDisplay() {
         {!domain ? <TvStandbyGalaxy active /> : null}
         <div className="tv-standby__depth" aria-hidden="true" />
 
-        <div className="tv-standby__core-copy" aria-hidden="true">
-          <i />
-          <img className="tv-standby__core-logo" src="/assets/metastone-official-logo.png" alt="METASTONE 是石科技" />
-        </div>
-
         <div className="tv-standby__message">
           <small>METASTONE · INTERACTIVE MEDIA SYSTEM</small>
           <strong>成果案例 <i /> 产品介绍</strong>
