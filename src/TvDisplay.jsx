@@ -45,26 +45,26 @@ function hasTvStateChanged(previous, next) {
  * the requested sound state once the element is actually playing.  This keeps
  * the TV route non-blocking without exposing a TV-side activation button.
  */
-function startTvPlayback(video, requestedMuted) {
+function startTvPlayback(video, requestedMuted, isActive = () => true) {
   if (!video) return;
   video.muted = requestedMuted;
   const attempt = video.play();
   if (!attempt || typeof attempt.catch !== "function") return;
   attempt.catch(() => {
-    if (requestedMuted) return;
+    if (requestedMuted || !isActive()) return;
     video.muted = true;
     const mutedAttempt = video.play();
     if (mutedAttempt && typeof mutedAttempt.then === "function") {
       mutedAttempt
         .then(() => {
-          if (!video.paused) video.muted = requestedMuted;
+          if (isActive() && !video.paused) video.muted = requestedMuted;
         })
         .catch(() => undefined);
     }
   });
 }
 
-function syncTvVideo(video, state) {
+function syncTvVideo(video, state, isActive = () => true) {
   if (!video || !state) return;
   const baseRate = normalizePlaybackRate(state.playbackRate, 1);
   const correction = planPlaybackCorrection({
@@ -87,7 +87,7 @@ function syncTvVideo(video, state) {
   }
 
   if (state.playing) {
-    if (video.paused) startTvPlayback(video, state.muted);
+    if (video.paused) startTvPlayback(video, state.muted, isActive);
   } else if (!video.paused && !video.seeking) {
     video.pause();
   }
@@ -244,6 +244,15 @@ export function TvDisplay() {
   }, [media?.id]);
 
   useEffect(() => {
+    // Capture the exact node owned by this media item. On a keyed source
+    // switch React may mount the replacement before passive cleanup runs, so
+    // relying only on the live ref can miss the old decoder. This closure
+    // always pauses and empties the previous node before it is discarded.
+    const activeVideo = videoRef.current;
+    return () => clearTvVideo(activeVideo);
+  }, [media?.id, mediaAttempt, mediaError]);
+
+  useEffect(() => {
     if (!media?.video || !mediaError) return undefined;
 
     let cancelled = false;
@@ -272,7 +281,10 @@ export function TvDisplay() {
 
   useEffect(() => {
     if (!media || mediaError) return undefined;
-    const sync = () => syncTvVideo(videoRef.current, remoteStateRef.current);
+    const sync = () => {
+      const video = videoRef.current;
+      syncTvVideo(video, remoteStateRef.current, () => videoRef.current === video);
+    };
     sync();
     // The server remains authoritative, but the TV only needs a light drift
     // check. This avoids calling play(), assigning playbackRate, or seeking on
@@ -331,12 +343,16 @@ export function TvDisplay() {
               loop={media.loop}
               preload="auto"
               onLoadedMetadata={(event) => {
-                syncTvVideo(event.currentTarget, remoteStateRef.current);
+                if (videoRef.current !== event.currentTarget) return;
+                syncTvVideo(event.currentTarget, remoteStateRef.current, () => videoRef.current === event.currentTarget);
               }}
               onCanPlay={(event) => {
-                syncTvVideo(event.currentTarget, remoteStateRef.current);
+                if (videoRef.current !== event.currentTarget) return;
+                syncTvVideo(event.currentTarget, remoteStateRef.current, () => videoRef.current === event.currentTarget);
               }}
-              onError={() => setMediaError(true)}
+              onError={(event) => {
+                if (videoRef.current === event.currentTarget) setMediaError(true);
+              }}
             />
           ) : (
             <TvFallback catalog={catalog} domain={domain} media={media} />

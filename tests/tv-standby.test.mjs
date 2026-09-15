@@ -35,7 +35,7 @@ test("TV preserves reduced-motion and auto-starts without a TV-side activation s
   assert.doesNotMatch(tvSource, /启用电视播放/);
   assert.doesNotMatch(tvSource, /armDisplay|setArmed|\[armed/);
   assert.match(tvSource, /autoPlay=\{Boolean\(remoteState\.playing\)\}/);
-  assert.match(tvSource, /startTvPlayback\(video, state\.muted\)/);
+  assert.match(tvSource, /startTvPlayback\(video, state\.muted(?:, isActive)?\)/);
   assert.match(tvSource, /!domain \? <TvStandbyGalaxy active \/> : null/);
   assert.match(tvSource, /renderProfile="tv-low"/);
   assert.match(styles, /\.tv-display\.is-media-active::before/);
@@ -53,7 +53,7 @@ test("TV ignores progress-only SSE renders and performs lightweight drift checks
   assert.match(tvSource, /remoteStateRef\.current = nextState/);
   assert.match(tvSource, /hasTvStateChanged\(previous, nextState\)/);
   assert.match(tvSource, /const timer = window\.setInterval\(sync, 500\)/);
-  assert.match(tvSource, /if \(video\.paused\) startTvPlayback\(video, state\.muted\)/);
+  assert.match(tvSource, /if \(video\.paused\) startTvPlayback\(video, state\.muted(?:, isActive)?\)/);
   assert.doesNotMatch(tvSource, /\}, \[media, mediaError, remoteState\]\);/);
 });
 
@@ -65,4 +65,9 @@ test("TV clears the exact video node when playback is exited or replaced", () =>
   assert.match(tvSource, /const setVideoRef = useCallback\(\(node\) =>/);
   assert.match(tvSource, /if \(!node && videoRef\.current\) clearTvVideo\(videoRef\.current\)/);
   assert.match(tvSource, /ref=\{setVideoRef\}/);
+  assert.match(tvSource, /const activeVideo = videoRef\.current/);
+  assert.match(tvSource, /return \(\) => clearTvVideo\(activeVideo\)/);
+  assert.match(tvSource, /\[media\?\.id, mediaAttempt, mediaError\]/);
+  assert.match(tvSource, /if \(videoRef\.current !== event\.currentTarget\) return/);
+  assert.match(tvSource, /isActive\(\) && !video\.paused/);
 });

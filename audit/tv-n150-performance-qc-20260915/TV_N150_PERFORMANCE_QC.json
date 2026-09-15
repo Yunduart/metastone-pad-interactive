@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-15T10:35:00+08:00",
+  "checkedAt": "2026-09-15T10:37:27+08:00",
   "targetIssue": "Intel N150 TV web playback stutter while system player is smooth",
   "rootCauseHypothesis": "standby WebGL galaxy and postprocessing continued during video playback",
   "implemented": {
@@ -16,9 +16,11 @@
     "previousMainJsBytes": 1352466,
     "mediaCacheControl": "public, max-age=86400",
     "clearVideoOnReturn": true,
-    "clearVideoSequence": ["pause", "removeAttribute(src)", "load"]
+    "clearVideoSequence": ["pause", "removeAttribute(src)", "load"],
+    "clearVideoOnMediaSwitch": true,
+    "ignoreStaleMediaEvents": true
   },
-  "sourceTests": {"all": "36/36 PASS", "testStandby": "6/6 PASS", "build": "PASS"},
+  "sourceTests": {"all": "37/37 PASS", "testStandby": "7/7 PASS", "build": "PASS"},
   "browserVerification": {
     "standbyCanvasCount": 1,
     "playingCanvasCount": 0,
