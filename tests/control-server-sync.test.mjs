@@ -139,3 +139,29 @@ test("the LAN control server advances progress, applies rate, and rejects stale 
     child.stderr.destroy();
   }
 });
+
+test("the control server keeps one authoritative TV event stream", async () => {
+  const port = 4900 + Math.floor(Math.random() * 100);
+  const child = spawn(process.execPath, ["server/test-control-server.mjs"], {
+    cwd: process.cwd(),
+    env: { ...process.env, TEST_PORT: String(port) },
+    stdio: ["ignore", "pipe", "pipe"],
+  });
+  const endpoint = `http://127.0.0.1:${port}`;
+  let first;
+  let second;
+  try {
+    await waitForServer(child);
+    first = await fetch(`${endpoint}/api/events?role=tv`);
+    second = await fetch(`${endpoint}/api/events?role=tv`);
+    await wait(100);
+    const state = await fetch(`${endpoint}/api/state`).then((response) => response.json());
+    assert.equal(state.displayClients, 1);
+  } finally {
+    await first?.body?.cancel();
+    await second?.body?.cancel();
+    child.kill();
+    child.stdout.destroy();
+    child.stderr.destroy();
+  }
+});

@@ -110,6 +110,13 @@ function clearTvVideo(video) {
   video.load();
 }
 
+function clearOtherTvVideos(activeVideo) {
+  if (typeof document === "undefined") return;
+  document.querySelectorAll("video").forEach((video) => {
+    if (video !== activeVideo) clearTvVideo(video);
+  });
+}
+
 function TvStandbyGalaxy({ active }) {
   const galaxyAngleRef = useRef(0);
   const dragGuardRef = useRef({
@@ -200,6 +207,7 @@ export function TvDisplay() {
     // when the user taps 返回. Clear the exact old node before releasing it so
     // no decoder, buffer, or hidden playback instance survives the transition.
     if (!node && videoRef.current) clearTvVideo(videoRef.current);
+    if (node) clearOtherTvVideos(node);
     videoRef.current = node;
   }, []);
 
@@ -234,7 +242,15 @@ export function TvDisplay() {
         setConnected(false);
       }
     };
-    stream.onerror = () => setConnected(false);
+    stream.onerror = () => {
+      // If this TV renderer is displaced by a second launcher/window, stop
+      // immediately. Otherwise the old page can keep decoding audio while a
+      // newer visible TV page owns the control stream.
+      remoteStateRef.current = EMPTY_REMOTE_STATE;
+      setRemoteState(EMPTY_REMOTE_STATE);
+      setMediaError(false);
+      setConnected(false);
+    };
     return () => stream.close();
   }, []);
 

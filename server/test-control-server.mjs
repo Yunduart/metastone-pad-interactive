@@ -118,6 +118,24 @@ function broadcast() {
   sseClients.forEach((role, client) => client.write(message));
 }
 
+function registerSseClient(response, role) {
+  // There must be one authoritative TV renderer per control process. If the
+  // launcher is clicked twice, the old browser window must stop receiving
+  // state instead of continuing to decode audio behind the visible window.
+  if (role === "tv") {
+    sseClients.forEach((existingRole, client) => {
+      if (existingRole !== "tv" || client === response) return;
+      sseClients.delete(client);
+      try {
+        client.end();
+      } catch {
+        // The peer may already be closing.
+      }
+    });
+  }
+  sseClients.set(response, role);
+}
+
 function resolveInside(root, relativePath) {
   const target = resolve(root, relativePath);
   if (target === root || target.startsWith(`${root}${sep}`)) return target;
@@ -299,7 +317,7 @@ const server = createServer(async (request, response) => {
     response.write(`data: ${JSON.stringify(snapshot())}\n\n`);
     const requestedRole = url.searchParams.get("role");
     const role = requestedRole === "tv" ? "tv" : requestedRole === "pad" ? "pad" : "unknown";
-    sseClients.set(response, role);
+    registerSseClient(response, role);
     broadcast();
     request.on("close", () => {
       sseClients.delete(response);

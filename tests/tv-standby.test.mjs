@@ -59,6 +59,9 @@ test("TV ignores progress-only SSE renders and performs lightweight drift checks
 
 test("TV clears the exact video node when playback is exited or replaced", () => {
   assert.match(tvSource, /function clearTvVideo\(video\)/);
+  assert.match(tvSource, /function clearOtherTvVideos\(activeVideo\)/);
+  assert.match(tvSource, /document\.querySelectorAll\("video"\)/);
+  assert.match(tvSource, /if \(node\) clearOtherTvVideos\(node\)/);
   assert.match(tvSource, /video\.pause\(\)/);
   assert.match(tvSource, /video\.removeAttribute\("src"\)/);
   assert.match(tvSource, /video\.load\(\)/);
@@ -70,4 +73,6 @@ test("TV clears the exact video node when playback is exited or replaced", () =>
   assert.match(tvSource, /\[media\?\.id, mediaAttempt, mediaError\]/);
   assert.match(tvSource, /if \(videoRef\.current !== event\.currentTarget\) return/);
   assert.match(tvSource, /isActive\(\) && !video\.paused/);
+  assert.match(tvSource, /remoteStateRef\.current = EMPTY_REMOTE_STATE/);
+  assert.match(tvSource, /setRemoteState\(EMPTY_REMOTE_STATE\)/);
 });
